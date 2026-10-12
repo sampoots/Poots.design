@@ -90,9 +90,62 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .call-fab{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.3)}
   footer{padding-bottom:96px}
 }
+.faq{max-width:780px}
+.faq details{border:1px solid var(--line);border-radius:12px;background:var(--white);margin-bottom:12px;overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:18px 52px 18px 20px;font-weight:700;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--red);transition:transform .25s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq summary:focus-visible{outline:3px solid var(--red);outline-offset:-3px}
+.faq details p{margin:0;padding:0 20px 18px;color:var(--muted)}
+.form-box{margin-top:20px}
+.form-box h3{margin:0 0 4px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.form-grid .full{grid-column:1/-1}
+.contact label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px;color:#e3e5e8}
+.contact input,.contact textarea{width:100%;font:inherit;padding:12px;border-radius:10px;border:1px solid #3a3d44;background:#111214;color:#fff}
+.contact input:focus,.contact textarea:focus{outline:2px solid var(--red);border-color:transparent}
+.contact textarea{min-height:110px;resize:vertical}
+.hp{position:absolute;left:-9999px}
+.form-foot{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:16px}
+.form-foot small{color:#8b9099}
+.form-foot small a{color:#c5c8ce}
+.form-status{margin:12px 0 0;font-weight:600}
+.form-status.ok{color:#7ee2a0}
+.form-status.err{color:#ff8a98}
+@media (max-width:640px){.form-grid{grid-template-columns:1fr}}
 </style>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://sampoots.github.io/poots.design/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Poots Design">
+<meta property="og:title" content="Poots Design: websites for local businesses">
+<meta property="og:description" content="Fast, mobile-friendly websites for local businesses in Belfast, Lisburn and North Down. Fixed prices, live in about a week, free mock-up.">
+<meta property="og:url" content="https://sampoots.github.io/poots.design/">
+<meta property="og:image" content="https://sampoots.github.io/poots.design/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Poots Design: websites that get local businesses more enquiries">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Poots Design",
+  "description": "Website design for local businesses in Belfast, Lisburn and North Down.",
+  "url": "https://sampoots.github.io/poots.design/",
+  "image": "https://sampoots.github.io/poots.design/assets/og-image.png",
+  "telephone": "+447395229191",
+  "email": "pootssam5@gmail.com",
+  "founder": {"@type": "Person", "name": "Sam Poots"},
+  "parentOrganization": {"@type": "Organization", "name": "Poots Group"},
+  "areaServed": ["Belfast","Lisburn","Bangor","Newtownards","Carrickfergus","Whiteabbey","Newtownabbey","Holywood"],
+  "priceRange": "££"
+}
+</script>
 <link rel="stylesheet" href="assets/motion.css">
 <script src="assets/motion.js" defer></script>
+<script src="assets/form.js" defer></script>
 </head>
 <body>
 
@@ -244,6 +297,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </div>
   </section>
 
+  <section id="faq" class="alt" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="faq-title">Questions people ask</h2>
+        <p>If yours isn't here, just ask.</p>
+      </div>
+      <div class="faq">
+        <details><summary>How long does it take?</summary><p>A Starter site is usually live in about 5 working days, and a Business site in 7 to 10, once I have your details and photos.</p></details>
+        <details><summary>What do I need to give you?</summary><p>Your business name, what you offer, the areas you cover, how customers should contact you, and any photos or logo you have. If you don't have photos or wording, I'll help you put them together.</p></details>
+        <details><summary>Do I own the website?</summary><p>Yes. Your domain name and all your content belong to you. If you ever leave, I'll hand everything over.</p></details>
+        <details><summary>Can I make changes after it's live?</summary><p>Yes. On the care plan, up to 30 minutes of changes a month are included. Without it, small changes are £60 each.</p></details>
+        <details><summary>I already have a domain or an old website. Is that a problem?</summary><p>Not at all. I can use your existing domain, replace or refresh your old site, and make sure nothing breaks when it switches over.</p></details>
+        <details><summary>Are there any ongoing costs?</summary><p>Your domain name, usually around £10 to £15 a year, paid directly to the provider so it stays in your name. The care plan is optional at £35 a month, and you can cancel any time.</p></details>
+        <details><summary>How do I pay?</summary><p>50% to start and 50% before the site goes live. You'll get a written quote first, so you know the full cost up front.</p></details>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="contact" aria-labelledby="contact-title">
     <div class="wrap">
       <div class="head">
@@ -262,6 +333,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <a class="btn" href="mailto:pootssam5@gmail.com?subject=Website%20mock-up">Send an email</a>
         </div>
       </div>
+      <div class="card form-box" data-form-box hidden>
+        <h3>Or send a message</h3>
+        <p>I'll reply within one working day.</p>
+        <form id="enquiry" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="form-grid">
+            <div><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+            <div><label for="f-business">Business name</label><input id="f-business" name="business" autocomplete="organization"></div>
+            <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div><label for="f-phone">Phone (optional)</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="full"><label for="f-msg">What do you do, and what do you need?</label><textarea id="f-msg" name="message" required></textarea></div>
+            <div class="hp" aria-hidden="true"><label for="f-gotcha">Leave this empty</label><input id="f-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+            <input type="hidden" name="_subject" value="New enquiry from poots.design">
+          </div>
+          <div class="form-foot">
+            <button class="btn" type="submit">Send message</button>
+            <small>I only use your details to reply. See the <a href="privacy/">privacy notice</a>.</small>
+          </div>
+          <p class="form-status" data-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </div>
   </section>
 </main>
@@ -269,7 +360,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <footer>
   <div class="wrap">
     <span>Poots Design is a trading name of Sam Poots, part of Poots Group. Northern Ireland.</span>
-    <span>No cookies or tracking on this page.</span>
+    <span><a href="privacy/" style="color:#c5c8ce">Privacy notice</a> · No cookies or tracking</span>
   </div>
 </footer>
 
