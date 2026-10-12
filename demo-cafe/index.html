@@ -56,6 +56,12 @@ h2{font-size:clamp(1.7rem,3.2vw,2.4rem);color:var(--moss-dark);margin:0 0 8px}
 .hours td{padding:4px 0}
 .hours td:last-child{text-align:right}
 .story{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.booking{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.widget{background:var(--white);border:2px dashed var(--line);border-radius:var(--radius);padding:24px;font-family:system-ui,sans-serif}
+.widget .row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:14px 0}
+.widget label{display:block;font-size:.8rem;font-weight:600;color:var(--muted);margin-bottom:4px}
+.widget select{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#f3efe7;color:var(--muted)}
+.widget button{width:100%;padding:12px;border:0;border-radius:999px;background:#9aa79a;color:#fff;font:inherit;font-weight:600;cursor:not-allowed}
 .placeholder-tag{display:inline-block;font-family:system-ui,sans-serif;font-size:.75rem;font-weight:700;color:#5a4100;background:#fff4d6;border-radius:6px;padding:2px 8px;margin-bottom:10px}
 footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-family:system-ui,sans-serif;font-size:.9rem}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
@@ -65,6 +71,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   nav{display:none}
   .info{grid-template-columns:1fr}
   .menu{grid-template-columns:1fr}
+  .booking{grid-template-columns:1fr}
+  .widget .row{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -76,6 +84,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <a class="brand" href="#top">Hollowmoss<small>Café · North Coast</small></a>
     <nav aria-label="Main"><ul>
       <li><a href="#menu">Menu</a></li>
+      <li><a href="#book">Book</a></li>
       <li><a href="#visit">Visit</a></li>
       <li><a href="#story">Our story</a></li>
     </ul></nav>
@@ -90,9 +99,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <h1 id="hero-title">Good coffee, proper breakfasts, and a seat by the window.</h1>
         <p>A small, dog-friendly café a short walk from the coast path. Local bakes, seasonal soups, and coffee roasted in Northern Ireland.</p>
         <div class="actions">
-          <a class="btn" href="#menu">See the menu</a>
-          <a class="btn btn-outline" href="#visit">Find us</a>
-        </div>
+          <a class="btn" href="#book">Book a table</a>
+          <a class="btn btn-outline" href="#menu">See the menu</a>
+                  </div>
       </div>
       <div class="art" aria-hidden="true">
         <svg viewBox="0 0 200 200" width="70%">
@@ -124,6 +133,25 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="item"><div><strong>Scone, butter &amp; jam</strong></div><span class="price">£0.00</span></div>
       </div>
       <p class="sub" style="margin-top:20px;font-size:.9rem">Prices shown as £0.00 because this is a design sample. Allergen information would be listed on a live site.</p>
+    </div>
+  </section>
+
+  <section id="book" aria-labelledby="book-title">
+    <div class="wrap booking">
+      <div>
+        <h2 id="book-title">Book a table</h2>
+        <p class="sub" style="margin-bottom:16px">Book online in under a minute, or call us for groups of 8 or more.</p>
+        <p style="margin:0;color:var(--muted)">On a live site, this box is the restaurant's own booking system (such as ResDiary, OpenTable or SevenRooms), built into the page. Bookings go straight into their diary.</p>
+      </div>
+      <div class="widget" role="group" aria-label="Example booking widget (not working)">
+        <span class="placeholder-tag">Example only: not a real booking system</span>
+        <div class="row">
+          <div><label for="b-date">Date</label><select id="b-date" disabled><option>Sat 18 Oct</option></select></div>
+          <div><label for="b-time">Time</label><select id="b-time" disabled><option>12:30</option></select></div>
+          <div><label for="b-ppl">Guests</label><select id="b-ppl" disabled><option>2 people</option></select></div>
+        </div>
+        <button type="button" disabled>Check availability</button>
+      </div>
     </div>
   </section>
 

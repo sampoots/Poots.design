@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Templates &amp; Add-ons — Poots Design</title>
+<meta name="description" content="Website templates for trades, cafés, restaurants, salons and local services in Belfast and North Down, plus add-ons like online booking, galleries and quote forms.">
+<style>
+:root{
+  --ink:#111214; --ink-2:#1b1d21; --red:#d7263d; --red-dark:#b01c30;
+  --text:#1c1e22; --muted:#5d636d; --line:#e5e7eb; --bg:#f7f7f8; --white:#fff;
+  --max:1080px; --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.6}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+header{background:var(--ink);color:var(--white);position:sticky;top:0;z-index:10}
+.nav{display:flex;justify-content:space-between;align-items:center;height:66px;gap:16px}
+.logo{font-weight:800;font-size:1.2rem;text-decoration:none}
+.logo span{color:var(--red)}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:#c5c8ce;font-weight:500}
+.nav ul a:hover,.nav ul a[aria-current]{color:var(--white)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:var(--white);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;border:0}
+.btn:hover{background:var(--red-dark)}
+.btn-outline{background:transparent;color:var(--text);border:2px solid var(--line)}
+.btn-outline:hover{background:var(--bg)}
+.hero{background:var(--ink);color:var(--white);padding:56px 0 64px}
+.hero h1{font-size:clamp(2rem,4.5vw,3rem);line-height:1.1;margin:0 0 14px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{font-size:1.1rem;color:#c5c8ce;max-width:38em;margin:0}
+.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;padding:0;list-style:none}
+.jump a{display:inline-block;text-decoration:none;color:var(--white);border:1px solid #3a3d44;border-radius:999px;padding:8px 14px;font-weight:500;font-size:.95rem}
+.jump a:hover{border-color:var(--red)}
+section{padding:72px 0;scroll-margin-top:66px}
+.alt{background:var(--bg)}
+.head{max-width:680px;margin-bottom:32px}
+.head h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.2;margin:0 0 8px}
+.head p{color:var(--muted);margin:0}
+.industry{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
+.preview{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--white)}
+.preview .bar{display:flex;gap:6px;padding:10px 12px;background:#eceef1}
+.preview .bar i{width:10px;height:10px;border-radius:50%;background:#c9cdd3;display:block}
+.preview .screen{padding:22px;min-height:190px}
+.preview .screen .t{font-weight:800;font-size:1.2rem;margin:10px 0 6px}
+.preview .screen .l{height:8px;border-radius:4px;margin:8px 0;opacity:.35}
+.preview .screen .b{display:inline-block;margin-top:12px;padding:8px 14px;border-radius:999px;font-weight:700;font-size:.85rem}
+.preview .foot{padding:14px 18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)}
+.lists{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.box h3{margin:0 0 10px;font-size:1.05rem}
+.box ul{margin:0;padding:0;list-style:none}
+.box li{padding:7px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px}
+.box li:first-child{border-top:0}
+.inc li::before{content:"✔";color:var(--red);font-weight:700;margin-right:8px}
+.inc li{justify-content:flex-start}
+.price{font-weight:700;white-space:nowrap}
+.addons{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.addon{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.addon h3{margin:0 0 4px;font-size:1.05rem;display:flex;justify-content:space-between;gap:12px}
+.addon p{margin:0;color:var(--muted);font-size:.95rem}
+.note{color:var(--muted);font-size:.9rem;margin-top:18px}
+.cta{background:var(--ink);color:var(--white);padding:56px 0}
+.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.cta h2{margin:0;font-size:clamp(1.4rem,3vw,2rem)}
+.cta p{margin:6px 0 0;color:#c5c8ce}
+footer{background:#000;color:#8b9099;padding:32px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:900px){
+  .industry,.lists{grid-template-columns:1fr}
+  .addons{grid-template-columns:1fr 1fr}
+  .nav ul{display:none}
+}
+@media (max-width:640px){
+  .addons{grid-template-columns:1fr}
+  section{padding:52px 0}
+  .nav .btn{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="../">Poots<span>.</span>Design</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="../#prices">Prices</a></li>
+      <li><a href="./" aria-current="page">Templates</a></li>
+      <li><a href="../#how">How it works</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul></nav>
+    <a class="btn" href="tel:+447395229191">07395 229191</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="t-title">
+    <div class="wrap">
+      <h1 id="t-title">Templates built for <em>your kind of business</em>.</h1>
+      <p>Every site starts from a template made for your trade, then gets your name, photos, services and colours. Pick the extras you need, and nothing you don't.</p>
+      <ul class="jump" aria-label="Jump to a business type">
+        <li><a href="#trades">Trades</a></li>
+        <li><a href="#food">Cafés &amp; restaurants</a></li>
+        <li><a href="#beauty">Salons &amp; barbers</a></li>
+        <li><a href="#services">Cleaners, gardeners &amp; local services</a></li>
+        <li><a href="#fitness">Fitness &amp; coaching</a></li>
+        <li><a href="#addons">All add-ons</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="trades" aria-labelledby="trades-title">
+    <div class="wrap industry">
+      <div>
+        <div class="head"><h2 id="trades-title">Trades</h2><p>Electricians, plumbers, roofers, joiners, builders, plasterers, painters.</p></div>
+        <div class="preview">
+          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="screen" style="background:#0f1d2e;color:#fff" aria-hidden="true">
+            <span class="tag" style="background:#1d3048;border-color:#2b4260;color:#f5a524">Trades template</span>
+            <div class="t">Safe, tidy work, done right.</div>
+            <div class="l" style="background:#fff;width:85%"></div><div class="l" style="background:#fff;width:60%"></div>
+            <span class="b" style="background:#f5a524;color:#1a1200">Get a free quote</span>
+          </div>
+          <div class="foot"><span class="tag">Design sample</span><a class="btn btn-outline" href="../demo-electrician/">View live demo</a></div>
+        </div>
+      </div>
+      <div class="lists">
+        <div class="box inc"><h3>Included</h3><ul>
+          <li>Tap-to-call button that stays on screen</li>
+          <li>Quote request form</li>
+          <li>Services list</li>
+          <li>Areas you cover</li>
+          <li>Accreditations and insurance shown</li>
+        </ul></div>
+        <div class="box"><h3>Popular add-ons</h3><ul>
+          <li>Before &amp; after gallery <span class="price">£60</span></li>
+          <li>Extra service or town page <span class="price">£60</span></li>
+          <li>Google reviews section <span class="price">£40</span></li>
+          <li>WhatsApp button <span class="price">£25</span></li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="food" class="alt" aria-labelledby="food-title">
+    <div class="wrap industry">
+      <div>
+        <div class="head"><h2 id="food-title">Cafés &amp; restaurants</h2><p>Cafés, restaurants, bistros, takeaways, bakeries, pubs.</p></div>
+        <div class="preview">
+          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="screen" style="background:#efe5d4;color:#2c4029" aria-hidden="true">
+            <span class="tag" style="background:#e3ecdf;border-color:#cbd9c6;color:#2c4029">Food &amp; drink template</span>
+            <div class="t" style="font-family:Georgia,serif">Good food, a warm welcome.</div>
+            <div class="l" style="background:#2c4029;width:80%"></div><div class="l" style="background:#2c4029;width:55%"></div>
+            <span class="b" style="background:#3f5a3c;color:#fff">Book a table</span>
+          </div>
+          <div class="foot"><span class="tag">Design sample</span><a class="btn btn-outline" href="../demo-cafe/">View live demo</a></div>
+        </div>
+      </div>
+      <div class="lists">
+        <div class="box inc"><h3>Included</h3><ul>
+          <li>Menu page that's easy to update</li>
+          <li>Allergen information section</li>
+          <li>Opening hours and map</li>
+          <li>Tap-to-call and directions</li>
+          <li>Links to Just Eat, Deliveroo or Uber Eats</li>
+        </ul></div>
+        <div class="box"><h3>Popular add-ons</h3><ul>
+          <li>Online table booking <span class="price">£75</span></li>
+          <li>Events or private dining page <span class="price">£60</span></li>
+          <li>Food &amp; venue gallery <span class="price">£60</span></li>
+          <li>Google reviews section <span class="price">£40</span></li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="wrap"><p class="note"><strong>Online booking</strong> connects your website to the booking system you already use, such as ResDiary, OpenTable, SevenRooms, Tablein or resOS. Customers can book without leaving your site. You keep your own booking account and subscription.</p></div>
+  </section>
+
+  <section id="beauty" aria-labelledby="beauty-title">
+    <div class="wrap industry">
+      <div>
+        <div class="head"><h2 id="beauty-title">Salons &amp; barbers</h2><p>Hair salons, barbers, nail and beauty, lash and brow, tattoo studios.</p></div>
+        <div class="preview">
+          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="screen" style="background:#1d1416;color:#f6e9ea" aria-hidden="true">
+            <span class="tag" style="background:#3a2427;border-color:#55363a;color:#f2b8c0">Salon template</span>
+            <div class="t">Look good. Feel better.</div>
+            <div class="l" style="background:#fff;width:75%"></div><div class="l" style="background:#fff;width:50%"></div>
+            <span class="b" style="background:#e58a99;color:#1d1416">Book now</span>
+          </div>
+          <div class="foot"><span class="tag">Template preview</span><a class="btn btn-outline" href="../#contact">Ask for a mock-up</a></div>
+        </div>
+      </div>
+      <div class="lists">
+        <div class="box inc"><h3>Included</h3><ul>
+          <li>Treatments and price list</li>
+          <li>"Book now" button on every page</li>
+          <li>Opening hours and map</li>
+          <li>Instagram link</li>
+          <li>Meet the team section</li>
+        </ul></div>
+        <div class="box"><h3>Popular add-ons</h3><ul>
+          <li>Online appointment booking <span class="price">£75</span></li>
+          <li>Work gallery <span class="price">£60</span></li>
+          <li>Gift voucher link <span class="price">£25</span></li>
+          <li>Google reviews section <span class="price">£40</span></li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="wrap"><p class="note"><strong>Online appointment booking</strong> links to the system you already use, such as Fresha, Booksy, Treatwell or Square Appointments.</p></div>
+  </section>
+
+  <section id="services" class="alt" aria-labelledby="services-title">
+    <div class="wrap industry">
+      <div>
+        <div class="head"><h2 id="services-title">Cleaners, gardeners &amp; local services</h2><p>Cleaners, window cleaners, landscapers, dog groomers, removals, mobile mechanics.</p></div>
+        <div class="preview">
+          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="screen" style="background:#eef6f3;color:#12372c" aria-hidden="true">
+            <span class="tag" style="background:#d9ede5;border-color:#bfe0d3;color:#12372c">Local services template</span>
+            <div class="t">Reliable, local, on time.</div>
+            <div class="l" style="background:#12372c;width:80%"></div><div class="l" style="background:#12372c;width:55%"></div>
+            <span class="b" style="background:#1f7a5a;color:#fff">Get a price</span>
+          </div>
+          <div class="foot"><span class="tag">Template preview</span><a class="btn btn-outline" href="../#contact">Ask for a mock-up</a></div>
+        </div>
+      </div>
+      <div class="lists">
+        <div class="box inc"><h3>Included</h3><ul>
+          <li>Services and starting prices</li>
+          <li>Quick quote form</li>
+          <li>Areas covered</li>
+          <li>Tap-to-call button</li>
+          <li>FAQ section</li>
+        </ul></div>
+        <div class="box"><h3>Popular add-ons</h3><ul>
+          <li>Online booking link <span class="price">£75</span></li>
+          <li>Before &amp; after gallery <span class="price">£60</span></li>
+          <li>Extra town page <span class="price">£60</span></li>
+          <li>WhatsApp button <span class="price">£25</span></li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fitness" aria-labelledby="fitness-title">
+    <div class="wrap industry">
+      <div>
+        <div class="head"><h2 id="fitness-title">Fitness &amp; coaching</h2><p>Personal trainers, gyms, yoga and pilates, sports coaches, tutors.</p></div>
+        <div class="preview">
+          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="screen" style="background:#101418;color:#e8f0f7" aria-hidden="true">
+            <span class="tag" style="background:#1d252d;border-color:#2c3742;color:#7cc4ff">Fitness template</span>
+            <div class="t">Train smarter. Get results.</div>
+            <div class="l" style="background:#fff;width:70%"></div><div class="l" style="background:#fff;width:45%"></div>
+            <span class="b" style="background:#2f9bff;color:#06121f">Book a free session</span>
+          </div>
+          <div class="foot"><span class="tag">Template preview</span><a class="btn btn-outline" href="../#contact">Ask for a mock-up</a></div>
+        </div>
+      </div>
+      <div class="lists">
+        <div class="box inc"><h3>Included</h3><ul>
+          <li>Classes or packages with prices</li>
+          <li>About and qualifications</li>
+          <li>Enquiry form</li>
+          <li>Location and times</li>
+          <li>Instagram link</li>
+        </ul></div>
+        <div class="box"><h3>Popular add-ons</h3><ul>
+          <li>Class timetable <span class="price">£60</span></li>
+          <li>Online booking link <span class="price">£75</span></li>
+          <li>Client results gallery <span class="price">£60</span></li>
+          <li>Google reviews section <span class="price">£40</span></li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="addons" class="alt" aria-labelledby="addons-title">
+    <div class="wrap">
+      <div class="head"><h2 id="addons-title">All add-ons</h2><p>Add any of these to a Starter or Business site. One-off prices. Galleries and reviews are already included in the Business package.</p></div>
+      <div class="addons">
+        <div class="addon"><h3>Online booking <span class="price">£75</span></h3><p>Connects your site to ResDiary, OpenTable, Fresha, Booksy and similar. Includes the cookie notice and privacy page it needs.</p></div>
+        <div class="addon"><h3>Extra page <span class="price">£60</span></h3><p>A service page, a town page for local search, events or private dining.</p></div>
+        <div class="addon"><h3>Photo gallery <span class="price">£60</span></h3><p>Before and after shots, food, your venue or your work.</p></div>
+        <div class="addon"><h3>Google reviews <span class="price">£40</span></h3><p>Shows your real Google reviews, with a link to leave one.</p></div>
+        <div class="addon"><h3>Class timetable <span class="price">£60</span></h3><p>A clear weekly schedule that's easy to update.</p></div>
+        <div class="addon"><h3>WhatsApp button <span class="price">£25</span></h3><p>Customers can message you in one tap.</p></div>
+        <div class="addon"><h3>Gift voucher link <span class="price">£25</span></h3><p>Links to your existing voucher or payment provider.</p></div>
+        <div class="addon"><h3>Delivery app links <span class="price">Included</span></h3><p>Just Eat, Deliveroo and Uber Eats buttons for food businesses.</p></div>
+        <div class="addon"><h3>Care plan <span class="price">£35/mo</span></h3><p>Hosting, backups, security and up to 30 minutes of changes every month.</p></div>
+      </div>
+      <p class="note">Booking systems, delivery apps and voucher providers are separate services that you sign up to and pay for yourself. I connect them to your site.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <div class="wrap">
+      <div><h2>Not sure what you need?</h2><p>Tell me about your business and I'll send a free mock-up with the right features.</p></div>
+      <a class="btn" href="../#contact">Get a free mock-up</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Poots Design is a trading name of Sam Poots, part of Poots Group. Northern Ireland.</span>
+    <span>No cookies or tracking on this page.</span>
+  </div>
+</footer>
+</body>
+</html>
