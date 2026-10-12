@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poots Design — Websites for local businesses in Belfast &amp; North Down</title>
+<meta name="description" content="Fast, mobile-friendly websites for local businesses in Belfast, Lisburn, Bangor, Newtownards, Carrickfergus and Whiteabbey. Fixed prices, live in about a week. Built by Sam Poots.">
+<style>
+:root{
+  --ink:#111214; --ink-2:#1b1d21; --red:#d7263d; --red-dark:#b01c30;
+  --text:#1c1e22; --muted:#5d636d; --line:#e5e7eb; --bg:#f7f7f8; --white:#fff;
+  --max:1080px; --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.6}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+header{background:var(--ink);color:var(--white);position:sticky;top:0;z-index:10}
+.nav{display:flex;justify-content:space-between;align-items:center;height:66px;gap:16px}
+.logo{font-weight:800;font-size:1.2rem;text-decoration:none;letter-spacing:.2px}
+.logo span{color:var(--red)}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:#c5c8ce;font-weight:500}
+.nav ul a:hover{color:var(--white)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:var(--white);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;border:0}
+.btn:hover{background:var(--red-dark)}
+.btn-ghost{background:transparent;border:2px solid rgba(255,255,255,.3)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.btn-dark{background:var(--ink)}
+.btn-dark:hover{background:#000}
+.hero{background:var(--ink);color:var(--white);padding:72px 0 88px}
+.hero h1{font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.08;margin:0 0 18px;max-width:16em}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{font-size:1.15rem;color:#c5c8ce;max-width:36em;margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.ticks{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:32px;color:#c5c8ce;font-size:.95rem;padding:0;list-style:none}
+.ticks li::before{content:"✔ ";color:var(--red);font-weight:700}
+section{padding:80px 0}
+.alt{background:var(--bg)}
+.head{max-width:640px;margin-bottom:36px}
+.head h2{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.2;margin:0 0 10px}
+.head p{color:var(--muted);margin:0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.card h3{margin:0 0 8px;font-size:1.15rem}
+.card p{margin:0;color:var(--muted)}
+.price-card{display:flex;flex-direction:column}
+.price-card.featured{border:2px solid var(--red);position:relative}
+.badge{position:absolute;top:-12px;left:24px;background:var(--red);color:var(--white);font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px}
+.price{font-size:2.2rem;font-weight:800;margin:6px 0 2px}
+.price small{font-size:1rem;font-weight:600;color:var(--muted)}
+.price-card ul{padding:0;margin:16px 0 0;list-style:none;color:var(--muted)}
+.price-card li{padding:6px 0;border-top:1px solid var(--line)}
+.price-card li::before{content:"✔ ";color:var(--red);font-weight:700}
+.offer{margin-top:24px;background:#fff1f3;border:1px solid #f6c6cd;color:#6b0f1c;border-radius:var(--radius);padding:16px 20px}
+.demo{display:block;text-decoration:none;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--white);transition:transform .15s,box-shadow .15s}
+.demo:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.08)}
+.demo .thumb{height:170px;display:grid;place-items:center;font-weight:800;font-size:1.3rem}
+.demo .body{padding:20px}
+.demo .body p{margin:4px 0 0;color:var(--muted)}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{position:relative;padding-top:52px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:38px;height:38px;border-radius:50%;background:var(--red);color:var(--white);display:grid;place-items:center;font-weight:800}
+.step h3{margin:0 0 6px;font-size:1.05rem}
+.step p{margin:0;color:var(--muted);font-size:.95rem}
+.areas{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0}
+.areas li{list-style:none;background:var(--white);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-weight:500}
+.contact{background:var(--ink);color:var(--white)}
+.contact .head p{color:#c5c8ce}
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.contact .card{background:var(--ink-2);border-color:#2b2e34}
+.contact .card p{color:#c5c8ce}
+.contact .card a.big{display:block;font-size:1.35rem;font-weight:800;text-decoration:none;margin:6px 0 14px;word-break:break-word}
+footer{background:#000;color:#8b9099;padding:32px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.call-fab{display:none}
+@media (max-width:900px){
+  .grid-3,.steps{grid-template-columns:1fr 1fr}
+  .nav ul{display:none}
+}
+@media (max-width:640px){
+  .grid-3,.grid-2,.steps,.contact-grid{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .hero{padding:48px 0 64px}
+  .nav .btn{display:none}
+  .call-fab{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+  footer{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Poots<span>.</span>Design</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="#prices">Prices</a></li>
+      <li><a href="#work">Examples</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <a class="btn" href="tel:+447395229191">07395 229191</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <h1 id="hero-title">Websites that get local businesses <em>more enquiries</em>.</h1>
+      <p>Fast, mobile-friendly websites for trades, shops and services across Belfast, Lisburn and North Down. Fixed price, usually live within a week, and no tech hassle for you.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Get a free mock-up</a>
+        <a class="btn btn-ghost" href="#prices">See prices</a>
+      </div>
+      <ul class="ticks">
+        <li>Fixed prices, no surprises</li>
+        <li>Built for phones first</li>
+        <li>You own your domain and content</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="why-title">Why bother with a website?</h2>
+        <p>When people search "electrician Bangor" or "café Lisburn", they pick from what they can see. A clear, quick website helps them pick you.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><h3>Show up on Google</h3><p>Pages written around your services and the towns you cover, so local searches can find you.</p></div>
+        <div class="card"><h3>Easy to contact</h3><p>One tap to call, a simple enquiry form, and your hours and area clearly shown.</p></div>
+        <div class="card"><h3>Look the part</h3><p>A tidy, modern site that matches the quality of your work.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="alt" aria-labelledby="prices-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="prices-title">Simple, fixed prices</h2>
+        <p>50% deposit to start, 50% before the site goes live. No hidden extras.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card price-card">
+          <h3>Starter</h3>
+          <div class="price">£395</div>
+          <p>For getting online properly.</p>
+          <ul>
+            <li>1 to 3 pages</li>
+            <li>Mobile-first design</li>
+            <li>Tap-to-call and enquiry form</li>
+            <li>Google Business Profile check</li>
+            <li>Live in about 5 working days</li>
+          </ul>
+        </div>
+        <div class="card price-card featured">
+          <span class="badge">Most popular</span>
+          <h3>Business</h3>
+          <div class="price">£795</div>
+          <p>For winning more local work.</p>
+          <ul>
+            <li>Up to 6 pages</li>
+            <li>Service and area pages for local search</li>
+            <li>Photo gallery</li>
+            <li>Your real Google reviews shown</li>
+            <li>Visitor stats</li>
+            <li>Live in 7 to 10 working days</li>
+          </ul>
+        </div>
+        <div class="card price-card">
+          <h3>Care plan</h3>
+          <div class="price">£35<small>/month</small></div>
+          <p>So you never have to think about it.</p>
+          <ul>
+            <li>Hosting and security certificate</li>
+            <li>Backups and uptime checks</li>
+            <li>Up to 30 minutes of changes a month</li>
+            <li>Cancel any time</li>
+          </ul>
+        </div>
+      </div>
+      <p class="offer"><strong>Founding client offer:</strong> my first two clients get 30% off the Starter or Business build, in return for honest feedback and permission to show the finished site here.</p>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="work-title">Example designs</h2>
+        <p>Poots Design is new, so these are design samples for made-up businesses. They show the style and features you'd get. Open them on your phone.</p>
+      </div>
+      <div class="grid-2">
+        <a class="demo" href="demo-electrician/">
+          <div class="thumb" style="background:#0f1d2e;color:#f5a524">⚡ Volthaven Electrical</div>
+          <div class="body"><span class="tag">Design sample</span><h3 style="margin:10px 0 0">Electrician</h3><p>Quote form, tap-to-call, services and areas covered.</p></div>
+        </a>
+        <a class="demo" href="demo-cafe/">
+          <div class="thumb" style="background:#efe5d4;color:#2c4029">☕ Hollowmoss Café</div>
+          <div class="body"><span class="tag">Design sample</span><h3 style="margin:10px 0 0">Café</h3><p>Menu, opening hours and how to find you.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="alt" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="how-title">How it works</h2>
+        <p>Most of it happens without you lifting a finger.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Free mock-up</h3><p>I send you a 1-page preview of your site. No obligation.</p></div>
+        <div class="step"><h3>Quick chat</h3><p>10 minutes on the phone about your services and area.</p></div>
+        <div class="step"><h3>I build it</h3><p>You check it and ask for changes before it goes live.</p></div>
+        <div class="step"><h3>Live</h3><p>Your site goes live and you start getting found.</p></div>
+      </div>
+      <div class="card" style="margin-top:32px">
+        <h3>How I work</h3>
+        <p>I'm Sam Poots, and I build every site myself. I use modern tools, including AI, to work faster, which keeps prices down and gets you online sooner. Everything is checked and finished by me before you see it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="areas-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="areas-title">Areas I cover</h2>
+        <p>Happy to meet in person around Belfast and North Down.</p>
+      </div>
+      <ul class="areas">
+        <li>Belfast</li><li>Lisburn</li><li>Bangor</li><li>Newtownards</li><li>Carrickfergus</li><li>Whiteabbey</li><li>Newtownabbey</li><li>Holywood</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="contact-title">Get your free mock-up</h2>
+        <p>Tell me your business name and what you do. I'll send a preview of what your site could look like.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Call or text</h3>
+          <a class="big" href="tel:+447395229191">07395 229191</a>
+          <a class="btn" href="tel:+447395229191">Call Sam</a>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <a class="big" href="mailto:pootssam5@gmail.com?subject=Website%20mock-up">pootssam5@gmail.com</a>
+          <a class="btn" href="mailto:pootssam5@gmail.com?subject=Website%20mock-up">Send an email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Poots Design is a trading name of Sam Poots, part of Poots Group. Northern Ireland.</span>
+    <span>No cookies or tracking on this page.</span>
+  </div>
+</footer>
+
+<a class="btn call-fab" href="tel:+447395229191">📞 Call Sam: 07395 229191</a>
+</body>
+</html>

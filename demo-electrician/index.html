@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volthaven Electrical — Demo Website</title>
+<meta name="description" content="Design sample: a website for a fictional local electrician in County Antrim.">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --navy:#0f1d2e; --navy-2:#17293f; --amber:#f5a524; --amber-dark:#c97f00;
+  --ink:#1b2430; --muted:#5b6675; --line:#e3e7ec; --bg:#f6f8fa; --white:#fff;
+  --radius:12px; --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.demo-bar{background:#fff4d6;color:#5a4100;font-size:.875rem;text-align:center;padding:8px 16px;border-bottom:1px solid #f0d58a}
+header{background:var(--navy);color:var(--white);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;text-decoration:none;letter-spacing:.2px}
+.logo svg{flex:none}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:#c9d3df;font-weight:500}
+.nav ul a:hover{color:var(--white)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--amber);color:#1a1200;font-weight:700;text-decoration:none;padding:12px 20px;border-radius:999px;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:#ffb53d}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);color:var(--white);padding:72px 0 88px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;background:rgba(245,165,36,.15);color:var(--amber);font-weight:700;font-size:.85rem;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.1;margin:0 0 16px}
+.hero p.lead{font-size:1.15rem;color:#c9d3df;margin:0 0 28px;max-width:34em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.trust{display:flex;flex-wrap:wrap;gap:20px;margin-top:32px;color:#c9d3df;font-size:.95rem}
+.trust span{display:flex;align-items:center;gap:8px}
+.hero-card{background:var(--white);color:var(--ink);border-radius:var(--radius);padding:28px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.hero-card h2{margin:0 0 4px;font-size:1.3rem}
+.hero-card p{margin:0 0 18px;color:var(--muted);font-size:.95rem}
+label{display:block;font-weight:600;font-size:.9rem;margin:12px 0 6px}
+input,textarea,select{width:100%;font:inherit;padding:11px 12px;border:1px solid #cfd6de;border-radius:8px;background:var(--white)}
+textarea{min-height:90px;resize:vertical}
+.form-note{font-size:.8rem;color:var(--muted);margin-top:10px}
+section{padding:80px 0}
+.section-head{max-width:640px;margin-bottom:40px}
+.section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:0 0 10px;line-height:1.2}
+.section-head p{color:var(--muted);margin:0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.card h3{margin:14px 0 6px;font-size:1.1rem}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.icon{width:46px;height:46px;border-radius:10px;background:#fff3dc;display:grid;place-items:center}
+.alt{background:var(--bg)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{position:relative;padding-top:52px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--amber);display:grid;place-items:center;font-weight:800}
+.step h3{margin:0 0 6px;font-size:1.05rem}
+.step p{margin:0;color:var(--muted);font-size:.95rem}
+.areas{display:flex;flex-wrap:wrap;gap:10px}
+.areas li{list-style:none;background:var(--white);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-weight:500}
+.areas{padding:0;margin:0}
+.reviews .card{border-style:dashed}
+.placeholder-tag{display:inline-block;font-size:.75rem;font-weight:700;color:#5a4100;background:#fff4d6;border-radius:6px;padding:2px 8px;margin-bottom:10px}
+.cta-band{background:var(--amber);color:#1a1200;padding:56px 0}
+.cta-band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta-band h2{margin:0;font-size:clamp(1.4rem,3vw,2rem)}
+.cta-band .btn{background:var(--navy);color:var(--white)}
+footer{background:var(--navy);color:#9fb0c3;padding:40px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.call-fab{display:none}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .nav ul{display:none}
+}
+@media (max-width:600px){
+  .grid-3,.steps{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .hero{padding:48px 0 64px}
+  .nav .btn{display:none}
+  .call-fab{display:flex;position:fixed;left:16px;right:16px;bottom:16px;justify-content:center;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+  footer{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-bar" role="note"><strong>Design sample.</strong> Volthaven Electrical is a fictional business. Phone numbers, details and reviews are placeholders.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Volthaven Electrical home">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="8" fill="#f5a524"/><path d="M19 5 9 19h7l-2 10 11-15h-7l1-9z" fill="#0f1d2e"/></svg>
+      Volthaven Electrical
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#areas">Areas</a></li>
+        <li><a href="#quote">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="tel:+442896496123">Call 028 9649 6123</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Domestic &amp; commercial electrician · County Antrim</span>
+        <h1 id="hero-title">Safe, tidy electrical work, done right first time.</h1>
+        <p class="lead">Rewires, fuse board upgrades, EV chargers and fault finding for homes and small businesses. Clear fixed quotes, and we leave the place cleaner than we found it.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#quote">Get a free quote</a>
+          <a class="btn btn-ghost" href="tel:+442896496123">Call now</a>
+        </div>
+        <div class="trust">
+          <span>✔ Registered &amp; insured <em>(placeholder)</em></span>
+          <span>✔ Fixed-price quotes</span>
+          <span>✔ Electrical certificates provided</span>
+        </div>
+      </div>
+      <div class="hero-card" id="quote">
+        <h2>Request a free quote</h2>
+        <p>Tell us what you need. We reply within one working day.</p>
+        <form onsubmit="event.preventDefault();document.getElementById('form-msg').textContent='Demo only: this form does not send. On a live site, this goes straight to your inbox.';">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          <label for="job">Type of job</label>
+          <select id="job" name="job">
+            <option>Fault finding / repair</option>
+            <option>Fuse board upgrade</option>
+            <option>Full or partial rewire</option>
+            <option>EV charger installation</option>
+            <option>Lighting / sockets</option>
+            <option>Something else</option>
+          </select>
+          <label for="details">Details</label>
+          <textarea id="details" name="details" placeholder="e.g. Kitchen sockets keep tripping"></textarea>
+          <button class="btn" type="submit" style="width:100%;justify-content:center;margin-top:16px">Send request</button>
+          <p class="form-note" id="form-msg" aria-live="polite">We only use your details to reply to this enquiry.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="services-title">What we do</h2>
+        <p>From a single faulty socket to a full rewire, every job is tested and certified.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><div class="icon" aria-hidden="true">🔌</div><h3>Fault finding</h3><p>Trips, flickers and dead circuits traced and fixed safely, often same week.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">🗄️</div><h3>Fuse board upgrades</h3><p>Old boards replaced with modern consumer units with RCD protection.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">🏠</div><h3>Rewires</h3><p>Full and partial rewires planned around you, with minimal mess.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">🚗</div><h3>EV chargers</h3><p>Home charge points fitted and registered, with advice on the right unit.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">💡</div><h3>Lighting</h3><p>Indoor, outdoor and LED upgrades that cut running costs.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">📋</div><h3>Landlord checks</h3><p>Electrical condition reports for landlords and home sellers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="alt" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="how-title">How it works</h2>
+        <p>No surprises on price or timing.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Tell us the job</h3><p>Call or send the form. Photos help.</p></div>
+        <div class="step"><h3>Fixed quote</h3><p>A clear written price before any work starts.</p></div>
+        <div class="step"><h3>Work done</h3><p>On time, tested, and tidied up.</p></div>
+        <div class="step"><h3>Certificate</h3><p>Paperwork for your records and insurer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="reviews-title">What customers say</h2>
+        <p>On a live site, this section shows the business's real Google reviews. Nothing here is a real review.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><span class="placeholder-tag">Placeholder</span><p>Real customer review text appears here, pulled from the business's Google Business Profile.</p></div>
+        <div class="card"><span class="placeholder-tag">Placeholder</span><p>Star rating and reviewer first name shown here, with permission.</p></div>
+        <div class="card"><span class="placeholder-tag">Placeholder</span><p>Link to "See all reviews on Google".</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" class="alt" aria-labelledby="areas-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="areas-title">Areas we cover</h2>
+        <p>Based in County Antrim, covering most of the Greater Belfast area.</p>
+      </div>
+      <ul class="areas">
+        <li>Belfast</li><li>Lisburn</li><li>Newtownabbey</li><li>Carrickfergus</li><li>Antrim</li><li>Ballyclare</li><li>Larne</li><li>Ballymena</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Need an electrician this week?</h2>
+      <a class="btn" href="tel:+442896496123">Call 028 9649 6123</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff">Volthaven Electrical</strong> (fictional) · County Antrim<br>hello@example.com · 028 9649 6123</div>
+    <div>Design sample · Privacy notice goes here on a live site</div>
+  </div>
+</footer>
+
+<a class="btn call-fab" href="tel:+442896496123">📞 Call 028 9649 6123</a>
+</body>
+</html>
