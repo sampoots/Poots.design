@@ -1,0 +1,64 @@
+/* Poots Design — shared motion layer.
+   Progressive enhancement: pages work and stay fully visible without it.
+   Everything is disabled for visitors who prefer reduced motion. */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  /* Smooth fade between pages (Chrome, Edge, Safari 18.2+; others just load normally) */
+  @view-transition { navigation: auto; }
+  header { view-transition-name: pd-header; }
+  ::view-transition-old(root) { animation: pd-page-out .25s ease both; }
+  ::view-transition-new(root) { animation: pd-page-in .45s cubic-bezier(.2,.7,.2,1) both; }
+
+  /* Hero intro: each part rises in, one after another */
+  .hero .eyebrow, .hero .open-now, .hero h1, .hero p, .hero .actions, .hero .hero-cta,
+  .hero .ticks, .hero .trust, .hero .jump, .hero-card, .hero .art {
+    animation: pd-rise .9s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .hero .eyebrow, .hero .open-now { animation-delay: .05s; }
+  .hero h1 { animation-delay: .12s; }
+  .hero p { animation-delay: .24s; }
+  .hero .actions, .hero .hero-cta { animation-delay: .36s; }
+  .hero .ticks, .hero .trust, .hero .jump { animation-delay: .48s; }
+  .hero-card, .hero .art { animation: pd-pop 1s cubic-bezier(.2,.7,.2,1) .3s both; }
+
+  /* Lift on hover for cards and buttons */
+  .card, .price-card, .demo, .box, .addon, .preview, .areas li {
+    transition: transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s, border-color .3s,
+                opacity .3s;
+  }
+  .card:hover, .price-card:hover, .box:hover, .addon:hover, .preview:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(0,0,0,.08);
+  }
+  .btn { transition: background-color .2s, transform .2s, box-shadow .2s; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn:active { transform: translateY(0) scale(.98); }
+
+  /* Scroll reveal (after hover rules so it wins while revealing;
+     motion.js removes it once the element has appeared) */
+  .pd-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);
+    transition-delay: var(--pd-delay, 0s);
+  }
+  .pd-reveal.pd-in { opacity: 1; transform: none; }
+
+}
+
+/* Header: gains a shadow and blur once the page scrolls */
+header { transition: box-shadow .3s, background-color .3s; }
+header.pd-scrolled { box-shadow: 0 6px 24px rgba(0,0,0,.18); }
+
+/* Current section highlighted in the menu */
+nav a.pd-active { color: inherit; opacity: 1; position: relative; }
+nav a.pd-active::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px;
+  background: currentColor; border-radius: 2px;
+}
+
+@keyframes pd-rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+@keyframes pd-pop { from { opacity: 0; transform: translateY(26px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes pd-page-out { to { opacity: 0; transform: translateY(-8px); } }
+@keyframes pd-page-in { from { opacity: 0; transform: translateY(12px); } }
