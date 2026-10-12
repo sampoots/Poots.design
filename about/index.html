@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Sam Poots — Poots Design</title>
+<meta name="description" content="Sam Poots is an 18-year-old web designer from Northern Ireland with a manufacturing engineering background, and a rock climber and mountaineer. He builds websites for local businesses.">
+<style>
+:root{
+  --ink:#111214; --ink-2:#1b1d21; --red:#d7263d; --red-dark:#b01c30;
+  --text:#1c1e22; --muted:#5d636d; --line:#e5e7eb; --bg:#f7f7f8; --white:#fff;
+  --max:1080px; --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.65}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+header{background:var(--ink);color:var(--white);position:sticky;top:0;z-index:10}
+.nav{display:flex;justify-content:space-between;align-items:center;height:66px;gap:16px}
+.logo{font-weight:800;font-size:1.2rem;text-decoration:none}
+.logo span{color:var(--red)}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:#c5c8ce;font-weight:500}
+.nav ul a:hover,.nav ul a[aria-current]{color:var(--white)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:var(--white);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;border:0}
+.btn:hover{background:var(--red-dark)}
+.btn-ghost{background:transparent;border:2px solid rgba(255,255,255,.3)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.hero{background:var(--ink);color:var(--white);padding:64px 0 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;background:rgba(215,38,61,.15);color:#ff6b7d;font-weight:700;font-size:.85rem;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.08;margin:0 0 18px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{font-size:1.15rem;color:#c5c8ce;margin:0 0 28px;max-width:34em}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.art{position:relative;aspect-ratio:1/1;max-width:380px;width:100%;justify-self:end;border-radius:24px;background:linear-gradient(160deg,#1f2228,#15171b);border:1px solid #2b2e34;overflow:hidden}
+.art svg{position:absolute;inset:0;width:100%;height:100%}
+.art .badge{position:absolute;left:18px;bottom:18px;background:rgba(17,18,20,.85);border:1px solid #2b2e34;border-radius:12px;padding:10px 14px;font-size:.85rem;color:#c5c8ce}
+.art .badge strong{display:block;color:var(--white);font-size:1rem}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;padding:0;list-style:none}
+.facts li{border:1px solid #3a3d44;border-radius:999px;padding:7px 14px;font-size:.92rem;color:#e3e5e8}
+section{padding:80px 0}
+.alt{background:var(--bg)}
+.head{max-width:680px;margin-bottom:36px}
+.head h2{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.2;margin:0 0 10px}
+.head p{color:var(--muted);margin:0}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.story .card h3{display:flex;align-items:center;gap:10px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.card h3{margin:0 0 10px;font-size:1.15rem}
+.card p{margin:0;color:var(--muted)}
+.card p + p{margin-top:12px}
+.ico{width:40px;height:40px;border-radius:10px;background:#fff1f3;display:grid;place-items:center;flex:none}
+.qualities{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.quality{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px;border-top:3px solid var(--red)}
+.quality h3{margin:0 0 6px;font-size:1.08rem}
+.quality p{margin:0;color:var(--muted);font-size:.97rem}
+.quality .from{display:block;margin-top:12px;font-size:.8rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--red)}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:0;margin:0;list-style:none}
+.promise li{background:var(--ink);color:#c5c8ce;border-radius:var(--radius);padding:24px}
+.promise strong{display:block;color:var(--white);font-size:1.08rem;margin-bottom:6px}
+.quote{font-size:clamp(1.3rem,2.6vw,1.8rem);line-height:1.35;font-weight:700;max-width:30em;margin:0}
+.quote em{font-style:normal;color:var(--red)}
+.cta{background:var(--ink);color:var(--white);padding:56px 0}
+.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.cta h2{margin:0;font-size:clamp(1.4rem,3vw,2rem)}
+.cta p{margin:6px 0 0;color:#c5c8ce}
+footer{background:#000;color:#8b9099;padding:32px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .art{justify-self:start;max-width:320px}
+  .qualities,.promise{grid-template-columns:1fr 1fr}
+  .nav ul{display:none}
+}
+@media (max-width:640px){
+  .story,.qualities,.promise{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .hero{padding:48px 0 64px}
+  .nav .btn{display:none}
+}
+</style>
+<link rel="stylesheet" href="../assets/motion.css">
+<script src="../assets/motion.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="../">Poots<span>.</span>Design</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="../#prices">Prices</a></li>
+      <li><a href="../templates/">Templates</a></li>
+      <li><a href="./" aria-current="page">About</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul></nav>
+    <a class="btn" href="tel:+447395229191">07395 229191</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="about-title">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">About Poots Design</span>
+        <h1 id="about-title">Hi, I'm Sam. I build websites the way I <em>climb</em>: carefully.</h1>
+        <p>I'm 18, from Northern Ireland, and I design and build websites for local businesses. My background is in manufacturing engineering, and most weekends I'm on a crag or up a mountain. Both have shaped how I work.</p>
+        <div class="actions">
+          <a class="btn" href="../#contact">Talk to me</a>
+          <a class="btn btn-ghost" href="../templates/">See what I build</a>
+        </div>
+        <ul class="facts" aria-label="Quick facts">
+          <li>18 years old</li>
+          <li>Manufacturing engineering</li>
+          <li>Rock climber</li>
+          <li>Mountaineer</li>
+          <li>Northern Ireland</li>
+        </ul>
+      </div>
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2228"/><stop offset="1" stop-color="#2a1a1e"/></linearGradient></defs>
+          <rect width="400" height="400" fill="url(#sky)"/>
+          <circle cx="300" cy="110" r="38" fill="#d7263d" opacity=".9"/>
+          <path d="M0 320 L90 190 L140 250 L210 120 L290 260 L330 210 L400 300 V400 H0Z" fill="#2b2e34"/>
+          <path d="M210 120 L235 165 L222 160 L210 178 L198 158 L186 168Z" fill="#e3e5e8"/>
+          <path d="M0 360 L120 270 L200 330 L280 280 L400 350 V400 H0Z" fill="#17191d"/>
+          <path d="M150 300 C170 260 190 230 210 175" stroke="#d7263d" stroke-width="3" stroke-dasharray="6 8" fill="none" stroke-linecap="round"/>
+          <circle cx="210" cy="175" r="5" fill="#fff"/>
+        </svg>
+        <div class="badge"><strong>Sam Poots</strong>Founder, Poots Design</div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="story-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="story-title">Where I'm coming from</h2>
+        <p>Two things shaped how I work: engineering and the mountains.</p>
+      </div>
+      <div class="story">
+        <div class="card">
+          <h3><span class="ico" aria-hidden="true">⚙️</span>Engineering</h3>
+          <p>Manufacturing engineering is about building things to a spec, measuring them, testing them, and getting them right before they leave the workshop.</p>
+          <p>I bring that to every website. Each one is planned, built to a clear brief, and tested on real phones before it goes live.</p>
+        </div>
+        <div class="card">
+          <h3><span class="ico" aria-hidden="true">🧗</span>Climbing &amp; mountaineering</h3>
+          <p>On a climb or a mountain day, you plan your route, check your kit, and look after the people you're with. Cutting corners isn't an option.</p>
+          <p>That's how I run projects: a clear plan, honest updates, and finishing what I start.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" aria-labelledby="qual-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="qual-title">What you get working with me</h2>
+        <p>The qualities I bring to your project.</p>
+      </div>
+      <div class="qualities">
+        <div class="quality"><h3>Attention to detail</h3><p>Spacing, spelling, speed and how it looks on a phone. The small things are what make a site feel professional.</p><span class="from">From engineering</span></div>
+        <div class="quality"><h3>Planning ahead</h3><p>Before I build anything, you'll know what you're getting, what it costs and when it'll be ready.</p><span class="from">From mountaineering</span></div>
+        <div class="quality"><h3>Problem-solving</h3><p>Whether it's a tricky layout or a booking system that won't behave, I work out the next move and get it sorted.</p><span class="from">From climbing</span></div>
+        <div class="quality"><h3>Reliability</h3><p>On a rope, your partner has to be able to trust you. I do what I say I'll do, when I say I'll do it.</p><span class="from">From climbing</span></div>
+        <div class="quality"><h3>Staying calm</h3><p>Deadlines and last-minute changes don't rattle me. I keep things moving and keep you in the loop.</p><span class="from">From the mountains</span></div>
+        <div class="quality"><h3>Up to date</h3><p>I'm 18 and grew up online, so I know how people use phones, Google and social media to find local businesses.</p><span class="from">From my generation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="head"><h2 id="why-title">Why I started Poots Design</h2></div>
+      <p class="quote">Plenty of brilliant local businesses are <em>hard to find online</em>. I want to help change that, with good websites at fair prices, one business at a time.</p>
+    </div>
+  </section>
+
+  <section class="alt" aria-labelledby="promise-title">
+    <div class="wrap">
+      <div class="head"><h2 id="promise-title">My promise to you</h2></div>
+      <ul class="promise">
+        <li><strong>You deal with me</strong>No account managers or call centres. You get my number and you talk to me.</li>
+        <li><strong>Fixed, clear prices</strong>You'll know the full cost before anything starts, with no surprises later.</li>
+        <li><strong>Straight answers</strong>If you don't need something, I'll tell you, even if it means a smaller job.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="cta">
+    <div class="wrap">
+      <div><h2>Let's get you online</h2><p>Tell me about your business and I'll send a free mock-up.</p></div>
+      <a class="btn" href="../#contact">Get a free mock-up</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Poots Design is a trading name of Sam Poots, part of Poots Group. Northern Ireland.</span>
+    <span>No cookies or tracking on this page.</span>
+  </div>
+</footer>
+</body>
+</html>

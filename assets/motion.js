@@ -37,7 +37,8 @@
     'section .head', 'section > .wrap > h2', 'section .sub',
     '.card', '.price-card', '.demo', '.step', '.box', '.addon', '.preview',
     '.areas li', '.item', '.offer', '.note', '.cta .wrap > *', '.cta-band .wrap > *',
-    '.story > *', '.booking > *', '.menu h3'
+    '.story > *', '.booking > *', '.menu h3',
+    '.quality', '.promise li', '.quote'
   ].join(',');
   var items = Array.prototype.slice.call(document.querySelectorAll(selector))
     .filter(function (el) { return !el.closest('.hero') && el.getBoundingClientRect().top > window.innerHeight; });
