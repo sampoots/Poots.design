@@ -132,6 +132,11 @@
 .offer{margin-top:22px;border:1px dashed rgba(224,35,63,.5);background:rgba(224,35,63,.05);color:#7f1d2d;border-radius:14px;padding:16px 20px}
 
 .prices-4{grid-template-columns:repeat(4,1fr)}
+.pc-actions{margin-top:auto;padding-top:18px;display:flex;flex-direction:column;gap:4px}
+.pc-actions .btn{justify-content:center}
+.pc-more{display:flex;align-items:center;justify-content:center;min-height:44px;color:var(--muted);font-size:.9rem}
+.ready{margin:18px 0 0;color:var(--text)}
+.ready a{color:var(--red-dark,#b5162e);font-weight:600}
 .care{margin-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .care p{margin:4px 0 0}
 @media (max-width:1100px){.prices-4{grid-template-columns:1fr 1fr}}
@@ -239,6 +244,7 @@
 </head>
 <body>
 
+<a class="skip" href="#top">Skip to main content</a>
 <header class="site">
   <div class="wrap nav">
     <a class="logo" href="#top" aria-label="Poots Design home">
@@ -404,15 +410,16 @@
       <div class="head"><h2 id="prices-title">Simple, fixed prices</h2><p>50% deposit to start, 50% before the site goes live. No hidden extras.</p></div>
       <div class="prices prices-4">
         <div class="card price-card"><h3>Launch</h3><div class="amount">£249</div><p>A simple one-page site to get you online.</p>
-          <ul><li>1 page from a template for your trade</li><li>Your logo, photos and text</li><li>Tap-to-call, enquiry form and map</li><li>1 round of changes</li><li>Live in about 3 working days</li></ul></div>
+          <ul><li>1 page from a template for your trade</li><li>Your logo, photos and text</li><li>Tap-to-call, enquiry form and map</li><li>1 round of changes</li><li>Live in about 3 working days</li></ul><div class="pc-actions"><a class="btn btn-line plain" href="start/?package=launch">Start with Launch</a><a class="pc-more" href="services/#launch">What's included in Launch</a></div></div>
         <div class="card price-card"><h3>Essential</h3><div class="amount">£299</div><p>Room for your services and contact details.</p>
-          <ul><li>Up to 3 pages from a template</li><li>Basic Google setup</li><li>Enquiry form and tap-to-call</li><li>2 rounds of changes</li><li>Live in about 5 working days</li></ul></div>
+          <ul><li>Up to 3 pages from a template</li><li>Basic Google setup</li><li>Enquiry form and tap-to-call</li><li>2 rounds of changes</li><li>Live in about 5 working days</li></ul><div class="pc-actions"><a class="btn btn-line plain" href="start/?package=essential">Start with Essential</a><a class="pc-more" href="services/#essential">What's included in Essential</a></div></div>
         <div class="card price-card"><h3>Starter</h3><div class="amount">£399</div><p>Designed around your brand.</p>
-          <ul><li>Up to 3 pages, custom design</li><li>I write and polish the wording</li><li>Google Business Profile check</li><li>2 rounds of changes</li><li>Live in about 5–7 working days</li></ul></div>
+          <ul><li>Up to 3 pages, custom design</li><li>I write and polish the wording</li><li>Google Business Profile check</li><li>2 rounds of changes</li><li>Live in about 5–7 working days</li></ul><div class="pc-actions"><a class="btn btn-line plain" href="start/?package=starter">Start with Starter</a><a class="pc-more" href="services/#starter">What's included in Starter</a></div></div>
         <div class="card price-card featured"><span class="badge">Most popular</span><h3>Business</h3><div class="amount">£795</div><p>For winning more local work.</p>
-          <ul><li>Up to 6 pages</li><li>Service and area pages for local search</li><li>Photo gallery and your real Google reviews</li><li>Visitor stats</li><li>Live in 7 to 10 working days</li></ul></div>
+          <ul><li>Up to 6 pages</li><li>Service and area pages for local search</li><li>Photo gallery and your real Google reviews</li><li>Visitor stats</li><li>Live in 7 to 10 working days</li></ul><div class="pc-actions"><a class="btn" href="start/?package=business">Start with Business <span class="tile" aria-hidden="true">→</span></a><a class="pc-more" href="services/#business">What's included in Business</a></div></div>
       </div>
-      <div class="card care"><div><h3>Care plan · £35/month</h3><p>Hosting, security certificate, backups and up to 30 minutes of changes a month. Cancel any time.</p></div><a class="btn btn-dark plain" href="#contact">Ask about care</a></div>
+      <div class="card care"><div><h3>Care plan · £35/month</h3><p>Hosting, security certificate, backups and up to 30 minutes of changes a month. Cancel any time.</p></div><a class="btn btn-dark plain" href="services/#care">Care plan details</a></div>
+      <p class="ready"><strong>Ready to go?</strong> <a href="start/">Start your project</a>: pick a package, see exactly what I need from you, and send it online. Not sure which package? <a href="#contact">Ask for a free mock-up</a> first.</p>
       <p class="offer"><strong>Founding client offer:</strong> my first two clients get 30% off a Starter or Business build, in return for honest feedback and permission to show the finished site here.</p>
     </div>
   </section>
@@ -494,7 +501,7 @@
   <div class="wrap">
     <div class="cols cols-4">
       <div><a class="logo" href="#top"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a><p style="margin:12px 0 0">Websites for local businesses across Belfast, Lisburn and North Down.</p></div>
-      <div><h3>Site</h3><ul><li><a href="services/">Services</a></li><li><a href="#prices">Prices</a></li><li><a href="templates/">Templates</a></li><li><a href="about/">About</a></li></ul></div>
+      <div><h3>Site</h3><ul><li><a href="services/">Services</a></li><li><a href="#prices">Prices</a></li><li><a href="templates/">Templates</a></li><li><a href="about/">About</a></li><li><a href="start/">Start your project</a></li></ul></div>
       <div><h3>Areas</h3><ul><li><a href="web-design-belfast/">Web design Belfast</a></li><li><a href="web-design-lisburn/">Web design Lisburn</a></li><li><a href="web-design-bangor/">Web design Bangor</a></li><li><a href="web-design-newtownards/">Web design Newtownards</a></li><li><a href="web-design-carrickfergus/">Web design Carrickfergus</a></li><li><a href="web-design-newtownabbey/">Web design Newtownabbey</a></li></ul></div>
       <div><h3>Contact</h3><ul><li><a href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:pootssam5@gmail.com">pootssam5@gmail.com</a></li><li><a href="#contact">Free mock-up</a></li></ul></div>
     </div>

@@ -10,6 +10,7 @@
 
   var status = form.querySelector('[data-status]');
   var button = form.querySelector('button[type="submit"]');
+  var label = button.innerHTML;
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -31,7 +32,7 @@
       status.className = 'form-status err';
       status.textContent = "Sorry, that didn't send. Please call or text 07395 229191, or email pootssam5@gmail.com.";
       button.disabled = false;
-      button.textContent = 'Send message';
+      button.innerHTML = label;
     });
   });
 })();
