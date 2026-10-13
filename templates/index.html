@@ -2,318 +2,235 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Templates &amp; Add-ons — Poots Design</title>
-<meta name="description" content="Website templates for trades, cafés, restaurants, salons and local services in Belfast and North Down, plus add-ons like online booking, galleries and quote forms.">
-<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css">
-<style>.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-.btn-outline{background:transparent;color:var(--text);border:2px solid var(--line)}
-.btn-outline:hover{background:var(--bg)}
-.hero{color:var(--white);padding:56px 0 64px}
-.hero h1{font-size:clamp(2rem,4.5vw,3rem);line-height:1.1;margin:0 0 14px}
-.hero h1 em{font-style:normal;color:var(--red)}
-.hero p{font-size:1.1rem;color:#c5c8ce;max-width:38em;margin:0}
-.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;padding:0;list-style:none}
-.jump a{display:inline-block;text-decoration:none;color:var(--white);border:1px solid #3a3d44;border-radius:999px;padding:8px 14px;font-weight:500;font-size:.95rem}
-.jump a:hover{border-color:var(--red)}
-section{padding:72px 0;scroll-margin-top:66px}
-.alt{background:var(--bg)}
-.head{max-width:680px;margin-bottom:32px}
-.head h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.2;margin:0 0 8px}
-.head p{color:var(--muted);margin:0}
-.industry{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
-.preview{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--white)}
-.preview .bar{display:flex;gap:6px;padding:10px 12px;background:#eceef1}
-.preview .bar i{width:10px;height:10px;border-radius:50%;background:#c9cdd3;display:block}
-.preview .screen{padding:22px;min-height:190px}
-.preview .screen .t{font-weight:800;font-size:1.2rem;margin:10px 0 6px}
-.preview .screen .l{height:8px;border-radius:4px;margin:8px 0;opacity:.35}
-.preview .screen .b{display:inline-block;margin-top:12px;padding:8px 14px;border-radius:999px;font-weight:700;font-size:.85rem}
-.preview .foot{padding:14px 18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-.tag{display:inline-block;font-size:.75rem;font-weight:700;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)}
-.lists{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.box{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.box h3{margin:0 0 10px;font-size:1.05rem}
-.box ul{margin:0;padding:0;list-style:none}
-.box li{padding:7px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px}
-.box li:first-child{border-top:0}
-.inc li::before{content:"✔";color:var(--red);font-weight:700;margin-right:8px}
-.inc li{justify-content:flex-start}
-.price{font-weight:700;white-space:nowrap}
-.addons{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.addon{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.addon h3{margin:0 0 4px;font-size:1.05rem;display:flex;justify-content:space-between;gap:12px}
-.addon p{margin:0;color:var(--muted);font-size:.95rem}
-.note{color:var(--muted);font-size:.9rem;margin-top:18px}
-.cta{background:var(--ink);color:var(--white);padding:56px 0}
-.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.cta h2{margin:0;font-size:clamp(1.4rem,3vw,2rem)}
-.cta p{margin:6px 0 0;color:#c5c8ce}
-@media (max-width:900px){
-  .industry,.lists{grid-template-columns:1fr}
-  .addons{grid-template-columns:1fr 1fr}
-}
-@media (max-width:640px){
-  .addons{grid-template-columns:1fr}
-  section{padding:52px 0}
-}
-.hero h1{letter-spacing:-.045em;font-weight:600;color:#fff}
-.hero{color:#fff}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Website Templates &amp; Add-ons for Local Businesses — Poots Design</title>
+<meta name="description" content="Website templates for trades, cafés, salons and local services in Belfast and North Down, plus add-ons like online booking, galleries and quote forms.">
+<meta name="theme-color" content="#0f0f12">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://sampoots.github.io/Poots.design/templates/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Poots Design">
-<meta property="og:title" content="Templates & add-ons | Poots Design">
-<meta property="og:description" content="Website templates for trades, cafés, restaurants, salons and local services, plus add-ons like online booking.">
-<meta property="og:url" content="https://sampoots.github.io/Poots.design/templates/">
-<meta property="og:image" content="https://sampoots.github.io/Poots.design/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Poots Design: websites that get local businesses more enquiries">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Poots Design"><meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Website Templates &amp; Add-ons for Local Businesses — Poots Design"><meta property="og:description" content="Website templates for trades, cafés, salons and local services in Belfast and North Down, plus add-ons like online booking, galleries and quote forms."><meta property="og:url" content="https://sampoots.github.io/Poots.design/templates/">
+<meta property="og:image" content="https://sampoots.github.io/Poots.design/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Poots Design: websites for local businesses in Belfast">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../assets/motion.css">
-<script src="../assets/motion.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sampoots.github.io/Poots.design/"},{"@type":"ListItem","position":2,"name":"Templates","item":"https://sampoots.github.io/Poots.design/templates/"}]}</script>
+<style>.tp-fan{position:relative;aspect-ratio:1/.9;max-width:500px;margin-left:auto}.tp-fan .browser{position:absolute;width:74%}.tp-f1{top:0;left:0;transform:rotate(-5deg)}.tp-f2{top:15%;left:13%;transform:rotate(-1.5deg)}.tp-f3{top:30%;left:26%;transform:rotate(2.5deg);box-shadow:var(--glow-red)}.tp-fan .dtag{position:absolute;left:4%;bottom:3%}.tp-split{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px 56px;align-items:start}@media (max-width:959px){.tp-split{grid-template-columns:minmax(0,1fr)}}.tp-prev{margin:0;min-width:0}.tp-shot{box-shadow:0 0 0 1px rgba(9,9,11,.12),0 2px 4px rgba(9,9,11,.06),0 40px 70px -36px rgba(9,9,11,.55)}.tp-cap{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:20px}.tp-cap p{flex:1 1 220px;margin:0;font-size:14.4px;line-height:1.45;color:var(--muted)}.tp-side{display:grid;gap:20px;min-width:0}.tp-box{display:grid;gap:24px}.tp-box h3{margin:0 0 16px;font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.tp-box>div+div{padding-top:24px;border-top:1px solid var(--line)}.tp-inc{display:grid;gap:12px;margin:0;padding:0;list-style:none}.tp-inc li{display:flex;gap:10px;line-height:1.45}.tp-note{margin:0;max-width:60ch}.tp-note strong{color:var(--ink)}.tp-ao{display:flex;flex-direction:column;gap:8px}.tp-ao__top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}.tp-ao h3{margin:0;font-size:var(--t1);font-weight:600;letter-spacing:-.02em;line-height:1.3}.tp-ao__top b{flex:none;color:var(--accent-text);font-size:var(--t1);font-weight:650;letter-spacing:-.02em}.tp-ao__top small{font-size:13px;font-weight:500;color:var(--muted)}.tp-ao p{margin:0;font-size:15.2px;line-height:1.5;color:var(--muted)}.tp-ao .tlink{align-self:flex-start;margin-top:auto;padding-top:8px}.tp-ask{background:radial-gradient(80% 90% at 100% 0%,rgba(224,35,63,.28),transparent 60%),var(--n1)}.tp-addons>.fine{margin:32px 0 0;max-width:80ch}</style>
 </head>
-<body>
-
+<body class="pg-templates">
 <a class="skip" href="#main">Skip to main content</a>
-<header class="site">
-  <div class="wrap nav">
-    <a class="logo" href="../" aria-label="Poots Design home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a>
-    <nav aria-label="Main"><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../templates/" aria-current="page">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../#contact">Contact</a></li></ul></nav>
-    <div class="nav-cta">
-      <a class="btn btn-white plain" href="../#contact">Free mock-up</a>
-      <a class="btn btn-ghost plain" href="tel:+447395229191">Call Sam</a>
+<header class="site-h">
+  <div class="wrap site-h__in">
+    <a class="logo" href="../"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg><span>Poots Design</span></a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="../services/">Services</a></li>
+        <li><a href="../#prices">Prices</a></li>
+        <li><a href="../#work">Examples</a></li>
+        <li><a href="../templates/" aria-current="page">Templates</a></li>
+        <li><a href="../about/">About</a></li>
+      </ul>
+    </nav>
+    <div class="h-cta">
+      <a class="h-call" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg><span>Call<span class="h-call__num tnum"> 07395 229191</span></span></a>
+      <a class="btn btn-white btn-sm h-mock" href="../mock-up/">Free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a>
+      <a class="call-ico" href="tel:+447395229191" aria-label="Call Sam on 07395 229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg></a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-btn__bars" aria-hidden="true"><i></i><i></i></span><span class="menu-btn__label">Menu</span></button>
     </div>
   </div>
 </header>
-
+<div class="menu-sheet" id="site-menu" hidden>
+  <nav aria-label="Menu">
+    <ul class="menu-sheet__links">
+      <li><a href="../services/">Services <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../#prices">Prices <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../#work">Examples <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../templates/" aria-current="page">Templates <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../about/">About <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../start/">Start your project <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+    </ul>
+  </nav>
+  <ul class="menu-sheet__pk" aria-label="Packages">
+    <li><a href="../services/#launch"><span>Launch</span><b class="tnum">£249</b></a></li>
+    <li><a href="../services/#essential"><span>Essential</span><b class="tnum">£299</b></a></li>
+    <li><a href="../services/#starter"><span>Starter</span><b class="tnum">£399</b></a></li>
+    <li><a href="../services/#business"><span>Business</span><b class="tnum">£795</b></a></li>
+  </ul>
+  <div class="menu-sheet__actions">
+    <a class="btn btn-lg btn-block" href="../mock-up/">Get my free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a>
+    <a class="btn btn-ghost btn-lg btn-block" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call 07395 229191</a>
+    <p class="menu-sheet__meta"><a href="sms:+447395229191">Text instead</a> · <a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a> · Belfast, BT7</p>
+  </div>
+</div>
 <main id="main">
-  <section class="hero dark glow frame" aria-labelledby="t-title">
-    <div class="wrap">
-      <h1 id="t-title">Templates built for <em>your kind of business</em>.</h1>
-      <p>Every site starts from a template made for your trade, then gets your name, photos, services and colours. Pick the extras you need, and nothing you don't.</p>
-      <ul class="jump" aria-label="Jump to a business type">
-        <li><a href="#trades">Trades</a></li>
-        <li><a href="#food">Cafés &amp; restaurants</a></li>
-        <li><a href="#beauty">Salons &amp; barbers</a></li>
-        <li><a href="#services">Cleaners, gardeners &amp; local services</a></li>
-        <li><a href="#fitness">Fitness &amp; coaching</a></li>
-        <li><a href="#addons">All add-ons</a></li>
-      </ul>
+<section class="page-hero dark glow frame" data-callbar-hide aria-labelledby="ph-title">
+  <div class="wrap page-hero__in">
+    <div>
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">Templates</li></ol></nav>
+      <h1 id="ph-title" class="h1">Templates built for <span class="hot">your kind of business.</span></h1>
+      <p class="lead">Every site starts from a template made for your trade, then gets your name, photos, services and colours. Pick the extras you need, and nothing you don't.</p>
+      <div class="actions"><a class="btn" href="../mock-up/">Get a free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-ghost" href="../services/">See packages and prices</a></div>
     </div>
-  </section>
-
-  <section id="trades" aria-labelledby="trades-title">
-    <div class="wrap industry">
-      <div>
-        <div class="head"><h2 id="trades-title">Trades</h2><p>Electricians, plumbers, roofers, joiners, builders, plasterers, painters.</p></div>
-        <div class="preview">
-          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="screen" style="background:#0f1d2e;color:#fff" aria-hidden="true">
-            <span class="tag" style="background:#1d3048;border-color:#2b4260;color:#f5a524">Trades template</span>
-            <div class="t">Safe, tidy work, done right.</div>
-            <div class="l" style="background:#fff;width:85%"></div><div class="l" style="background:#fff;width:60%"></div>
-            <span class="b" style="background:#f5a524;color:#1a1200">Get a free quote</span>
-          </div>
-          <div class="foot"><span class="tag">Design sample · includes deposit example</span><a class="btn btn-outline" href="../demo-electrician/">View live demo</a></div>
+    <div class="page-hero__art" aria-hidden="true"><div class="tp-fan"><div class="browser tp-f1"><div class="b-bar"><i></i><i></i><i></i></div><div class="mini" data-palette="lime"><div class="mini-nav"><b>P</b><strong>Your PT Studio</strong><span><span>Packages</span><span>Timetable</span><span>Contact</span></span><em>Book</em></div><div class="mini-body"><div><span class="mini-tag">Personal trainer · Bangor</span><p class="mini-h">Train smarter. Get results.</p><p class="mini-p">Packages, class times and an easy way to book your first session.</p><span class="mini-cta"><b>Book a free session</b><span>See packages</span></span></div><div class="mini-form"><b>Book a session</b><i></i><i></i><i></i><u></u></div></div><div class="mini-svcs"><span>1-to-1 training</span><span>Small groups</span><span>Online plans</span></div></div></div><div class="browser tp-f2"><div class="b-bar"><i></i><i></i><i></i></div><div class="mini" data-palette="plum"><div class="mini-nav"><b>S</b><strong>Your Salon</strong><span><span>Treatments</span><span>Prices</span><span>Contact</span></span><em>Book now</em></div><div class="mini-body"><div><span class="mini-tag">Hair &amp; beauty · Belfast</span><p class="mini-h">Look good. Feel better.</p><p class="mini-p">Treatments, prices and opening hours, with booking one tap away.</p><span class="mini-cta"><b>Book now</b><span>See prices</span></span></div><div class="mini-form"><b>Book an appointment</b><i></i><i></i><i></i><u></u></div></div><div class="mini-svcs"><span>Cut &amp; colour</span><span>Nails</span><span>Lashes &amp; brows</span></div></div></div><div class="browser tp-f3"><div class="b-bar"><i></i><i></i><i></i></div><div class="mini" data-palette="teal"><div class="mini-nav"><b>C</b><strong>Your Cleaning Co</strong><span><span>Services</span><span>Areas</span><span>Contact</span></span><em>Call now</em></div><div class="mini-body"><div><span class="mini-tag">Cleaning · Lisburn</span><p class="mini-h">Reliable, local, on time.</p><p class="mini-p">Clear starting prices, the areas you cover and a quick quote form.</p><span class="mini-cta"><b>Get a price</b><span>Call now</span></span></div><div class="mini-form"><b>Request a quote</b><i></i><i></i><i></i><u></u></div></div><div class="mini-svcs"><span>Homes</span><span>Offices</span><span>End of tenancy</span></div></div></div><span class="dtag">Template preview</span></div></div>
+  </div>
+</section>
+<nav class="subnav" aria-label="On this page"><div class="wrap"><ul><li><a href="#trades">Trades</a></li><li><a href="#food">Cafés &amp; restaurants</a></li><li><a href="#beauty">Salons &amp; barbers</a></li><li><a href="#services">Cleaners &amp; local services</a></li><li><a href="#fitness">Fitness &amp; coaching</a></li><li><a href="#addons">All add-ons</a></li></ul></div></nav>
+<section id="trades" class="white frame" aria-labelledby="trades-title">
+  <div class="wrap">
+    <div class="sh sh--split" data-reveal><div><p class="kicker"><b>01</b>Trades</p><h2 class="h2" id="trades-title">Trades</h2></div>
+    <p class="lead">Electricians, plumbers, roofers, joiners, builders, plasterers, painters.</p></div>
+    <div class="tp-split">
+      <figure class="tp-prev">
+        <div class="demo tp-shot"><div class="demo__shot"><div class="b-bar"><i></i><i></i><i></i><span class="b-url">Design sample · Electrician</span></div>
+          <div class="demo__vp" inert><iframe src="../demo-electrician/" loading="lazy" tabindex="-1" aria-hidden="true" title="Preview of the electrician design sample"></iframe></div></div>
+          <a class="stretch" href="../demo-electrician/" tabindex="-1" aria-hidden="true"></a></div>
+        <figcaption class="tp-cap"><span class="dtag">Design sample</span><p>Volthaven Electrical is a made-up business. This sample includes a deposit example.</p><a class="btn btn-line" href="../demo-electrician/">View electrician demo</a></figcaption>
+      </figure>
+      <div class="tp-side" data-reveal>
+        <div class="card tp-box">
+          <div><h3>Included</h3><ul class="tp-inc"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Tap-to-call button that stays on screen</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Quote request form</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Services list</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Areas you cover</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Accreditations and insurance shown</li></ul></div>
+          <div><h3>Useful add-ons</h3><ul class="pricelist"><li><span>Before &amp; after gallery</span><b>£60</b></li><li><span>Extra service or town page</span><b>£60</b></li><li><span>Google reviews section</span><b>£40</b></li><li><span>WhatsApp button</span><b>£25</b></li><li><span>Online deposits for quotes</span><b>£75</b></li></ul></div>
         </div>
       </div>
-      <div class="lists">
-        <div class="box inc"><h3>Included</h3><ul>
-          <li>Tap-to-call button that stays on screen</li>
-          <li>Quote request form</li>
-          <li>Services list</li>
-          <li>Areas you cover</li>
-          <li>Accreditations and insurance shown</li>
-        </ul></div>
-        <div class="box"><h3>Popular add-ons</h3><ul>
-          <li>Before &amp; after gallery <span class="price">£60</span></li>
-          <li>Extra service or town page <span class="price">£60</span></li>
-          <li>Google reviews section <span class="price">£40</span></li>
-          <li>WhatsApp button <span class="price">£25</span></li>
-          <li>Online deposits for quotes <span class="price">£75</span></li>
-        </ul></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="food" class="alt" aria-labelledby="food-title">
-    <div class="wrap industry">
-      <div>
-        <div class="head"><h2 id="food-title">Cafés &amp; restaurants</h2><p>Cafés, restaurants, bistros, takeaways, bakeries, pubs.</p></div>
-        <div class="preview">
-          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="screen" style="background:#efe5d4;color:#2c4029" aria-hidden="true">
-            <span class="tag" style="background:#e3ecdf;border-color:#cbd9c6;color:#2c4029">Food &amp; drink template</span>
-            <div class="t" style="font-family:Georgia,serif">Good food, a warm welcome.</div>
-            <div class="l" style="background:#2c4029;width:80%"></div><div class="l" style="background:#2c4029;width:55%"></div>
-            <span class="b" style="background:#3f5a3c;color:#fff">Book a table</span>
-          </div>
-          <div class="foot"><span class="tag">Design sample · includes ordering example</span><a class="btn btn-outline" href="../demo-cafe/">View live demo</a></div>
-        </div>
-      </div>
-      <div class="lists">
-        <div class="box inc"><h3>Included</h3><ul>
-          <li>Menu page that's easy to update</li>
-          <li>Allergen information section</li>
-          <li>Opening hours and map</li>
-          <li>Tap-to-call and directions</li>
-          <li>Links to Just Eat, Deliveroo or Uber Eats</li>
-        </ul></div>
-        <div class="box"><h3>Popular add-ons</h3><ul>
-          <li>Online ordering &amp; payment <span class="price">£95</span></li>
-          <li>Online table booking <span class="price">£75</span></li>
-          <li>Events or private dining page <span class="price">£60</span></li>
-          <li>Food &amp; venue gallery <span class="price">£60</span></li>
-          <li>Google reviews section <span class="price">£40</span></li>
-        </ul></div>
-      </div>
-    </div>
-    <div class="wrap"><p class="note"><strong>Online booking</strong> connects your website to the booking system you already use, such as ResDiary, OpenTable, SevenRooms, Tablein or resOS. Customers can book without leaving your site. You keep your own booking account and subscription.</p></div>
-  </section>
-
-  <section id="beauty" aria-labelledby="beauty-title">
-    <div class="wrap industry">
-      <div>
-        <div class="head"><h2 id="beauty-title">Salons &amp; barbers</h2><p>Hair salons, barbers, nail and beauty, lash and brow, tattoo studios.</p></div>
-        <div class="preview">
-          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="screen" style="background:#1d1416;color:#f6e9ea" aria-hidden="true">
-            <span class="tag" style="background:#3a2427;border-color:#55363a;color:#f2b8c0">Salon template</span>
-            <div class="t">Look good. Feel better.</div>
-            <div class="l" style="background:#fff;width:75%"></div><div class="l" style="background:#fff;width:50%"></div>
-            <span class="b" style="background:#e58a99;color:#1d1416">Book now</span>
-          </div>
-          <div class="foot"><span class="tag">Template preview</span><a class="btn btn-outline" href="../#contact">Ask for a mock-up</a></div>
-        </div>
-      </div>
-      <div class="lists">
-        <div class="box inc"><h3>Included</h3><ul>
-          <li>Treatments and price list</li>
-          <li>"Book now" button on every page</li>
-          <li>Opening hours and map</li>
-          <li>Instagram link</li>
-          <li>Meet the team section</li>
-        </ul></div>
-        <div class="box"><h3>Popular add-ons</h3><ul>
-          <li>Online appointment booking <span class="price">£75</span></li>
-          <li>Work gallery <span class="price">£60</span></li>
-          <li>Gift voucher link <span class="price">£25</span></li>
-          <li>Google reviews section <span class="price">£40</span></li>
-        </ul></div>
-      </div>
-    </div>
-    <div class="wrap"><p class="note"><strong>Online appointment booking</strong> links to the system you already use, such as Fresha, Booksy, Treatwell or Square Appointments.</p></div>
-  </section>
-
-  <section id="services" class="alt" aria-labelledby="services-title">
-    <div class="wrap industry">
-      <div>
-        <div class="head"><h2 id="services-title">Cleaners, gardeners &amp; local services</h2><p>Cleaners, window cleaners, landscapers, dog groomers, removals, mobile mechanics.</p></div>
-        <div class="preview">
-          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="screen" style="background:#eef6f3;color:#12372c" aria-hidden="true">
-            <span class="tag" style="background:#d9ede5;border-color:#bfe0d3;color:#12372c">Local services template</span>
-            <div class="t">Reliable, local, on time.</div>
-            <div class="l" style="background:#12372c;width:80%"></div><div class="l" style="background:#12372c;width:55%"></div>
-            <span class="b" style="background:#1f7a5a;color:#fff">Get a price</span>
-          </div>
-          <div class="foot"><span class="tag">Template preview</span><a class="btn btn-outline" href="../#contact">Ask for a mock-up</a></div>
-        </div>
-      </div>
-      <div class="lists">
-        <div class="box inc"><h3>Included</h3><ul>
-          <li>Services and starting prices</li>
-          <li>Quick quote form</li>
-          <li>Areas covered</li>
-          <li>Tap-to-call button</li>
-          <li>FAQ section</li>
-        </ul></div>
-        <div class="box"><h3>Popular add-ons</h3><ul>
-          <li>Online booking link <span class="price">£75</span></li>
-          <li>Before &amp; after gallery <span class="price">£60</span></li>
-          <li>Extra town page <span class="price">£60</span></li>
-          <li>WhatsApp button <span class="price">£25</span></li>
-        </ul></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="fitness" aria-labelledby="fitness-title">
-    <div class="wrap industry">
-      <div>
-        <div class="head"><h2 id="fitness-title">Fitness &amp; coaching</h2><p>Personal trainers, gyms, yoga and pilates, sports coaches, tutors.</p></div>
-        <div class="preview">
-          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="screen" style="background:#101418;color:#e8f0f7" aria-hidden="true">
-            <span class="tag" style="background:#1d252d;border-color:#2c3742;color:#7cc4ff">Fitness template</span>
-            <div class="t">Train smarter. Get results.</div>
-            <div class="l" style="background:#fff;width:70%"></div><div class="l" style="background:#fff;width:45%"></div>
-            <span class="b" style="background:#2f9bff;color:#06121f">Book a free session</span>
-          </div>
-          <div class="foot"><span class="tag">Template preview</span><a class="btn btn-outline" href="../#contact">Ask for a mock-up</a></div>
-        </div>
-      </div>
-      <div class="lists">
-        <div class="box inc"><h3>Included</h3><ul>
-          <li>Classes or packages with prices</li>
-          <li>About and qualifications</li>
-          <li>Enquiry form</li>
-          <li>Location and times</li>
-          <li>Instagram link</li>
-        </ul></div>
-        <div class="box"><h3>Popular add-ons</h3><ul>
-          <li>Class timetable <span class="price">£60</span></li>
-          <li>Online booking link <span class="price">£75</span></li>
-          <li>Client results gallery <span class="price">£60</span></li>
-          <li>Google reviews section <span class="price">£40</span></li>
-        </ul></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="addons" class="alt" aria-labelledby="addons-title">
-    <div class="wrap">
-      <div class="head"><h2 id="addons-title">All add-ons</h2><p>Add any of these to any website package. One-off prices. Galleries and reviews are already included in the Business package.</p></div>
-      <div class="addons">
-        <div class="addon"><h3>Card payments &amp; deposits <span class="price">£75</span></h3><p>Let customers pay deposits, invoices or quotes online by card, Apple Pay or Google Pay, through Stripe, SumUp or Square.</p></div>
-        <div class="addon"><h3>Online food ordering <span class="price">£95</span></h3><p>Order-ahead for collection or delivery, paid online, through Square, Flipdish or similar. Cheaper per order than delivery apps.</p></div>
-        <div class="addon"><h3>Online booking <span class="price">£75</span></h3><p>Connects your site to ResDiary, OpenTable, Fresha, Booksy and similar. Includes the cookie notice and privacy page it needs.</p></div>
-        <div class="addon"><h3>Extra page <span class="price">£60</span></h3><p>A service page, a town page for local search, events or private dining.</p></div>
-        <div class="addon"><h3>Photo gallery <span class="price">£60</span></h3><p>Before and after shots, food, your venue or your work.</p></div>
-        <div class="addon"><h3>Google reviews <span class="price">£40</span></h3><p>Shows your real Google reviews, with a link to leave one.</p></div>
-        <div class="addon"><h3>Class timetable <span class="price">£60</span></h3><p>A clear weekly schedule that's easy to update.</p></div>
-        <div class="addon"><h3>WhatsApp button <span class="price">£25</span></h3><p>Customers can message you in one tap.</p></div>
-        <div class="addon"><h3>Gift voucher link <span class="price">£25</span></h3><p>Links to your existing voucher or payment provider.</p></div>
-        <div class="addon"><h3>Delivery app links <span class="price">Included</span></h3><p>Just Eat, Deliveroo and Uber Eats buttons for food businesses.</p></div>
-        <div class="addon"><h3>Care plan <span class="price">£25/mo</span></h3><p>Optional. Backups, security, uptime checks and up to 30 minutes of changes every month. Hosting itself is free.</p></div>
-      </div>
-      <p class="note">Payment, ordering, booking and voucher providers are separate services that you sign up to and pay for yourself, usually a small fee per transaction. I connect them to your site. Card details are always handled by the payment provider, never stored on your website.</p>
-    </div>
-  </section>
-
-  <div class="cta">
-    <div class="wrap">
-      <div><h2>Not sure what you need?</h2><p>Tell me about your business and I'll send a free mock-up with the right features.</p></div>
-      <a class="btn" href="../#contact">Get a free mock-up</a>
     </div>
   </div>
-</main>
-
-<footer class="site">
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section id="food" class="light frame" aria-labelledby="food-title">
   <div class="wrap">
-    <div class="cols cols-4">
-      <div><a class="logo" href="../"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a><p style="margin:12px 0 0">Websites for local businesses across Belfast, Lisburn and North Down.</p></div>
-      <div><h3>Site</h3><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../start/">Start your project</a></li></ul></div>
-      <div><h3>Areas</h3><ul><li><a href="../web-design-belfast/">Web design Belfast</a></li><li><a href="../web-design-lisburn/">Web design Lisburn</a></li><li><a href="../web-design-bangor/">Web design Bangor</a></li><li><a href="../web-design-newtownards/">Web design Newtownards</a></li><li><a href="../web-design-carrickfergus/">Web design Carrickfergus</a></li><li><a href="../web-design-newtownabbey/">Web design Newtownabbey</a></li></ul></div>
-      <div><h3>Contact</h3><ul><li><a href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a></li><li><a href="../#contact">Free mock-up</a></li></ul></div>
+    <div class="sh sh--split" data-reveal><div><p class="kicker"><b>02</b>Food &amp; drink</p><h2 class="h2" id="food-title">Cafés &amp; restaurants</h2></div>
+    <p class="lead">Cafés, restaurants, bistros, takeaways, bakeries, pubs.</p></div>
+    <div class="tp-split">
+      <figure class="tp-prev">
+        <div class="demo tp-shot"><div class="demo__shot"><div class="b-bar"><i></i><i></i><i></i><span class="b-url">Design sample · Café</span></div>
+          <div class="demo__vp" inert><iframe src="../demo-cafe/" loading="lazy" tabindex="-1" aria-hidden="true" title="Preview of the café design sample"></iframe></div></div>
+          <a class="stretch" href="../demo-cafe/" tabindex="-1" aria-hidden="true"></a></div>
+        <figcaption class="tp-cap"><span class="dtag">Design sample</span><p>Hollowmoss Café is a made-up business. This sample includes an ordering example.</p><a class="btn btn-line" href="../demo-cafe/">View café demo</a></figcaption>
+      </figure>
+      <div class="tp-side" data-reveal>
+        <div class="card tp-box">
+          <div><h3>Included</h3><ul class="tp-inc"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Menu page that's easy to update</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Allergen information section</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Opening hours and map</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Tap-to-call and directions</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Links to Just Eat, Deliveroo or Uber Eats</li></ul></div>
+          <div><h3>Useful add-ons</h3><ul class="pricelist"><li><span>Online ordering &amp; payment</span><b>£95</b></li><li><span>Online table booking</span><b>£75</b></li><li><span>Events or private dining page</span><b>£60</b></li><li><span>Food &amp; venue gallery</span><b>£60</b></li><li><span>Google reviews section</span><b>£40</b></li></ul></div>
+        </div>
+        <p class="fine tp-note"><strong>Online booking</strong> connects your website to the booking system you already use, such as ResDiary, OpenTable, SevenRooms, Tablein or resOS. Customers can book without leaving your site. You keep your own booking account and subscription.</p>
+      </div>
     </div>
-    <div class="legal"><span>Poots Design is a trading name of Sam Poots, part of Poots Group. Belfast, BT7.</span><span><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <a href="../care/">Care plan changes</a></span></div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section id="beauty" class="white frame" aria-labelledby="beauty-title">
+  <div class="wrap">
+    <div class="sh sh--split" data-reveal><div><p class="kicker"><b>03</b>Hair &amp; beauty</p><h2 class="h2" id="beauty-title">Salons &amp; barbers</h2></div>
+    <p class="lead">Hair salons, barbers, nail and beauty, lash and brow, tattoo studios.</p></div>
+    <div class="tp-split">
+      <figure class="tp-prev">
+        <div class="browser tp-shot" aria-hidden="true"><div class="b-bar"><i></i><i></i><i></i><span class="b-url">Template preview · Salon</span></div>
+          <div class="mini" data-palette="plum"><div class="mini-nav"><b>S</b><strong>Your Salon</strong><span><span>Treatments</span><span>Prices</span><span>Contact</span></span><em>Book now</em></div><div class="mini-body"><div><span class="mini-tag">Hair &amp; beauty · Belfast</span><p class="mini-h">Look good. Feel better.</p><p class="mini-p">Treatments, prices and opening hours, with booking one tap away.</p><span class="mini-cta"><b>Book now</b><span>See prices</span></span></div><div class="mini-form"><b>Book an appointment</b><i></i><i></i><i></i><u></u></div></div><div class="mini-svcs"><span>Cut &amp; colour</span><span>Nails</span><span>Lashes &amp; brows</span></div></div></div>
+        <figcaption class="tp-cap"><span class="dtag">Template preview</span><p>A starting point, not a real business. Your name, photos, prices and colours go in.</p><a class="btn btn-line" href="../mock-up/?trade=salon">Ask for a mock-up</a></figcaption>
+      </figure>
+      <div class="tp-side" data-reveal>
+        <div class="card tp-box">
+          <div><h3>Included</h3><ul class="tp-inc"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Treatments and price list</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>“Book now” button on every page</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Opening hours and map</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Instagram link</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Meet the team section</li></ul></div>
+          <div><h3>Useful add-ons</h3><ul class="pricelist"><li><span>Online appointment booking</span><b>£75</b></li><li><span>Work gallery</span><b>£60</b></li><li><span>Gift voucher link</span><b>£25</b></li><li><span>Google reviews section</span><b>£40</b></li></ul></div>
+        </div>
+        <p class="fine tp-note"><strong>Online appointment booking</strong> links to the system you already use, such as Fresha, Booksy, Treatwell or Square Appointments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section id="services" class="light frame" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="sh sh--split" data-reveal><div><p class="kicker"><b>04</b>Local services</p><h2 class="h2" id="services-title">Cleaners, gardeners &amp; local services</h2></div>
+    <p class="lead">Cleaners, window cleaners, landscapers, dog groomers, removals, mobile mechanics.</p></div>
+    <div class="tp-split">
+      <figure class="tp-prev">
+        <div class="browser tp-shot" aria-hidden="true"><div class="b-bar"><i></i><i></i><i></i><span class="b-url">Template preview · Cleaner</span></div>
+          <div class="mini" data-palette="teal"><div class="mini-nav"><b>C</b><strong>Your Cleaning Co</strong><span><span>Services</span><span>Areas</span><span>Contact</span></span><em>Call now</em></div><div class="mini-body"><div><span class="mini-tag">Cleaning · Lisburn</span><p class="mini-h">Reliable, local, on time.</p><p class="mini-p">Clear starting prices, the areas you cover and a quick quote form.</p><span class="mini-cta"><b>Get a price</b><span>Call now</span></span></div><div class="mini-form"><b>Request a quote</b><i></i><i></i><i></i><u></u></div></div><div class="mini-svcs"><span>Homes</span><span>Offices</span><span>End of tenancy</span></div></div></div>
+        <figcaption class="tp-cap"><span class="dtag">Template preview</span><p>A starting point, not a real business. Your name, photos, prices and colours go in.</p><a class="btn btn-line" href="../mock-up/?trade=cleaner">Ask for a mock-up</a></figcaption>
+      </figure>
+      <div class="tp-side" data-reveal>
+        <div class="card tp-box">
+          <div><h3>Included</h3><ul class="tp-inc"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Services and starting prices</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Quick quote form</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Areas covered</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Tap-to-call button</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>FAQ section</li></ul></div>
+          <div><h3>Useful add-ons</h3><ul class="pricelist"><li><span>Online booking link</span><b>£75</b></li><li><span>Before &amp; after gallery</span><b>£60</b></li><li><span>Extra town page</span><b>£60</b></li><li><span>WhatsApp button</span><b>£25</b></li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section id="fitness" class="white frame" aria-labelledby="fitness-title">
+  <div class="wrap">
+    <div class="sh sh--split" data-reveal><div><p class="kicker"><b>05</b>Fitness</p><h2 class="h2" id="fitness-title">Fitness &amp; coaching</h2></div>
+    <p class="lead">Personal trainers, gyms, yoga and pilates, sports coaches, tutors.</p></div>
+    <div class="tp-split">
+      <figure class="tp-prev">
+        <div class="browser tp-shot" aria-hidden="true"><div class="b-bar"><i></i><i></i><i></i><span class="b-url">Template preview · Fitness</span></div>
+          <div class="mini" data-palette="lime"><div class="mini-nav"><b>P</b><strong>Your PT Studio</strong><span><span>Packages</span><span>Timetable</span><span>Contact</span></span><em>Book</em></div><div class="mini-body"><div><span class="mini-tag">Personal trainer · Bangor</span><p class="mini-h">Train smarter. Get results.</p><p class="mini-p">Packages, class times and an easy way to book your first session.</p><span class="mini-cta"><b>Book a free session</b><span>See packages</span></span></div><div class="mini-form"><b>Book a session</b><i></i><i></i><i></i><u></u></div></div><div class="mini-svcs"><span>1-to-1 training</span><span>Small groups</span><span>Online plans</span></div></div></div>
+        <figcaption class="tp-cap"><span class="dtag">Template preview</span><p>A starting point, not a real business. Your name, photos, prices and colours go in.</p><a class="btn btn-line" href="../mock-up/?trade=trainer">Ask for a mock-up</a></figcaption>
+      </figure>
+      <div class="tp-side" data-reveal>
+        <div class="card tp-box">
+          <div><h3>Included</h3><ul class="tp-inc"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Classes or packages with prices</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>About and qualifications</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Enquiry form</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Location and times</li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span>Instagram link</li></ul></div>
+          <div><h3>Useful add-ons</h3><ul class="pricelist"><li><span>Class timetable</span><b>£60</b></li><li><span>Online booking link</span><b>£75</b></li><li><span>Client results gallery</span><b>£60</b></li><li><span>Google reviews section</span><b>£40</b></li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section id="addons" class="light frame tp-addons" aria-labelledby="addons-title">
+  <div class="wrap">
+    <div class="sh sh--split" data-reveal><div><p class="kicker"><b>06</b>Add-ons</p><h2 class="h2" id="addons-title">All add-ons. <span class="dim">Pick only what you need.</span></h2></div>
+    <p class="lead">Add any of these to any website package. One-off prices. Galleries and reviews are already included in the Business package.</p></div>
+    <div class="cells c3" data-stagger>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Card payments &amp; deposits</h3><b class="tnum">£75</b></div><p>Let customers pay deposits, invoices or quotes online by card, Apple Pay or Google Pay, through Stripe, SumUp or Square.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Online food ordering</h3><b class="tnum">£95</b></div><p>Order-ahead for collection or delivery, paid online, through Square, Flipdish or similar. Cheaper per order than delivery apps.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Online booking</h3><b class="tnum">£75</b></div><p>Connects your site to ResDiary, OpenTable, Fresha, Booksy and similar. Includes the cookie notice and privacy page it needs.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Extra page</h3><b class="tnum">£60</b></div><p>A service page, a town page for local search, events or private dining.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Photo gallery</h3><b class="tnum">£60</b></div><p>Before and after shots, food, your venue or your work.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Google reviews</h3><b class="tnum">£40</b></div><p>Shows your real Google reviews, with a link to leave one.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Class timetable</h3><b class="tnum">£60</b></div><p>A clear weekly schedule that's easy to update.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>WhatsApp button</h3><b class="tnum">£25</b></div><p>Customers can message you in one tap.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Gift voucher link</h3><b class="tnum">£25</b></div><p>Links to your existing voucher or payment provider.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Delivery app links</h3><b class="tnum">Included</b></div><p>Just Eat, Deliveroo and Uber Eats buttons for food businesses.</p></div>
+      <div class="cell spot tp-ao"><div class="tp-ao__top"><h3>Care plan</h3><b class="tnum">£25<small>/month</small></b></div><p>Optional. Backups, security, uptime checks and up to 30 minutes of changes every month. Hosting itself is free.</p></div>
+      <div class="cell dark tp-ao tp-ask"><h3>Need something else?</h3><p>Tell me what you need and I'll price it before I do anything.</p><a class="tlink" href="../mock-up/">Ask me <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></a></div>
+    </div>
+    <p class="fine">Payment, ordering, booking and voucher providers are separate services that you sign up to and pay for yourself, usually a small fee per transaction. I connect them to your site. Card details are always handled by the payment provider, never stored on your website.</p>
+  </div>
+</section>
+<section class="cta-band dark glow frame" data-callbar-hide aria-labelledby="cta-title">
+  <div class="wrap cta-band__in">
+    <div><h2 id="cta-title" class="h2">See your new website <span class="dim">before you pay a penny.</span></h2>
+    <p class="lead">Send me your business name and I&#x27;ll send you a free one-page mock-up. No obligation.</p></div>
+    <div class="actions"><a class="btn btn-lg" href="../mock-up/">Get my free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-ghost btn-lg" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call 07395 229191</a></div>
+  </div>
+</section>
+</main>
+<footer class="site-f" data-callbar-hide>
+  <svg class="skyline" viewBox="0 0 1440 150" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 132C60 124 110 112 160 96 205 82 232 60 262 50c14-5 22-4 30 2 6 5 6 14 14 18 10 5 24-2 38 2 26 8 52 30 84 44 34 15 76 22 120 24"/>
+    <path d="M520 138v-22h26v-10h18v14h22v-26h12v26h30v-12h24v18h40v-30l14-10 14 10v30h28v-16h30v20h36"/>
+    <g class="crane"><path d="M922 141l6-104h8l6 104M1036 141l6-104h8l6 104M910 37h160v-14H910zM932 23v-9h30v9M944 37v10h18V37M929 90h119"/><path d="M1096 141l5-88h7l5 88M1196 141l5-88h7l5 88M1086 53h140V41h-140zM1104 41v-8h26v8M1150 53v9h16v-9M1102 100h104"/></g>
+    <path d="M1150 138c40-4 90-14 150-16s100 4 140 2"/><path d="M0 141h1440"/>
+  </svg>
+  <div class="wrap">
+    <p class="site-f__signoff">Made in Belfast, <b>one site at a time.</b></p>
+    <div class="site-f__grid">
+      <div class="site-f__brand"><a class="logo" href="../"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg><span>Poots Design</span></a><p>Websites for local businesses across Belfast, Lisburn and North Down.</p><p>Sam Poots · Belfast, BT7</p></div>
+      <nav aria-labelledby="f-site"><h2 class="f-h" id="f-site">Site</h2><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../#work">Examples</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../start/">Start your project</a></li></ul></nav>
+      <nav aria-labelledby="f-areas"><h2 class="f-h" id="f-areas">Areas</h2><ul><li><a href="../web-design-belfast/">Web design Belfast</a></li><li><a href="../web-design-lisburn/">Web design Lisburn</a></li><li><a href="../web-design-bangor/">Web design Bangor</a></li><li><a href="../web-design-newtownards/">Web design Newtownards</a></li><li><a href="../web-design-carrickfergus/">Web design Carrickfergus</a></li><li><a href="../web-design-newtownabbey/">Web design Newtownabbey</a></li></ul></nav>
+      <div><h2 class="f-h">Contact</h2><ul><li><a class="tnum" href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a></li><li><a href="../mock-up/">Free mock-up</a></li><li><a href="../care/">Care plan changes</a></li></ul></div>
+    </div>
+    <div class="site-f__legal"><p>Poots Design is a trading name of Sam Poots, part of Poots Group. Belfast, BT7.</p><p><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <span class="no-track"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-shield"/></svg>No cookies. No tracking.</span></p></div>
   </div>
 </footer>
-<a class="btn call-fab plain" href="tel:+447395229191">📞 Call Sam: 07395 229191</a>
+<div class="callbar" data-callbar>
+  <a class="btn btn-sm" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call Sam</a>
+  <a class="btn btn-white btn-sm" href="../mock-up/">Free mock-up</a>
+</div>
 </body>
 </html>

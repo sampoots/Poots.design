@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex">
 <style>
 :root{
-  --cream:#faf6ef; --sand:#efe5d4; --moss:#3f5a3c; --moss-dark:#2c4029; --clay:#b8643c;
+  --cream:#faf6ef; --sand:#efe5d4; --moss:#3f5a3c; --moss-dark:#2c4029; --clay:#a0522d;
   --ink:#2a2622; --muted:#6b635a; --line:#e2d7c4; --white:#fff; --max:1080px; --radius:14px;
 }
 *{box-sizing:border-box}
@@ -18,7 +18,13 @@ body{margin:0;font-family:Georgia,"Iowan Old Style","Times New Roman",serif;colo
 a{color:inherit}
 a:focus-visible,.btn:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-.demo-bar{background:#fff4d6;color:#5a4100;font-size:.875rem;text-align:center;padding:8px 16px;border-bottom:1px solid #f0d58a;font-family:system-ui,sans-serif}
+.demo-bar{position:relative;z-index:20;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0 6px;min-height:44px;background:#fff4d6;color:#5a4100;font:400 .85rem/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;text-align:center;padding:4px 16px;border-bottom:1px solid #f0d58a}
+.demo-bar a{display:inline-block;padding:10px 2px;color:#5a4100;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.demo-bar a:hover{text-decoration-thickness:2px}
+.demo-bar a:focus-visible{outline:2px solid #5a4100;outline-offset:1px}
+@media (min-width:1200px){.demo-bar{position:sticky;top:0;height:44px;padding-block:0;flex-wrap:nowrap;white-space:nowrap}.demo-bar a{padding-block:11px}}
+.skip{position:fixed;left:12px;top:12px;z-index:100;padding:12px 18px;border-radius:10px;background:#fff;color:#111;font:600 1rem system-ui,sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3);transform:translateY(-200%)}
+.skip:focus{transform:none;outline:3px solid #5a4100;outline-offset:2px}
 header .wrap{display:flex;justify-content:space-between;align-items:center;height:76px}
 .brand{font-size:1.5rem;font-weight:700;text-decoration:none;color:var(--moss-dark);letter-spacing:.3px}
 .brand small{display:block;font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);font-family:system-ui,sans-serif;font-weight:600}
@@ -102,7 +108,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <script src="../assets/motion.js" defer></script>
 </head>
 <body>
-<div class="demo-bar" role="note"><strong>Design sample.</strong> Hollowmoss Café is a fictional business. Menu, prices, hours and contact details are placeholders.</div>
+<a class="skip" href="#top">Skip to main content</a>
+<div class="demo-bar" role="note"><span><strong>Design sample by Poots Design.</strong> Hollowmoss Café is a fictional business. Menu, prices, hours and contact details are placeholders.</span><span><a href="../">Back to Poots Design</a> · <a href="../mock-up/">Get a site like this</a></span></div>
 
 <header>
   <div class="wrap">

@@ -2,258 +2,392 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Services &amp; Prices — Poots Design</title>
-<meta name="description" content="Websites from £249 plus Google Business Profile set-up, local search, logos, social media pages, business email, bookings and payments. Full details for every service.">
-<meta name="theme-color" content="#111113">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Website Prices &amp; Services in Belfast, from £249 | Poots Design</title>
+<meta name="description" content="Websites from £249 plus Google Business Profile set-up, local search, logos, social pages, business email and bookings. Full details for every service.">
+<meta name="theme-color" content="#0f0f12">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://sampoots.github.io/Poots.design/services/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Poots Design">
-<meta property="og:title" content="Services &amp; Prices — Poots Design">
-<meta property="og:description" content="Websites from £249 plus Google Business Profile set-up, local search, logos, social media pages, business email, bookings and payments. Full details for every service.">
-<meta property="og:url" content="https://sampoots.github.io/Poots.design/services/">
-<meta property="og:image" content="https://sampoots.github.io/Poots.design/assets/og-image.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Poots Design"><meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Website Prices &amp; Services in Belfast, from £249 | Poots Design"><meta property="og:description" content="Websites from £249 plus Google Business Profile set-up, local search, logos, social pages, business email and bookings. Full details for every service."><meta property="og:url" content="https://sampoots.github.io/Poots.design/services/">
+<meta property="og:image" content="https://sampoots.github.io/Poots.design/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Poots Design: websites for local businesses in Belfast">
 <meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/site.css">
-<style>
-.hero{padding:76px 0 84px}
-.hero h1{color:#fff;margin:16px 0 18px}
-.hero p.lead{color:var(--muted-dark);margin:0 0 28px}
-.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.svc .card{display:flex;flex-direction:column}
-.svc .card .tag{display:inline-block;align-self:flex-start;font-size:.72rem;font-weight:700;border-radius:6px;padding:2px 8px;background:var(--paper);border:1px solid var(--line);color:var(--muted);margin-bottom:12px}
-.svc .card h3{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
-.svc .card h3 span{color:var(--red);font-size:1rem;white-space:nowrap}
-.svc .card ul{margin:14px 0 0;padding:0;list-style:none;color:var(--text);font-size:.95rem}
-.svc .card li{padding:6px 0;border-top:1px solid var(--line);display:flex;gap:8px}
-.svc .card li::before{content:"✓";color:var(--red);font-weight:800}
-.bundle{margin-top:28px;border:1px dashed rgba(224,35,63,.5);background:rgba(224,35,63,.05);border-radius:14px;padding:18px 20px;color:#7f1d2d}
-.two{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
-.prose p{color:var(--text);margin:0 0 14px}
-.prose h2{font-size:clamp(1.5rem,2.8vw,2rem);letter-spacing:-.03em;color:var(--ink);margin:0 0 12px}
-.list{list-style:none;margin:0;padding:0}
-.list li{padding:10px 0;border-top:1px solid var(--line);display:flex;gap:10px}
-.list li::before{content:"✓";color:var(--red);font-weight:800}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.chips span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:.9rem;font-weight:500}
-.faq{max-width:820px}
-.faq details{border:1px solid var(--line);border-radius:14px;background:#fff;margin-bottom:12px}
-.faq summary{cursor:pointer;list-style:none;padding:18px 54px 18px 20px;font-weight:600;color:var(--ink);position:relative}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--red);transition:transform .25s}
-.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
-.faq details p{margin:0;padding:0 20px 18px;color:var(--muted)}
-.cta{padding:72px 0}
-.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.cta h2{margin:0;color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.035em}
-.cta p{margin:6px 0 0}
-.areas-nav{display:flex;flex-wrap:wrap;gap:8px}
-.areas-nav a{text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font-weight:600;font-size:.92rem;color:var(--ink)}
-.areas-nav a:hover{border-color:var(--red);color:var(--red)}
-.areas-nav a[aria-current]{background:var(--ink);border-color:var(--ink);color:#fff}
-@media (max-width:960px){.svc{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
-@media (max-width:640px){.svc{grid-template-columns:1fr}.hero{padding:52px 0 60px}}
-</style>
-<link rel="stylesheet" href="../assets/motion.css">
-<script src="../assets/motion.js" defer></script>
-<style>
-.svc-link{text-decoration:none;color:inherit;display:flex;flex-direction:column}
-.svc-link p{margin:6px 0 10px}
-.svc-link .more{margin-top:auto;font-weight:700;color:var(--red)}
-.detail{background:#fff;border:1px solid var(--line);border-radius:18px;margin:0 0 22px;scroll-margin-top:84px;overflow:hidden}
-.dt-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:20px 24px;border-bottom:1px solid var(--line);background:var(--paper)}
-.dt-head .tag{font-size:.72rem;font-weight:700;border-radius:6px;padding:2px 8px;background:#fff;border:1px solid var(--line);color:var(--muted)}
-.dt-head h3{margin:0;font-size:1.35rem;letter-spacing:-.02em;color:var(--ink);flex:1}
-.dt-head .price{font-size:1.4rem;font-weight:800;color:var(--red);letter-spacing:-.02em}
-.dt-body{padding:22px 24px}
-.dt-para{font-size:1.05rem;color:var(--text);margin:0 0 18px;max-width:62em}
-.dt-cols{display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
-.dt-cols h4{margin:0 0 8px;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
-.dt-cols p{margin:0 0 16px;color:var(--text)}
-.ticks,.dots{margin:0 0 16px;padding:0;list-style:none}
-.ticks li,.dots li{padding:7px 0 7px 26px;position:relative;border-top:1px solid var(--line)}
-.ticks li:first-child,.dots li:first-child{border-top:0}
-.ticks li::before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:800}
-.dots li::before{content:"";position:absolute;left:6px;top:16px;width:7px;height:7px;border-radius:50%;background:#a1a1aa}
-.dt-cta{margin:6px 0 0;display:flex;flex-wrap:wrap;gap:10px}
-.jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
-.jump a{text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;font-weight:600;font-size:.9rem;color:var(--ink);min-height:40px;display:inline-flex;align-items:center}
-.jump a:hover,.jump a:focus-visible{border-color:var(--red);color:var(--red)}
-@media (max-width:760px){.dt-cols{grid-template-columns:1fr}.dt-head .price{width:100%}}
-</style></head>
-<body>
+<script src="../assets/site.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sampoots.github.io/Poots.design/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sampoots.github.io/Poots.design/services/"}]}</script>
+<style>.sv-rc{max-width:340px;margin:0 0 0 auto}.sv-receipt{padding:24px 26px 22px;box-shadow:0 40px 70px -30px #000;border-radius:16px;background:#fff;color:var(--fl2);font:500 13.6px/1.4 var(--mono);letter-spacing:0;transform:rotate(-2deg)}.sv-receipt p{display:flex;justify-content:space-between;margin:0 0 14px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fl3)}.sv-receipt b{color:var(--fl1)}.sv-receipt p b,.sv-receipt .sv-depo,.sv-receipt .sv-depo b{color:var(--red-text)}.sv-receipt ul{margin:0;padding:0;list-style:none}.sv-receipt li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--ll)}.sv-receipt .sv-tot{border-top:1.5px solid var(--fl1);font-weight:700;color:var(--fl1)}.sv-receipt .sv-depo{margin-top:12px;padding-top:16px;border-top:1.5px dashed var(--ll2)}.sv-group,.sv-sub{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.sv-group{margin:0 calc(var(--gutter)*-1);padding:16px var(--gutter);background:var(--p1);border-top:1px solid var(--line)}#more,.sv-compare{margin-top:clamp(40px,4vw,64px)}.sv-c{display:flex;flex-direction:column;align-items:flex-start;gap:6px}.sv-c h3{margin:0;font-size:var(--t1);font-weight:600;letter-spacing:-.02em}.sv-c h3 a{color:var(--ink);text-decoration:none}.sv-c:has(.stretch:focus-visible){outline:2px solid var(--red);outline-offset:-2px}.sv-c__p{margin:0;font-size:1.5rem;font-weight:650;letter-spacing:-.03em;color:var(--red-text)}.sv-c__p small,.sv-price small{margin-right:.2em;font-size:.55em;font-weight:500;color:var(--muted)}.sv-c__b{margin:4px 0 12px;color:var(--muted);font-size:15px}.sv-c__more{display:inline-flex;align-items:center;gap:6px;font-size:14.4px;font-weight:600;color:var(--accent-text)}.sv-c__more,.sv-c .tlink,.sv-c .btn{margin-top:auto}.sv-c--note{background:var(--red-050)}.sv-c--note p,.sv-c--cta p{margin:6px 0 16px}.cells>.sv-c--cta{background:radial-gradient(90% 80% at 100% 0%,rgba(224,35,63,.32),transparent 60%),var(--n1);color:var(--fd2)}.sv-c--cta h3{color:#fff}.sv-compare{border-radius:16px;background:#fff;box-shadow:var(--sh2);--surface:#fff}.sv-compare>summary{position:relative;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;padding:22px 64px 22px 24px;list-style:none;cursor:pointer;font-size:var(--t1);font-weight:600;color:var(--ink)}.sv-compare>summary::-webkit-details-marker{display:none}.sv-compare small{display:block;font-size:14.4px;font-weight:400;color:var(--muted)}.sv-compare .pm{right:20px}.sv-compare>div{margin:0 24px 24px}.sv-note{margin:24px 0 0;max-width:72ch}@media (min-width:641px){.pg-services .matrix thead :is(th,td){top:121px}}.sv-sheet{padding-block:clamp(48px,6vw,96px)}.sv-intro{padding-bottom:0}.sv-intro .sh{margin:0}.sv-sheet__in{display:grid;gap:32px 64px}.sv-name{margin:16px 0 10px;font-size:var(--t3);font-weight:600;letter-spacing:-.035em;line-height:1.1}.sv-price{margin:0;font-size:2.4rem;font-weight:650;letter-spacing:-.045em;line-height:1.1;color:var(--ink)}.sv-dep{margin:6px 0 0;font-size:13.6px;color:var(--muted)}.sv-side .actions{margin-top:24px}.sv-found{margin-top:18px}.sv-desc{margin:0 0 32px;max-width:62ch;font-size:var(--t1)}.sv-cols{display:grid;gap:8px 48px}.sv-sub{margin:0 0 14px}.sv-cols p,.sv-cols ul{margin:0 0 28px}.sv-ck{display:grid;gap:12px;padding:0;list-style:none}.sv-ck li{display:flex;gap:10px;line-height:1.45}.sv-dots{padding-left:1.1em}.sv-dots ::marker{color:var(--faint)}@media (min-width:720px){.sv-cols{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}}@media (min-width:960px){.sv-sheet__in{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}.sv-side{position:sticky;top:152px;align-self:start}}@media (max-width:900px) and (min-width:641px){.sv-more>:last-child{grid-column:1/-1;border-right:0}}@media (max-width:640px){.sv-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:12px;padding-block:20px}.sv-row .sv-c__b{display:none}.sv-row .sv-c__p{font-size:1.2rem}.sv-row .sv-c__more{margin:0;font-size:0}}</style>
+</head>
+<body class="pg-services">
 <a class="skip" href="#main">Skip to main content</a>
-<header class="site">
-  <div class="wrap nav">
-    <a class="logo" href="../" aria-label="Poots Design home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a>
-    <nav aria-label="Main"><ul><li><a href="../services/" aria-current="page">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../#contact">Contact</a></li></ul></nav>
-    <div class="nav-cta">
-      <a class="btn btn-white plain" href="../#contact">Free mock-up</a>
-      <a class="btn btn-ghost plain" href="tel:+447395229191">Call Sam</a>
+<header class="site-h">
+  <div class="wrap site-h__in">
+    <a class="logo" href="../"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg><span>Poots Design</span></a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="../services/" aria-current="page">Services</a></li>
+        <li><a href="../#prices">Prices</a></li>
+        <li><a href="../#work">Examples</a></li>
+        <li><a href="../templates/">Templates</a></li>
+        <li><a href="../about/">About</a></li>
+      </ul>
+    </nav>
+    <div class="h-cta">
+      <a class="h-call" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg><span>Call<span class="h-call__num tnum"> 07395 229191</span></span></a>
+      <a class="btn btn-white btn-sm h-mock" href="../mock-up/">Free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a>
+      <a class="call-ico" href="tel:+447395229191" aria-label="Call Sam on 07395 229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg></a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-btn__bars" aria-hidden="true"><i></i><i></i></span><span class="menu-btn__label">Menu</span></button>
     </div>
   </div>
 </header>
+<div class="menu-sheet" id="site-menu" hidden>
+  <nav aria-label="Menu">
+    <ul class="menu-sheet__links">
+      <li><a href="../services/" aria-current="page">Services <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../#prices">Prices <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../#work">Examples <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../templates/">Templates <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../about/">About <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../start/">Start your project <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+    </ul>
+  </nav>
+  <ul class="menu-sheet__pk" aria-label="Packages">
+    <li><a href="../services/#launch"><span>Launch</span><b class="tnum">£249</b></a></li>
+    <li><a href="../services/#essential"><span>Essential</span><b class="tnum">£299</b></a></li>
+    <li><a href="../services/#starter"><span>Starter</span><b class="tnum">£399</b></a></li>
+    <li><a href="../services/#business"><span>Business</span><b class="tnum">£795</b></a></li>
+  </ul>
+  <div class="menu-sheet__actions">
+    <a class="btn btn-lg btn-block" href="../mock-up/">Get my free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a>
+    <a class="btn btn-ghost btn-lg btn-block" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call 07395 229191</a>
+    <p class="menu-sheet__meta"><a href="sms:+447395229191">Text instead</a> · <a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a> · Belfast, BT7</p>
+  </div>
+</div>
 <main id="main">
-
-<section class="hero dark glow frame" aria-labelledby="s-title">
-  <div class="wrap">
-    <span class="eyebrow">Services</span>
-    <h1 id="s-title" class="display">Everything a local business needs to get found online</h1>
-    <p class="lead">Affordable websites from £249, plus the things that go with them: Google Maps, a tidy brand, social pages and your own email. All at fixed prices, with free hosting and no monthly fees, all done by me.</p>
-    <div class="actions"><a class="btn" href="../start/">Start your project <span class="tile" aria-hidden="true">→</span></a><a class="btn btn-ghost plain" href="../#contact">Get a free mock-up</a></div>
+<section class="page-hero dark glow frame" data-callbar-hide aria-labelledby="ph-title">
+  <div class="wrap page-hero__in">
+    <div>
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">Services</li></ol></nav>
+      <h1 id="ph-title" class="h1">Everything a local business needs to get found <span class="dim">online</span></h1>
+      <p class="lead">Affordable websites from £249, plus the things that go with them: Google Maps, a tidy brand, social pages and your own email. All at fixed prices, with free hosting and no monthly fees, all done by me.</p>
+      <div class="actions"><a class="btn" href="../start/">Start your project<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-ghost" href="../mock-up/">Get a free mock-up</a></div>
+    </div>
+    <div class="page-hero__art" aria-hidden="true"><div class="sv-rc"><div class="sv-receipt">
+  <p>Example quote <b>Fixed</b></p>
+  <ul><li><span>Business website</span><b>£795</b></li><li><span>Logo &amp; brand kit</span><b>£120</b></li>
+  <li class="sv-tot"><span>Total · fixed</span><b>£915</b></li>
+  <li class="sv-depo"><span>Deposit to start</span><b>£457.50</b></li></ul>
+</div></div></div>
   </div>
 </section>
+<nav class="subnav" aria-label="On this page"><div class="wrap"><ul><li><a href="#packages">Packages</a></li><li><a href="#more">More services</a></li><li><a href="#compare">Compare</a></li><li><a href="#details">Details</a></li></ul></div></nav>
 <section class="light frame" aria-labelledby="list-title">
   <div class="wrap">
-    <div class="head"><h2 id="list-title">Services and prices</h2><p>Fixed prices, so you know the cost before anything starts. Tap any service for full details.</p></div>
-    <div class="svc"><a class="card svc-link" href="#launch"><span class="tag">Website packages</span><h3>Launch website <span>£249</span></h3><p>Sole traders and new businesses who need a professional presence fast, on a tight budget.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#essential"><span class="tag">Website packages</span><h3>Essential website <span>£299</span></h3><p>Small businesses with a few services who want more than a single page.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#starter"><span class="tag">Website packages</span><h3>Starter website <span>£399</span></h3><p>Established small businesses that want a more polished, distinctive site.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#business"><span class="tag">Website packages</span><h3>Business website <span>£795</span></h3><p>Businesses that cover several services or towns and want to grow their enquiries.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#care"><span class="tag">Website packages</span><h3>Care plan <span>£25/month</span></h3><p>Anyone who doesn&#x27;t want to think about their website once it&#x27;s live.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#refresh"><span class="tag">More services</span><h3>Website refresh <span>from £295</span></h3><p>Businesses with an old site that no longer reflects them.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#gbp"><span class="tag">More services</span><h3>Google Business Profile set-up <span>£75</span></h3><p>Any local business that wants to show up on Google Maps.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#local-seo"><span class="tag">More services</span><h3>Local search starter pack <span>£150</span></h3><p>Businesses that want to be easier to find in local searches.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#logo"><span class="tag">More services</span><h3>Logo &amp; brand kit <span>£120</span></h3><p>New businesses, or anyone without a proper logo.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#social"><span class="tag">More services</span><h3>Social media page set-up <span>£60</span></h3><p>Businesses starting out on social media or with untidy pages.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#email"><span class="tag">More services</span><h3>Domain &amp; business email <span>£40</span></h3><p>Any business that wants to look established.</p><span class="more">Full details →</span></a><a class="card svc-link" href="#bookings"><span class="tag">More services</span><h3>Bookings, payments &amp; ordering <span>from £75</span></h3><p>Restaurants, cafés, salons and trades that take bookings, deposits or orders.</p><span class="more">Full details →</span></a></div>
-    <p class="bundle"><strong>Starting from scratch?</strong> A Business website plus the Local search starter pack and a Logo &amp; brand kit gets you fully set up online. The Business website already includes Google Business Profile and social media set-up, so add a Logo &amp; brand kit (£120) and you're fully set up.</p>
+    <div id="packages">
+      <div class="sh sh--split"><div><p class="kicker"><b>01</b>Services and prices</p><h2 class="h2" id="list-title">Fixed prices. <span class="dim">Nothing hidden.</span></h2></div>
+      <p class="lead">You know the cost before anything starts. Tap any package or service for the full details.</p></div>
+      <p class="sv-group">Website packages</p>
+      <div class="cells c3"><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#launch">Launch website</a></h3><p class="sv-c__p tnum">£249</p><p class="sv-c__b">Sole traders and new businesses who need a professional presence fast, on a tight budget.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#essential">Essential website</a></h3><p class="sv-c__p tnum">£299</p><p class="sv-c__b">Small businesses with a few services who want more than a single page.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#starter">Starter website</a></h3><p class="sv-c__p tnum">£399</p><p class="sv-c__b">Established small businesses that want a more polished, distinctive site.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#business">Business website</a></h3><p class="sv-c__p tnum">£795</p><p class="sv-c__b">Businesses that cover several services or towns and want to grow their enquiries.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#care">Care plan</a></h3><p class="sv-c__p tnum">£25<small>/month</small></p><p class="sv-c__b">Anyone who doesn&#x27;t want to think about their website once it&#x27;s live.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell sv-c sv-c--note"><span class="tag tag--red">Bundle</span><p><strong>Starting from scratch?</strong> A Business website (£795, Google Business Profile and social set-up included) plus a Logo &amp; brand kit (£120) gets you fully set up online for £915.</p><a class="tlink" href="../start/?package=business">Start with Business <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></a></div></div>
+    </div>
+    <div id="more">
+      <p class="sv-group">More services</p>
+      <div class="cells c3 sv-more"><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#refresh">Website refresh</a></h3><p class="sv-c__p tnum"><small>from</small>£295</p><p class="sv-c__b">Businesses with an old site that no longer reflects them.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#gbp">Google Business Profile set-up</a></h3><p class="sv-c__p tnum">£75</p><p class="sv-c__b">Any local business that wants to show up on Google Maps.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#local-seo">Local search starter pack</a></h3><p class="sv-c__p tnum">£150</p><p class="sv-c__b">Businesses that want to be easier to find in local searches.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#logo">Logo &amp; brand kit</a></h3><p class="sv-c__p tnum">£120</p><p class="sv-c__b">New businesses, or anyone without a proper logo.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#social">Social media page set-up</a></h3><p class="sv-c__p tnum">£60</p><p class="sv-c__b">Businesses starting out on social media or with untidy pages.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#email">Domain &amp; business email</a></h3><p class="sv-c__p tnum">£40</p><p class="sv-c__b">Any business that wants to look established.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell spot sv-c sv-row"><h3><a class="stretch" href="#bookings">Bookings, payments &amp; ordering</a></h3><p class="sv-c__p tnum"><small>from</small>£75</p><p class="sv-c__b">Restaurants, cafés, salons and trades that take bookings, deposits or orders.</p><span class="sv-c__more" aria-hidden="true">Full details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></div><div class="cell sv-c"><h3>Extra pages &amp; small changes</h3><p class="sv-c__p tnum"><small>from</small>£60</p><p class="sv-c__b">Anything outside your plan, like a new page or a change after sign-off, is quoted first. On the care plan, small changes are included.</p><a class="tlink" href="../terms/#scope">How changes work <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></a></div><div class="cell sv-c sv-c--cta"><h3>Not sure what you need?</h3><p>Tell me about your business and I'll suggest the right mix, with a free mock-up.</p><a class="btn btn-white" href="../mock-up/">Get a free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a></div></div>
+    </div>
+    <details class="sv-compare" id="compare">
+      <summary>Compare the four packages <small>Pages, design, wording, Google and timings side by side</small><span class="pm" aria-hidden="true"></span></summary>
+      <div role="region" aria-label="Package comparison" tabindex="0"><table class="matrix"><caption class="sr">The four website packages compared</caption><thead><tr><td></td><th scope="col">Launch<small class="tnum">£249</small></th><th scope="col">Essential<small class="tnum">£299</small></th><th scope="col">Starter<small class="tnum">£399</small></th><th scope="col">Business<small class="tnum">£795</small></th></tr></thead><tbody><tr><th scope="row">Pages</th><td>1</td><td>Up to 5</td><td>Up to 5</td><td>Up to 8</td></tr><tr><th scope="row">Design</th><td>Template</td><td>Template</td><td>Custom</td><td>Custom</td></tr><tr><th scope="row">Wording</th><td>You provide</td><td>You provide</td><td>Written for you</td><td>Written for you</td></tr><tr><th scope="row">Search setup</th><td>Title &amp; description</td><td>Every page</td><td>Every page</td><td>Every page + service &amp; area pages</td></tr><tr><th scope="row">Google Business Profile</th><td>—<span class="sr">Not included</span></td><td>—<span class="sr">Not included</span></td><td>Check &amp; tidy-up</td><td><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg><span class="sr">Included: </span>Set up</td></tr><tr><th scope="row">Facebook &amp; Instagram set-up</th><td>—<span class="sr">Not included</span></td><td>—<span class="sr">Not included</span></td><td>—<span class="sr">Not included</span></td><td><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg><span class="sr">Included: </span>Set up</td></tr><tr><th scope="row">Rounds of changes</th><td>1</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row">Live in</th><td>about 3 days</td><td>about 5 days</td><td>about 5–7 days</td><td>7–10 days</td></tr><tr><th scope="row">Deposit</th><td>£124.50</td><td>£149.50</td><td>£199.50</td><td>£397.50</td></tr><tr><th scope="row">Hosting</th><td>£0/month</td><td>£0/month</td><td>£0/month</td><td>£0/month</td></tr></tbody></table></div>
+    </details>
+    <p class="fine sv-note">All prices are fixed and agreed in a written quote before work starts. I'm not VAT registered, so no VAT is added. Domains, email accounts, booking systems and payment providers are separate services you pay for directly, so they stay in your name. Full details in the <a href="../terms/">terms of business</a>.</p>
   </div>
 </section>
-<section class="white" aria-labelledby="detail-title">
-  <div class="wrap">
-    <div class="head"><h2 id="detail-title">Every service in detail</h2><p>What's included, who it's for, what I'll need from you, and how long it takes.</p></div>
-    <nav class="jump" aria-label="Jump to a service"><a href="#launch">Launch website</a><a href="#essential">Essential website</a><a href="#starter">Starter website</a><a href="#business">Business website</a><a href="#care">Care plan</a><a href="#refresh">Website refresh</a><a href="#gbp">Google Business Profile set-up</a><a href="#local-seo">Local search starter pack</a><a href="#logo">Logo &amp; brand kit</a><a href="#social">Social media page set-up</a><a href="#email">Domain &amp; business email</a><a href="#bookings">Bookings, payments &amp; ordering</a></nav>
-    <article class="detail" id="launch" aria-labelledby="launch-h">
-  <div class="dt-head"><span class="tag">Website packages</span><h3 id="launch-h">Launch website</h3><div class="price">£249</div></div>
-  <div class="dt-body">
-    <p class="dt-para">The quickest, most affordable way to get your business online properly. I take a ready-made template designed for your trade and fill it with your details, logo and photos, so customers can find you, see what you do and call you in one tap. It&#x27;s a single, well-organised page that works beautifully on phones.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>One page with sections for your services, about you, areas covered and contact</li><li>Free hosting set up for you, with no monthly fee</li><li>Template designed for your type of business, in your colours</li><li>Tap-to-call button and a simple enquiry form that emails you</li><li>Google map and opening hours</li><li>Basic search setup (page title and description)</li><li>1 round of changes before going live</li></ul></div>
-      <div><h4>Best for</h4><p>Sole traders and new businesses who need a professional presence fast, on a tight budget.</p><h4>You'll need to provide</h4><ul class="dots"><li>Your logo (or business name if you don&#x27;t have one)</li><li>3–8 photos</li><li>Your wording for services and contact details</li></ul><h4>Timeline</h4><p>About 3 working days once I have your deposit and content.</p></div>
+<div class="rule" aria-hidden="true"></div>
+<div id="details">
+<section class="white frame sv-sheet sv-intro" aria-labelledby="detail-title">
+  <div class="wrap"><div class="sh sh--split"><div><p class="kicker"><b>02</b>In detail</p><h2 class="h2" id="detail-title">Every service <span class="dim">in detail.</span></h2></div>
+  <p class="lead">What's included, who it's for, what I'll need from you, and how long it takes.</p></div></div>
+</section>
+<section class="white frame sv-sheet" id="launch" aria-labelledby="launch-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">Website package</span>
+      <h2 class="sv-name" id="launch-h">Launch website</h2>
+      <p class="sv-price tnum">£249</p><p class="sv-dep">£124.50 to start, the rest when you've seen it finished</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>Live in about 3 working days</span>
+      <div class="actions"><a class="btn" href="../start/?package=launch">Start with Launch<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
     </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/?package=launch">Start with Launch website</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="essential" aria-labelledby="essential-h">
-  <div class="dt-head"><span class="tag">Website packages</span><h3 id="essential-h">Essential website</h3><div class="price">£299</div></div>
-  <div class="dt-body">
-    <p class="dt-para">Everything in Launch, with room to explain what you do. You get up to five pages, such as Home, About, Services, Gallery and Contact, built from a template for your trade. It&#x27;s ideal if you offer several services and want each one explained clearly, without paying for a fully custom design.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Up to 5 pages (for example Home, About, Services, Gallery, Contact)</li><li>Free hosting set up for you, with no monthly fee</li><li>Template designed for your type of business, in your colours</li><li>Tap-to-call, enquiry form, map and opening hours</li><li>Basic search setup on every page</li><li>Links to your Facebook, Instagram and Google profile</li><li>2 rounds of changes before going live</li></ul></div>
-      <div><h4>Best for</h4><p>Small businesses with a few services who want more than a single page.</p><h4>You'll need to provide</h4><ul class="dots"><li>Your logo and 5–12 photos</li><li>Wording for each service</li><li>Contact details and areas you cover</li></ul><h4>Timeline</h4><p>About 5 working days once I have your deposit and content.</p></div>
+    <div class="sv-main">
+      <p class="sv-desc">The quickest, most affordable way to get your business online properly. I take a ready-made template designed for your trade and fill it with your details, logo and photos, so customers can find you, see what you do and call you in one tap. It&#x27;s a single, well-organised page that works beautifully on phones.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>One page with sections for your services, about you, areas covered and contact</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Free hosting set up for you, with no monthly fee</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Template designed for your type of business, in your colours</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Tap-to-call button and a simple enquiry form that emails you</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Google map and opening hours</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Basic search setup (page title and description)</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>1 round of changes before going live</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Sole traders and new businesses who need a professional presence fast, on a tight budget.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Your logo (or business name if you don&#x27;t have one)</li><li>3–8 photos</li><li>Your wording for services and contact details</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>About 3 working days once I have your deposit and content.</p></div>
+      </div>
     </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/?package=essential">Start with Essential website</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="starter" aria-labelledby="starter-h">
-  <div class="dt-head"><span class="tag">Website packages</span><h3 id="starter-h">Starter website</h3><div class="price">£399</div></div>
-  <div class="dt-body">
-    <p class="dt-para">A website designed around your brand rather than a template. I write and polish the wording for you, so you don&#x27;t have to worry about what to say, and I check your Google Business Profile so you show up properly on Google Maps. It&#x27;s a step up in look and feel for businesses that want to stand out.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Up to 5 pages with a custom design to match your brand</li><li>Free hosting set up for you, with no monthly fee</li><li>I write and polish the wording, based on a short chat with you</li><li>Google Business Profile check and tidy-up</li><li>Tap-to-call, enquiry form, map and opening hours</li><li>Search setup on every page</li><li>2 rounds of changes before going live</li></ul></div>
-      <div><h4>Best for</h4><p>Established small businesses that want a more polished, distinctive site.</p><h4>You'll need to provide</h4><ul class="dots"><li>Your logo and photos</li><li>15 minutes on the phone about your business</li><li>Access to your Google Business Profile (as a manager, never your password)</li></ul><h4>Timeline</h4><p>About 5–7 working days once I have your deposit and content.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/?package=starter">Start with Starter website</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="business" aria-labelledby="business-h">
-  <div class="dt-head"><span class="tag">Website packages</span><h3 id="business-h">Business website</h3><div class="price">£795</div></div>
-  <div class="dt-body">
-    <p class="dt-para">My most complete package, built to win more local work. As well as a custom design and professional wording, you get separate pages for your main services and the towns you cover, which helps you show up when people search for a service in their area. Your real Google reviews and a photo gallery build trust with new customers.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Up to 8 pages with a custom design</li><li>Google Business Profile set-up included (normally £75)</li><li>Facebook and Instagram page set-up included (normally £60)</li><li>Free hosting set up for you, with no monthly fee</li><li>Separate service and area pages to help local search</li><li>Photo gallery of your work</li><li>Your real Google reviews shown on the site</li><li>Visitor stats so you can see what&#x27;s working</li><li>Wording written and polished for you</li><li>2 rounds of changes before going live</li></ul></div>
-      <div><h4>Best for</h4><p>Businesses that cover several services or towns and want to grow their enquiries.</p><h4>You'll need to provide</h4><ul class="dots"><li>Your logo and 10–20 photos</li><li>A list of your services and the towns you cover</li><li>A short phone chat</li></ul><h4>Timeline</h4><p>About 7–10 working days once I have your deposit and content.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/?package=business">Start with Business website</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="care" aria-labelledby="care-h">
-  <div class="dt-head"><span class="tag">Website packages</span><h3 id="care-h">Care plan</h3><div class="price">£25/month</div></div>
-  <div class="dt-body">
-    <p class="dt-para">Optional peace of mind after your site goes live. Your hosting is free either way, so this isn&#x27;t a hosting fee: it&#x27;s me looking after your site. I look after the hosting account and security certificate, take backups and check it&#x27;s online, and you get up to 30 minutes of changes every month, so updating prices, hours or photos is just a quick message away.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Hosting account and security certificate looked after for you</li><li>Regular backups and uptime checks</li><li>Up to 30 minutes of changes each month</li><li>Changes requested through a simple online form</li><li>Cancel any time before your next payment</li></ul></div>
-      <div><h4>Best for</h4><p>Anyone who doesn&#x27;t want to think about their website once it&#x27;s live.</p><h4>You'll need to provide</h4><ul class="dots"><li>Change requests through the care plan form</li></ul><h4>Timeline</h4><p>Changes usually made within 2 working days.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/">Add this to your project</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="refresh" aria-labelledby="refresh-h">
-  <div class="dt-head"><span class="tag">More services</span><h3 id="refresh-h">Website refresh</h3><div class="price">from £295</div></div>
-  <div class="dt-body">
-    <p class="dt-para">Already have a website that&#x27;s slow, dated or hard to use on phones? I&#x27;ll rebuild it to modern standards, keeping your domain and the content that works, so customers get a better experience without you starting from scratch.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Your existing site rebuilt to be fast and mobile-friendly</li><li>Keep your domain name and existing content</li><li>Fresh, modern design</li><li>Switch-over planned so your site isn&#x27;t offline</li><li>2 rounds of changes</li></ul></div>
-      <div><h4>Best for</h4><p>Businesses with an old site that no longer reflects them.</p><h4>You'll need to provide</h4><ul class="dots"><li>Access to your current domain (we set this up together safely)</li><li>Any new photos or updates</li></ul><h4>Timeline</h4><p>Usually 5–10 working days, depending on the size of the site.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/">Add this to your project</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="gbp" aria-labelledby="gbp-h">
-  <div class="dt-head"><span class="tag">More services</span><h3 id="gbp-h">Google Business Profile set-up</h3><div class="price">£75</div></div>
-  <div class="dt-body">
-    <p class="dt-para">Your Google Business Profile is what appears on Google Maps and in local searches, and it&#x27;s often the first thing customers see. I&#x27;ll set it up or tidy it up, add your services, prices, areas and photos, and make sure it&#x27;s verified and pointing to your website.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>New profile set up, or existing profile tidied up</li><li>Services, prices, service areas and opening hours added</li><li>Photos and a clear business description</li><li>Help with verification</li><li>Linked to your website and phone</li></ul></div>
-      <div><h4>Best for</h4><p>Any local business that wants to show up on Google Maps.</p><h4>You'll need to provide</h4><ul class="dots"><li>Your business details</li><li>Photos</li><li>Access to the verification step (usually a code from Google)</li></ul><h4>Timeline</h4><p>Set-up within 2 working days. Google verification can take longer and is outside my control.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/">Add this to your project</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="local-seo" aria-labelledby="local-seo-h">
-  <div class="dt-head"><span class="tag">More services</span><h3 id="local-seo-h">Local search starter pack</h3><div class="price">£150</div></div>
-  <div class="dt-body">
-    <p class="dt-para">A head start on being found by local customers. As well as setting up your Google Business Profile, I&#x27;ll make sure your website&#x27;s pages target the services and towns people search for, list your business on trusted UK directories, and connect Google Search Console so you can see how people find you.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Google Business Profile set-up included</li><li>Pages written around your services and towns</li><li>Listings on 10 trusted UK business directories</li><li>Google Search Console connected</li><li>A short summary of what was done</li></ul></div>
-      <div><h4>Best for</h4><p>Businesses that want to be easier to find in local searches.</p><h4>You'll need to provide</h4><ul class="dots"><li>Your business details, kept consistent everywhere</li><li>Access to your website (if I didn&#x27;t build it)</li></ul><h4>Timeline</h4><p>About 1–2 weeks. Rankings take time and can&#x27;t be guaranteed.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/">Add this to your project</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="logo" aria-labelledby="logo-h">
-  <div class="dt-head"><span class="tag">More services</span><h3 id="logo-h">Logo &amp; brand kit</h3><div class="price">£120</div></div>
-  <div class="dt-body">
-    <p class="dt-para">A simple, clean logo and a set of brand basics so everything you put out looks consistent, from your website to your van to your Facebook page. You get a couple of design directions to choose from, then all the files you need.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Simple, clean logo with 2 initial ideas to choose from</li><li>Final logo in all the file types you need (web, print, social)</li><li>Your brand colours and fonts</li><li>Profile and cover images for social media</li><li>2 rounds of changes</li></ul></div>
-      <div><h4>Best for</h4><p>New businesses, or anyone without a proper logo.</p><h4>You'll need to provide</h4><ul class="dots"><li>Your business name and any ideas or examples you like</li></ul><h4>Timeline</h4><p>About 5 working days.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/">Add this to your project</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="social" aria-labelledby="social-h">
-  <div class="dt-head"><span class="tag">More services</span><h3 id="social-h">Social media page set-up</h3><div class="price">£60</div></div>
-  <div class="dt-body">
-    <p class="dt-para">Professional Facebook and Instagram business pages that match your website, with your logo, cover images, bio, contact buttons and links, so customers who find you on social media can get in touch straight away.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Facebook business page set up or tidied up</li><li>Instagram business profile</li><li>Branded profile and cover images</li><li>Bio, contact button and link to your website</li></ul></div>
-      <div><h4>Best for</h4><p>Businesses starting out on social media or with untidy pages.</p><h4>You'll need to provide</h4><ul class="dots"><li>Your logo and photos</li><li>Access as a page admin (never your personal password)</li></ul><h4>Timeline</h4><p>About 2 working days.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/">Add this to your project</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="email" aria-labelledby="email-h">
-  <div class="dt-head"><span class="tag">More services</span><h3 id="email-h">Domain &amp; business email</h3><div class="price">£40</div></div>
-  <div class="dt-body">
-    <p class="dt-para">Your own web address and a professional email like hello@yourbusiness.co.uk instead of a Gmail address. Everything is registered in your name, so you always own it, and I&#x27;ll set it up and connect it to your website.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Help choosing and registering your domain name</li><li>Business email set up with your provider</li><li>Connected to your website</li><li>Registered in your name, so you own it</li></ul></div>
-      <div><h4>Best for</h4><p>Any business that wants to look established.</p><h4>You'll need to provide</h4><ul class="dots"><li>Payment for the domain and email provider directly (usually about £10–15 a year for a .co.uk domain, plus any email plan)</li></ul><h4>Timeline</h4><p>About 1–2 working days.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/">Add this to your project</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article><article class="detail" id="bookings" aria-labelledby="bookings-h">
-  <div class="dt-head"><span class="tag">More services</span><h3 id="bookings-h">Bookings, payments &amp; ordering</h3><div class="price">from £75</div></div>
-  <div class="dt-body">
-    <p class="dt-para">Let customers book, pay or order on your website without picking up the phone. I connect the provider you choose, such as ResDiary or Fresha for bookings, Stripe or SumUp for payments, or Square or Flipdish for food orders, so it all works smoothly on your site.</p>
-    <div class="dt-cols">
-      <div><h4>What's included</h4><ul class="ticks"><li>Table or appointment booking (from £75)</li><li>Card deposits and invoice payments (from £75)</li><li>Online food ordering (from £95)</li><li>Card details always handled by the provider, never stored on your site</li><li>Cookie notice and privacy page wording included</li></ul></div>
-      <div><h4>Best for</h4><p>Restaurants, cafés, salons and trades that take bookings, deposits or orders.</p><h4>You'll need to provide</h4><ul class="dots"><li>An account with your chosen provider (you pay their fees directly)</li><li>Your booking link or embed code, never your password</li></ul><h4>Timeline</h4><p>Usually 1–3 working days.</p></div>
-    </div>
-    <p class="dt-cta"><a class="btn plain" href="../start/">Add this to your project</a> <a class="btn btn-line plain" href="../#contact">Ask a question</a></p>
-  </div>
-</article>
-    <p style="color:var(--muted);font-size:.92rem">All prices are fixed and agreed in a written quote before work starts. I'm not VAT registered, so no VAT is added. Domains, email accounts, booking systems and payment providers are separate services you pay for directly, so they stay in your name. Full details in the <a href="../terms/" style="color:var(--red)">terms of business</a>.</p>
   </div>
 </section>
-<section class="cta dark glow frame"><div class="wrap"><div><h2>Not sure what you need?</h2><p>Tell me about your business and I'll suggest the right mix, with a free mock-up.</p></div><a class="btn" href="../#contact">Get a free mock-up <span class="tile" aria-hidden="true">→</span></a></div></section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="essential" aria-labelledby="essential-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">Website package</span>
+      <h2 class="sv-name" id="essential-h">Essential website</h2>
+      <p class="sv-price tnum">£299</p><p class="sv-dep">£149.50 to start, the rest when you've seen it finished</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>About 5 working days</span>
+      <div class="actions"><a class="btn" href="../start/?package=essential">Start with Essential<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">Everything in Launch, with room to explain what you do. You get up to five pages, such as Home, About, Services, Gallery and Contact, built from a template for your trade. It&#x27;s ideal if you offer several services and want each one explained clearly, without paying for a fully custom design.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Up to 5 pages (for example Home, About, Services, Gallery, Contact)</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Free hosting set up for you, with no monthly fee</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Template designed for your type of business, in your colours</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Tap-to-call, enquiry form, map and opening hours</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Basic search setup on every page</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Links to your Facebook, Instagram and Google profile</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>2 rounds of changes before going live</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Small businesses with a few services who want more than a single page.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Your logo and 5–12 photos</li><li>Wording for each service</li><li>Contact details and areas you cover</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>About 5 working days once I have your deposit and content.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="starter" aria-labelledby="starter-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">Website package</span>
+      <h2 class="sv-name" id="starter-h">Starter website</h2>
+      <p class="sv-price tnum">£399</p><p class="sv-dep">£199.50 to start, the rest when you've seen it finished</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>About 5–7 working days</span>
+      <div class="actions"><a class="btn" href="../start/?package=starter">Start with Starter<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div><a class="tlink sv-found" href="../#founding">Founding client price £279.30 <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></a>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">A website designed around your brand rather than a template. I write and polish the wording for you, so you don&#x27;t have to worry about what to say, and I check your Google Business Profile so you show up properly on Google Maps. It&#x27;s a step up in look and feel for businesses that want to stand out.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Up to 5 pages with a custom design to match your brand</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Free hosting set up for you, with no monthly fee</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>I write and polish the wording, based on a short chat with you</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Google Business Profile check and tidy-up</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Tap-to-call, enquiry form, map and opening hours</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Search setup on every page</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>2 rounds of changes before going live</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Established small businesses that want a more polished, distinctive site.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Your logo and photos</li><li>15 minutes on the phone about your business</li><li>Access to your Google Business Profile (as a manager, never your password)</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>About 5–7 working days once I have your deposit and content.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="business" aria-labelledby="business-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">Website package</span>
+      <h2 class="sv-name" id="business-h">Business website</h2>
+      <p class="sv-price tnum">£795</p><p class="sv-dep">£397.50 to start, the rest when you've seen it finished</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>7–10 working days</span>
+      <div class="actions"><a class="btn" href="../start/?package=business">Start with Business<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div><a class="tlink sv-found" href="../#founding">Founding client price £556.50 <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></a>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">My most complete package, built to win more local work. As well as a custom design and professional wording, you get separate pages for your main services and the towns you cover, which helps you show up when people search for a service in their area. Your real Google reviews and a photo gallery build trust with new customers.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Up to 8 pages with a custom design</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Google Business Profile set-up included (normally £75)</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Facebook and Instagram page set-up included (normally £60)</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Free hosting set up for you, with no monthly fee</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Separate service and area pages to help local search</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Photo gallery of your work</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Your real Google reviews shown on the site</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Visitor stats so you can see what&#x27;s working</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Wording written and polished for you</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>2 rounds of changes before going live</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Businesses that cover several services or towns and want to grow their enquiries.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Your logo and 10–20 photos</li><li>A list of your services and the towns you cover</li><li>A short phone chat</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>About 7–10 working days once I have your deposit and content.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="care" aria-labelledby="care-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">After launch</span>
+      <h2 class="sv-name" id="care-h">Care plan</h2>
+      <p class="sv-price tnum">£25<small>/month</small></p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>Changes within 2 working days</span>
+      <div class="actions"><a class="btn" href="../start/">Add this to your project<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">Optional peace of mind after your site goes live. Your hosting is free either way, so this isn&#x27;t a hosting fee: it&#x27;s me looking after your site. I look after the hosting account and security certificate, take backups and check it&#x27;s online, and you get up to 30 minutes of changes every month, so updating prices, hours or photos is just a quick message away.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Hosting account and security certificate looked after for you</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Regular backups and uptime checks</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Up to 30 minutes of changes each month</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Changes requested through a simple online form</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Cancel any time before your next payment</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Anyone who doesn&#x27;t want to think about their website once it&#x27;s live.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Change requests through the care plan form</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>Changes usually made within 2 working days.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="refresh" aria-labelledby="refresh-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">More services</span>
+      <h2 class="sv-name" id="refresh-h">Website refresh</h2>
+      <p class="sv-price tnum"><small>from</small>£295</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>Usually 5–10 working days</span>
+      <div class="actions"><a class="btn" href="../start/">Add this to your project<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">Already have a website that&#x27;s slow, dated or hard to use on phones? I&#x27;ll rebuild it to modern standards, keeping your domain and the content that works, so customers get a better experience without you starting from scratch.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Your existing site rebuilt to be fast and mobile-friendly</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Keep your domain name and existing content</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Fresh, modern design</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Switch-over planned so your site isn&#x27;t offline</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>2 rounds of changes</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Businesses with an old site that no longer reflects them.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Access to your current domain (we set this up together safely)</li><li>Any new photos or updates</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>Usually 5–10 working days, depending on the size of the site.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="gbp" aria-labelledby="gbp-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">More services</span>
+      <h2 class="sv-name" id="gbp-h">Google Business Profile set-up</h2>
+      <p class="sv-price tnum">£75</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>Set up within 2 working days</span>
+      <div class="actions"><a class="btn" href="../start/">Add this to your project<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">Your Google Business Profile is what appears on Google Maps and in local searches, and it&#x27;s often the first thing customers see. I&#x27;ll set it up or tidy it up, add your services, prices, areas and photos, and make sure it&#x27;s verified and pointing to your website.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>New profile set up, or existing profile tidied up</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Services, prices, service areas and opening hours added</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Photos and a clear business description</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Help with verification</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Linked to your website and phone</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Any local business that wants to show up on Google Maps.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Your business details</li><li>Photos</li><li>Access to the verification step (usually a code from Google)</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>Set-up within 2 working days. Google verification can take longer and is outside my control.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="local-seo" aria-labelledby="local-seo-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">More services</span>
+      <h2 class="sv-name" id="local-seo-h">Local search starter pack</h2>
+      <p class="sv-price tnum">£150</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>About 1–2 weeks</span>
+      <div class="actions"><a class="btn" href="../start/">Add this to your project<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">A head start on being found by local customers. As well as setting up your Google Business Profile, I&#x27;ll make sure your website&#x27;s pages target the services and towns people search for, list your business on trusted UK directories, and connect Google Search Console so you can see how people find you.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Google Business Profile set-up included</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Pages written around your services and towns</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Listings on 10 trusted UK business directories</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Google Search Console connected</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>A short summary of what was done</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Businesses that want to be easier to find in local searches.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Your business details, kept consistent everywhere</li><li>Access to your website (if I didn&#x27;t build it)</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>About 1–2 weeks. Rankings take time and can&#x27;t be guaranteed.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="logo" aria-labelledby="logo-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">More services</span>
+      <h2 class="sv-name" id="logo-h">Logo &amp; brand kit</h2>
+      <p class="sv-price tnum">£120</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>About 5 working days</span>
+      <div class="actions"><a class="btn" href="../start/">Add this to your project<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">A simple, clean logo and a set of brand basics so everything you put out looks consistent, from your website to your van to your Facebook page. You get a couple of design directions to choose from, then all the files you need.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Simple, clean logo with 2 initial ideas to choose from</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Final logo in all the file types you need (web, print, social)</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Your brand colours and fonts</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Profile and cover images for social media</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>2 rounds of changes</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>New businesses, or anyone without a proper logo.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Your business name and any ideas or examples you like</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>About 5 working days.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="social" aria-labelledby="social-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">More services</span>
+      <h2 class="sv-name" id="social-h">Social media page set-up</h2>
+      <p class="sv-price tnum">£60</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>About 2 working days</span>
+      <div class="actions"><a class="btn" href="../start/">Add this to your project<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">Professional Facebook and Instagram business pages that match your website, with your logo, cover images, bio, contact buttons and links, so customers who find you on social media can get in touch straight away.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Facebook business page set up or tidied up</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Instagram business profile</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Branded profile and cover images</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Bio, contact button and link to your website</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Businesses starting out on social media or with untidy pages.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Your logo and photos</li><li>Access as a page admin (never your personal password)</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>About 2 working days.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="email" aria-labelledby="email-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">More services</span>
+      <h2 class="sv-name" id="email-h">Domain &amp; business email</h2>
+      <p class="sv-price tnum">£40</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>About 1–2 working days</span>
+      <div class="actions"><a class="btn" href="../start/">Add this to your project<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">Your own web address and a professional email like hello@yourbusiness.co.uk instead of a Gmail address. Everything is registered in your name, so you always own it, and I&#x27;ll set it up and connect it to your website.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Help choosing and registering your domain name</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Business email set up with your provider</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Connected to your website</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Registered in your name, so you own it</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Any business that wants to look established.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>Payment for the domain and email provider directly (usually about £10–15 a year for a .co.uk domain, plus any email plan)</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>About 1–2 working days.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame sv-sheet" id="bookings" aria-labelledby="bookings-h">
+  <div class="wrap sv-sheet__in">
+    <div class="sv-side">
+      <span class="tag">More services</span>
+      <h2 class="sv-name" id="bookings-h">Bookings, payments &amp; ordering</h2>
+      <p class="sv-price tnum"><small>from</small>£75</p>
+      <span class="tl__chip"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-clock"/></svg>Usually 1–3 working days</span>
+      <div class="actions"><a class="btn" href="../start/">Add this to your project<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-line" href="../mock-up/">Ask a question</a></div>
+    </div>
+    <div class="sv-main">
+      <p class="sv-desc">Let customers book, pay or order on your website without picking up the phone. I connect the provider you choose, such as ResDiary or Fresha for bookings, Stripe or SumUp for payments, or Square or Flipdish for food orders, so it all works smoothly on your site.</p>
+      <div class="sv-cols">
+        <div><h3 class="sv-sub">What's included</h3><ul class="sv-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Table or appointment booking (from £75)</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Card deposits and invoice payments (from £75)</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Online food ordering (from £95)</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Card details always handled by the provider, never stored on your site</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Cookie notice and privacy page wording included</span></li></ul></div>
+        <div><h3 class="sv-sub">Best for</h3><p>Restaurants, cafés, salons and trades that take bookings, deposits or orders.</p>
+          <h3 class="sv-sub">You'll need to provide</h3><ul class="sv-dots"><li>An account with your chosen provider (you pay their fees directly)</li><li>Your booking link or embed code, never your password</li></ul>
+          <h3 class="sv-sub">Timeline</h3><p>Usually 1–3 working days.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<section class="cta-band dark glow frame" data-callbar-hide aria-labelledby="cta-title">
+  <div class="wrap cta-band__in">
+    <div><h2 id="cta-title" class="h2">See your new website <span class="dim">before you pay a penny.</span></h2>
+    <p class="lead">Send me your business name and I&#x27;ll send you a free one-page mock-up. No obligation.</p></div>
+    <div class="actions"><a class="btn btn-lg" href="../mock-up/">Get my free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a><a class="btn btn-ghost btn-lg" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call 07395 229191</a></div>
+  </div>
+</section>
 </main>
-<footer class="site">
+<footer class="site-f" data-callbar-hide>
+  <svg class="skyline" viewBox="0 0 1440 150" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 132C60 124 110 112 160 96 205 82 232 60 262 50c14-5 22-4 30 2 6 5 6 14 14 18 10 5 24-2 38 2 26 8 52 30 84 44 34 15 76 22 120 24"/>
+    <path d="M520 138v-22h26v-10h18v14h22v-26h12v26h30v-12h24v18h40v-30l14-10 14 10v30h28v-16h30v20h36"/>
+    <g class="crane"><path d="M922 141l6-104h8l6 104M1036 141l6-104h8l6 104M910 37h160v-14H910zM932 23v-9h30v9M944 37v10h18V37M929 90h119"/><path d="M1096 141l5-88h7l5 88M1196 141l5-88h7l5 88M1086 53h140V41h-140zM1104 41v-8h26v8M1150 53v9h16v-9M1102 100h104"/></g>
+    <path d="M1150 138c40-4 90-14 150-16s100 4 140 2"/><path d="M0 141h1440"/>
+  </svg>
   <div class="wrap">
-    <div class="cols cols-4">
-      <div><a class="logo" href="../"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a><p style="margin:12px 0 0">Websites for local businesses across Belfast, Lisburn and North Down.</p></div>
-      <div><h3>Site</h3><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../start/">Start your project</a></li></ul></div>
-      <div><h3>Areas</h3><ul><li><a href="../web-design-belfast/">Web design Belfast</a></li><li><a href="../web-design-lisburn/">Web design Lisburn</a></li><li><a href="../web-design-bangor/">Web design Bangor</a></li><li><a href="../web-design-newtownards/">Web design Newtownards</a></li><li><a href="../web-design-carrickfergus/">Web design Carrickfergus</a></li><li><a href="../web-design-newtownabbey/">Web design Newtownabbey</a></li></ul></div>
-      <div><h3>Contact</h3><ul><li><a href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a></li><li><a href="../#contact">Free mock-up</a></li></ul></div>
+    <p class="site-f__signoff">Made in Belfast, <b>one site at a time.</b></p>
+    <div class="site-f__grid">
+      <div class="site-f__brand"><a class="logo" href="../"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg><span>Poots Design</span></a><p>Websites for local businesses across Belfast, Lisburn and North Down.</p><p>Sam Poots · Belfast, BT7</p></div>
+      <nav aria-labelledby="f-site"><h2 class="f-h" id="f-site">Site</h2><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../#work">Examples</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../start/">Start your project</a></li></ul></nav>
+      <nav aria-labelledby="f-areas"><h2 class="f-h" id="f-areas">Areas</h2><ul><li><a href="../web-design-belfast/">Web design Belfast</a></li><li><a href="../web-design-lisburn/">Web design Lisburn</a></li><li><a href="../web-design-bangor/">Web design Bangor</a></li><li><a href="../web-design-newtownards/">Web design Newtownards</a></li><li><a href="../web-design-carrickfergus/">Web design Carrickfergus</a></li><li><a href="../web-design-newtownabbey/">Web design Newtownabbey</a></li></ul></nav>
+      <div><h2 class="f-h">Contact</h2><ul><li><a class="tnum" href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a></li><li><a href="../mock-up/">Free mock-up</a></li><li><a href="../care/">Care plan changes</a></li></ul></div>
     </div>
-    <div class="legal"><span>Poots Design is a trading name of Sam Poots, part of Poots Group. Belfast, BT7.</span><span><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <a href="../care/">Care plan changes</a></span></div>
+    <div class="site-f__legal"><p>Poots Design is a trading name of Sam Poots, part of Poots Group. Belfast, BT7.</p><p><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <span class="no-track"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-shield"/></svg>No cookies. No tracking.</span></p></div>
   </div>
 </footer>
-<a class="btn call-fab plain" href="tel:+447395229191">📞 Call Sam: 07395 229191</a>
+<div class="callbar" data-callbar>
+  <a class="btn btn-sm" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call Sam</a>
+  <a class="btn btn-white btn-sm" href="../mock-up/">Free mock-up</a>
+</div>
 </body>
 </html>

@@ -2,157 +2,127 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Care Plan Changes — Poots Design</title>
 <meta name="description" content="Care plan clients: request changes to your website. Up to 30 minutes of changes a month included.">
-<meta name="theme-color" content="#111113">
+<meta name="theme-color" content="#0f0f12">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://sampoots.github.io/Poots.design/care/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Poots Design">
-<meta property="og:title" content="Care Plan Changes — Poots Design">
-<meta property="og:description" content="Care plan clients: request changes to your website. Up to 30 minutes of changes a month included.">
-<meta property="og:url" content="https://sampoots.github.io/Poots.design/care/">
-<meta property="og:image" content="https://sampoots.github.io/Poots.design/assets/og-image.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Poots Design"><meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Care Plan Changes — Poots Design"><meta property="og:description" content="Care plan clients: request changes to your website. Up to 30 minutes of changes a month included."><meta property="og:url" content="https://sampoots.github.io/Poots.design/care/">
+<meta property="og:image" content="https://sampoots.github.io/Poots.design/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Poots Design: websites for local businesses in Belfast">
 <meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/site.css">
-<style>
-.hero{padding:76px 0 84px}
-.hero h1{color:#fff;margin:16px 0 18px}
-.hero p.lead{color:var(--muted-dark);margin:0 0 28px}
-.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.svc .card{display:flex;flex-direction:column}
-.svc .card .tag{display:inline-block;align-self:flex-start;font-size:.72rem;font-weight:700;border-radius:6px;padding:2px 8px;background:var(--paper);border:1px solid var(--line);color:var(--muted);margin-bottom:12px}
-.svc .card h3{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
-.svc .card h3 span{color:var(--red);font-size:1rem;white-space:nowrap}
-.svc .card ul{margin:14px 0 0;padding:0;list-style:none;color:var(--text);font-size:.95rem}
-.svc .card li{padding:6px 0;border-top:1px solid var(--line);display:flex;gap:8px}
-.svc .card li::before{content:"✓";color:var(--red);font-weight:800}
-.bundle{margin-top:28px;border:1px dashed rgba(224,35,63,.5);background:rgba(224,35,63,.05);border-radius:14px;padding:18px 20px;color:#7f1d2d}
-.two{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
-.prose p{color:var(--text);margin:0 0 14px}
-.prose h2{font-size:clamp(1.5rem,2.8vw,2rem);letter-spacing:-.03em;color:var(--ink);margin:0 0 12px}
-.list{list-style:none;margin:0;padding:0}
-.list li{padding:10px 0;border-top:1px solid var(--line);display:flex;gap:10px}
-.list li::before{content:"✓";color:var(--red);font-weight:800}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.chips span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:.9rem;font-weight:500}
-.faq{max-width:820px}
-.faq details{border:1px solid var(--line);border-radius:14px;background:#fff;margin-bottom:12px}
-.faq summary{cursor:pointer;list-style:none;padding:18px 54px 18px 20px;font-weight:600;color:var(--ink);position:relative}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--red);transition:transform .25s}
-.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
-.faq details p{margin:0;padding:0 20px 18px;color:var(--muted)}
-.cta{padding:72px 0}
-.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.cta h2{margin:0;color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.035em}
-.cta p{margin:6px 0 0}
-.areas-nav{display:flex;flex-wrap:wrap;gap:8px}
-.areas-nav a{text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font-weight:600;font-size:.92rem;color:var(--ink)}
-.areas-nav a:hover{border-color:var(--red);color:var(--red)}
-.areas-nav a[aria-current]{background:var(--ink);border-color:var(--ink);color:#fff}
-@media (max-width:960px){.svc{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
-@media (max-width:640px){.svc{grid-template-columns:1fr}.hero{padding:52px 0 60px}}
-</style>
-<link rel="stylesheet" href="../assets/motion.css">
-<script src="../assets/motion.js" defer></script>
-<style>
-.doc{max-width:780px}
-.doc h2{font-size:1.35rem;letter-spacing:-.02em;color:var(--ink);margin:34px 0 8px}
-.doc h3{font-size:1.05rem;color:var(--ink);margin:20px 0 6px}
-.doc p,.doc li{color:var(--text)}
-.doc ul{padding-left:1.2em}
-.doc li{margin:4px 0}
-.doc a{color:var(--red)}
-.doc a.btn{color:#fff}
-.doc a.btn-line{color:var(--ink)}
-.summary{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:12px;padding:16px 18px;margin-bottom:8px}
-.summary p{margin:0}
-.toc ol{columns:2;column-gap:28px;padding-left:1.3em;margin:6px 0 0}
-.toc li{margin:5px 0;break-inside:avoid}
-@media (max-width:640px){.toc ol{columns:1}}
-.check{list-style:none;padding:0;margin:0}
-.check li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
-.check li:first-child{border-top:0}
-.check input{width:20px;height:20px;accent-color:var(--red);flex:none;margin-top:3px}
-.check label{cursor:pointer}
-.check small{display:block;color:var(--muted)}
-.steps-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
-.form-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
-.form-grid .full{grid-column:1/-1}
-.form-card label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px;color:var(--ink)}
-.form-card input,.form-card select,.form-card textarea{width:100%;font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
-.form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:none;border-color:var(--red);background:#fff;box-shadow:0 0 0 3px rgba(224,35,63,.15)}
-.form-card textarea{min-height:130px;resize:vertical}
-.hp{position:absolute;left:-9999px}
-.form-status{margin:12px 0 0;font-weight:600}
-.form-status.ok{color:#15803d}
-.form-status.err{color:#b91c1c}
-@media (max-width:640px){.steps-mini,.form-grid{grid-template-columns:1fr}}
-@media print{header.site,footer.site,.call-fab,.no-print{display:none!important}.hero{padding:20px 0!important;background:#fff!important;color:#000!important}.hero h1{color:#000!important}}
-</style>
+<script src="../assets/site.js" defer></script>
 <script src="../assets/form.js" defer></script>
-<style>@media(max-width:820px){section.white .wrap[style]{grid-template-columns:1fr!important}}</style></head>
-<body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sampoots.github.io/Poots.design/"},{"@type":"ListItem","position":2,"name":"Care plan changes","item":"https://sampoots.github.io/Poots.design/care/"}]}</script>
+<style>.cr-body{padding-top:clamp(40px,5vw,72px)}.cr-grid{display:grid;gap:24px 48px}.cr-grid>*{min-width:0}.cr-form .h3{margin:0 0 24px}.cr-side{display:grid;gap:16px;align-content:start}.cr-side h2{margin:0 0 18px;font-size:var(--t2);letter-spacing:-.02em}.cr-ck{display:grid;gap:12px;margin:0;padding:0;list-style:none}.cr-ck li{display:flex;gap:10px;line-height:1.45}.cr-side p{margin:0 0 12px}.cr-side .callline{margin:20px 0 0;padding-top:12px;border-top:1px solid var(--line)}@media (min-width:960px){.cr-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}}</style>
+</head>
+<body class="pg-care">
 <a class="skip" href="#main">Skip to main content</a>
-<header class="site">
-  <div class="wrap nav">
-    <a class="logo" href="../" aria-label="Poots Design home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a>
-    <nav aria-label="Main"><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../#contact">Contact</a></li></ul></nav>
-    <div class="nav-cta">
-      <a class="btn btn-white plain" href="../#contact">Free mock-up</a>
-      <a class="btn btn-ghost plain" href="tel:+447395229191">Call Sam</a>
+<header class="site-h">
+  <div class="wrap site-h__in">
+    <a class="logo" href="../"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg><span>Poots Design</span></a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="../services/">Services</a></li>
+        <li><a href="../#prices">Prices</a></li>
+        <li><a href="../#work">Examples</a></li>
+        <li><a href="../templates/">Templates</a></li>
+        <li><a href="../about/">About</a></li>
+      </ul>
+    </nav>
+    <div class="h-cta">
+      <a class="h-call" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg><span>Call<span class="h-call__num tnum"> 07395 229191</span></span></a>
+      <a class="btn btn-white btn-sm h-mock" href="../mock-up/">Free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a>
+      <a class="call-ico" href="tel:+447395229191" aria-label="Call Sam on 07395 229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg></a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-btn__bars" aria-hidden="true"><i></i><i></i></span><span class="menu-btn__label">Menu</span></button>
     </div>
   </div>
 </header>
+<div class="menu-sheet" id="site-menu" hidden>
+  <nav aria-label="Menu">
+    <ul class="menu-sheet__links">
+      <li><a href="../services/">Services <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../#prices">Prices <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../#work">Examples <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../templates/">Templates <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../about/">About <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../start/">Start your project <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+    </ul>
+  </nav>
+  <ul class="menu-sheet__pk" aria-label="Packages">
+    <li><a href="../services/#launch"><span>Launch</span><b class="tnum">£249</b></a></li>
+    <li><a href="../services/#essential"><span>Essential</span><b class="tnum">£299</b></a></li>
+    <li><a href="../services/#starter"><span>Starter</span><b class="tnum">£399</b></a></li>
+    <li><a href="../services/#business"><span>Business</span><b class="tnum">£795</b></a></li>
+  </ul>
+  <div class="menu-sheet__actions">
+    <a class="btn btn-lg btn-block" href="../mock-up/">Get my free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a>
+    <a class="btn btn-ghost btn-lg btn-block" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call 07395 229191</a>
+    <p class="menu-sheet__meta"><a href="sms:+447395229191">Text instead</a> · <a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a> · Belfast, BT7</p>
+  </div>
+</div>
 <main id="main">
-<section class="hero dark glow frame"><div class="wrap"><span class="eyebrow">Care plan</span><h1 class="display">Request a change to your site</h1><p class="lead">For care plan clients. Send your changes here and I&#x27;ll usually make them within 2 working days.</p></div></section>
-<section class="white"><div class="wrap" style="display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:start">
-<div class="form-card" data-form-box>
-  <form id="enquiry" action="https://formspree.io/f/mppqjvey" method="POST" novalidate>
+<section class="page-hero dark glow frame page-hero--compact" data-callbar-hide aria-labelledby="ph-title">
+  <div class="wrap page-hero__in">
+    <div>
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">Care plan changes</li></ol></nav>
+      <h1 id="ph-title" class="h1">Request a change to your site</h1>
+      <p class="lead">For care plan clients. Send your changes here and I'll usually make them within 2 working days.</p>
+    </div>
+  </div>
+</section>
+<section class="light frame cr-body" aria-label="Change request">
+  <div class="wrap cr-grid">
+    <div class="card cr-form">
+  <h2 class="h3">What would you like changed?</h2>
+  <form id="enquiry" class="form" data-enquiry action="https://formspree.io/f/mppqjvey" method="POST">
     <div class="form-grid">
-      <div><label for="cr-name">Your name</label><input id="cr-name" name="name" autocomplete="name" required></div>
-      <div><label for="cr-business">Business / website</label><input id="cr-business" name="business" required></div>
-      <div><label for="cr-email">Email</label><input id="cr-email" name="email" type="email" autocomplete="email" required></div>
-      <div><label for="cr-when">How urgent?</label><select id="cr-when" name="urgency"><option>Normal (within 2 working days)</option><option>Not urgent (this month)</option><option>Urgent (something is broken)</option></select></div>
-      <div class="full"><label for="cr-page">Which page? (link or name)</label><input id="cr-page" name="page" placeholder="e.g. Home page, or the Prices page"></div>
-      <div class="full"><label for="cr-msg">What should change?</label><textarea id="cr-msg" name="message" required placeholder="e.g. Change Saturday hours to 9am–1pm. Add 'Gutter cleaning' to services."></textarea></div>
+      <div class="field"><label for="cr-name">Your name <span class="req">(required)</span></label><input class="inp" id="cr-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="cr-business">Business / website <span class="req">(required)</span></label><input class="inp" id="cr-business" name="business" required></div>
+      <div class="field"><label for="cr-email">Email <span class="req">(required)</span></label><input class="inp" id="cr-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="cr-page">Which page? (link or name)</label><input class="inp" id="cr-page" name="page" placeholder="e.g. Home page, or the Prices page"></div>
+      <div class="field full"><label for="cr-when">How urgent?</label><select class="inp" id="cr-when" name="urgency"><option>Normal (within 2 working days)</option><option>Not urgent (this month)</option><option>Urgent (something is broken)</option></select></div>
+      <div class="field full"><label for="cr-msg">What should change? <span class="req">(required)</span></label><textarea class="inp" id="cr-msg" name="message" required placeholder="e.g. Change Saturday hours to 9am–1pm. Add 'Gutter cleaning' to services."></textarea></div>
       <div class="hp" aria-hidden="true"><label for="cr-gotcha">Leave this empty</label><input id="cr-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
       <input type="hidden" name="_subject" value="Care plan change request">
     </div>
-    <p style="margin:14px 0 0"><button class="btn" type="submit">Send request <span class="tile" aria-hidden="true">→</span></button></p>
+    <div><button class="btn btn-lg" type="submit">Send request<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></button></div>
     <p class="form-status" data-status role="status" aria-live="polite"></p>
-    <p style="color:var(--muted);font-size:.85rem;margin:8px 0 0">New photos? Email them to <a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a>. See the <a href="../privacy/">privacy notice</a>.</p>
+    <p class="fine">New photos? Email them to <a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a>. See the <a href="../privacy/">privacy notice</a>.</p>
   </form>
 </div>
-<div class="card">
-  <h3>What's included</h3>
-  <ul class="list">
-    <li>Up to 30 minutes of changes each month</li>
-    <li>Hosting account and security certificate looked after</li>
-    <li>Backups and uptime checks</li>
-    <li>Bigger jobs are quoted first, never added without asking</li>
-  </ul>
-  <p style="margin-top:14px">Not on the care plan? You can still use this form, and I'll quote first (small changes from £60).</p>
-</div>
-</div></section>
-
-</main>
-<footer class="site">
-  <div class="wrap">
-    <div class="cols cols-4">
-      <div><a class="logo" href="../"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a><p style="margin:12px 0 0">Websites for local businesses across Belfast, Lisburn and North Down.</p></div>
-      <div><h3>Site</h3><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../start/">Start your project</a></li></ul></div>
-      <div><h3>Areas</h3><ul><li><a href="../web-design-belfast/">Web design Belfast</a></li><li><a href="../web-design-lisburn/">Web design Lisburn</a></li><li><a href="../web-design-bangor/">Web design Bangor</a></li><li><a href="../web-design-newtownards/">Web design Newtownards</a></li><li><a href="../web-design-carrickfergus/">Web design Carrickfergus</a></li><li><a href="../web-design-newtownabbey/">Web design Newtownabbey</a></li></ul></div>
-      <div><h3>Contact</h3><ul><li><a href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a></li><li><a href="../#contact">Free mock-up</a></li></ul></div>
+    <div class="cr-side">
+      <div class="card"><h2>What's included</h2><ul class="cr-ck"><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Up to 30 minutes of changes each month</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Hosting account and security certificate looked after</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Backups and uptime checks</span></li><li><span class="ck"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Bigger jobs are quoted first, never added without asking</span></li></ul></div>
+      <div class="card"><p>Not on the care plan? You can still use this form, and I'll quote first (small changes from £60).</p><a class="tlink" href="../services/#care">Care plan details <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></a><p class="callline"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg> Prefer to talk? <a href="tel:+447395229191">Call or text <b class="tnum">07395 229191</b></a></p></div>
     </div>
-    <div class="legal"><span>Poots Design is a trading name of Sam Poots, part of Poots Group. Belfast, BT7.</span><span><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <a href="../care/">Care plan changes</a></span></div>
+  </div>
+</section>
+</main>
+<footer class="site-f" data-callbar-hide>
+  <svg class="skyline" viewBox="0 0 1440 150" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 132C60 124 110 112 160 96 205 82 232 60 262 50c14-5 22-4 30 2 6 5 6 14 14 18 10 5 24-2 38 2 26 8 52 30 84 44 34 15 76 22 120 24"/>
+    <path d="M520 138v-22h26v-10h18v14h22v-26h12v26h30v-12h24v18h40v-30l14-10 14 10v30h28v-16h30v20h36"/>
+    <g class="crane"><path d="M922 141l6-104h8l6 104M1036 141l6-104h8l6 104M910 37h160v-14H910zM932 23v-9h30v9M944 37v10h18V37M929 90h119"/><path d="M1096 141l5-88h7l5 88M1196 141l5-88h7l5 88M1086 53h140V41h-140zM1104 41v-8h26v8M1150 53v9h16v-9M1102 100h104"/></g>
+    <path d="M1150 138c40-4 90-14 150-16s100 4 140 2"/><path d="M0 141h1440"/>
+  </svg>
+  <div class="wrap">
+    <p class="site-f__signoff">Made in Belfast, <b>one site at a time.</b></p>
+    <div class="site-f__grid">
+      <div class="site-f__brand"><a class="logo" href="../"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg><span>Poots Design</span></a><p>Websites for local businesses across Belfast, Lisburn and North Down.</p><p>Sam Poots · Belfast, BT7</p></div>
+      <nav aria-labelledby="f-site"><h2 class="f-h" id="f-site">Site</h2><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../#work">Examples</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../start/">Start your project</a></li></ul></nav>
+      <nav aria-labelledby="f-areas"><h2 class="f-h" id="f-areas">Areas</h2><ul><li><a href="../web-design-belfast/">Web design Belfast</a></li><li><a href="../web-design-lisburn/">Web design Lisburn</a></li><li><a href="../web-design-bangor/">Web design Bangor</a></li><li><a href="../web-design-newtownards/">Web design Newtownards</a></li><li><a href="../web-design-carrickfergus/">Web design Carrickfergus</a></li><li><a href="../web-design-newtownabbey/">Web design Newtownabbey</a></li></ul></nav>
+      <div><h2 class="f-h">Contact</h2><ul><li><a class="tnum" href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a></li><li><a href="../mock-up/">Free mock-up</a></li><li><a href="../care/">Care plan changes</a></li></ul></div>
+    </div>
+    <div class="site-f__legal"><p>Poots Design is a trading name of Sam Poots, part of Poots Group. Belfast, BT7.</p><p><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <span class="no-track"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-shield"/></svg>No cookies. No tracking.</span></p></div>
   </div>
 </footer>
-<a class="btn call-fab plain" href="tel:+447395229191">📞 Call Sam: 07395 229191</a>
+<div class="callbar" data-callbar>
+  <a class="btn btn-sm" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call Sam</a>
+  <a class="btn btn-white btn-sm" href="../mock-up/">Free mock-up</a>
+</div>
 </body>
 </html>

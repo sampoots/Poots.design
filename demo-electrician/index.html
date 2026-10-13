@@ -17,7 +17,13 @@ html{scroll-behavior:smooth}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
 a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-.demo-bar{background:#fff4d6;color:#5a4100;font-size:.875rem;text-align:center;padding:8px 16px;border-bottom:1px solid #f0d58a}
+.demo-bar{position:relative;z-index:20;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0 6px;min-height:44px;background:#fff4d6;color:#5a4100;font:400 .85rem/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;text-align:center;padding:4px 16px;border-bottom:1px solid #f0d58a}
+.demo-bar a{display:inline-block;padding:10px 2px;color:#5a4100;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.demo-bar a:hover{text-decoration-thickness:2px}
+.demo-bar a:focus-visible{outline:2px solid #5a4100;outline-offset:1px}
+@media (min-width:1200px){.demo-bar{position:sticky;top:0;height:44px;padding-block:0;flex-wrap:nowrap;white-space:nowrap}.demo-bar a{padding-block:11px}}
+.skip{position:fixed;left:12px;top:12px;z-index:100;padding:12px 18px;border-radius:10px;background:#fff;color:#111;font:600 1rem system-ui,sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3);transform:translateY(-200%)}
+.skip:focus{transform:none;outline:3px solid #5a4100;outline-offset:2px}
 header{background:var(--navy);color:var(--white);position:sticky;top:0;z-index:10}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;text-decoration:none;letter-spacing:.2px}
@@ -98,6 +104,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .methods span{font-size:.75rem;font-weight:700;border:1px solid var(--line);border-radius:6px;padding:3px 8px;color:var(--muted)}
 .dep-msg{font-size:.85rem;color:var(--muted);margin:12px 0 0}
 @media (max-width:900px){.dep{grid-template-columns:1fr}}
+@media (min-width:1200px){header{top:44px}}
 </style>
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/motion.css">
@@ -105,7 +112,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </head>
 <body>
 
-<div class="demo-bar" role="note"><strong>Design sample.</strong> Volthaven Electrical is a fictional business. Phone numbers, details and reviews are placeholders.</div>
+<a class="skip" href="#top">Skip to main content</a>
+<div class="demo-bar" role="note"><span><strong>Design sample by Poots Design.</strong> Volthaven Electrical is a fictional business. Phone numbers, details and reviews are placeholders.</span><span><a href="../">Back to Poots Design</a> · <a href="../mock-up/">Get a site like this</a></span></div>
 
 <header>
   <div class="wrap nav">

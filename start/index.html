@@ -2,232 +2,188 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Start Your Project — Poots Design</title>
 <meta name="description" content="Start your website with Poots Design: pick a package, gather your details with the checklist, and send them online or by email.">
-<meta name="theme-color" content="#111113">
+<meta name="theme-color" content="#0f0f12">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://sampoots.github.io/Poots.design/start/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Poots Design">
-<meta property="og:title" content="Start Your Project — Poots Design">
-<meta property="og:description" content="Start your website with Poots Design: pick a package, gather your details with the checklist, and send them online or by email.">
-<meta property="og:url" content="https://sampoots.github.io/Poots.design/start/">
-<meta property="og:image" content="https://sampoots.github.io/Poots.design/assets/og-image.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Poots Design"><meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Start Your Project — Poots Design"><meta property="og:description" content="Start your website with Poots Design: pick a package, gather your details with the checklist, and send them online or by email."><meta property="og:url" content="https://sampoots.github.io/Poots.design/start/">
+<meta property="og:image" content="https://sampoots.github.io/Poots.design/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Poots Design: websites for local businesses in Belfast">
 <meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/site.css">
-<style>
-.hero{padding:76px 0 84px}
-.hero h1{color:#fff;margin:16px 0 18px}
-.hero p.lead{color:var(--muted-dark);margin:0 0 28px}
-.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.svc .card{display:flex;flex-direction:column}
-.svc .card .tag{display:inline-block;align-self:flex-start;font-size:.72rem;font-weight:700;border-radius:6px;padding:2px 8px;background:var(--paper);border:1px solid var(--line);color:var(--muted);margin-bottom:12px}
-.svc .card h3{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
-.svc .card h3 span{color:var(--red);font-size:1rem;white-space:nowrap}
-.svc .card ul{margin:14px 0 0;padding:0;list-style:none;color:var(--text);font-size:.95rem}
-.svc .card li{padding:6px 0;border-top:1px solid var(--line);display:flex;gap:8px}
-.svc .card li::before{content:"✓";color:var(--red);font-weight:800}
-.bundle{margin-top:28px;border:1px dashed rgba(224,35,63,.5);background:rgba(224,35,63,.05);border-radius:14px;padding:18px 20px;color:#7f1d2d}
-.two{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
-.prose p{color:var(--text);margin:0 0 14px}
-.prose h2{font-size:clamp(1.5rem,2.8vw,2rem);letter-spacing:-.03em;color:var(--ink);margin:0 0 12px}
-.list{list-style:none;margin:0;padding:0}
-.list li{padding:10px 0;border-top:1px solid var(--line);display:flex;gap:10px}
-.list li::before{content:"✓";color:var(--red);font-weight:800}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.chips span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:.9rem;font-weight:500}
-.faq{max-width:820px}
-.faq details{border:1px solid var(--line);border-radius:14px;background:#fff;margin-bottom:12px}
-.faq summary{cursor:pointer;list-style:none;padding:18px 54px 18px 20px;font-weight:600;color:var(--ink);position:relative}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--red);transition:transform .25s}
-.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
-.faq details p{margin:0;padding:0 20px 18px;color:var(--muted)}
-.cta{padding:72px 0}
-.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.cta h2{margin:0;color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.035em}
-.cta p{margin:6px 0 0}
-.areas-nav{display:flex;flex-wrap:wrap;gap:8px}
-.areas-nav a{text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font-weight:600;font-size:.92rem;color:var(--ink)}
-.areas-nav a:hover{border-color:var(--red);color:var(--red)}
-.areas-nav a[aria-current]{background:var(--ink);border-color:var(--ink);color:#fff}
-@media (max-width:960px){.svc{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
-@media (max-width:640px){.svc{grid-template-columns:1fr}.hero{padding:52px 0 60px}}
-</style>
-<link rel="stylesheet" href="../assets/motion.css">
-<script src="../assets/motion.js" defer></script>
-<style>
-.doc{max-width:780px}
-.doc h2{font-size:1.35rem;letter-spacing:-.02em;color:var(--ink);margin:34px 0 8px}
-.doc h3{font-size:1.05rem;color:var(--ink);margin:20px 0 6px}
-.doc p,.doc li{color:var(--text)}
-.doc ul{padding-left:1.2em}
-.doc li{margin:4px 0}
-.doc a{color:var(--red)}
-.doc a.btn{color:#fff}
-.doc a.btn-line{color:var(--ink)}
-.summary{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:12px;padding:16px 18px;margin-bottom:8px}
-.summary p{margin:0}
-.toc ol{columns:2;column-gap:28px;padding-left:1.3em;margin:6px 0 0}
-.toc li{margin:5px 0;break-inside:avoid}
-@media (max-width:640px){.toc ol{columns:1}}
-.check{list-style:none;padding:0;margin:0}
-.check li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
-.check li:first-child{border-top:0}
-.check input{width:20px;height:20px;accent-color:var(--red);flex:none;margin-top:3px}
-.check label{cursor:pointer}
-.check small{display:block;color:var(--muted)}
-.steps-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
-.form-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
-.form-grid .full{grid-column:1/-1}
-.form-card label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px;color:var(--ink)}
-.form-card input,.form-card select,.form-card textarea{width:100%;font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
-.form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:none;border-color:var(--red);background:#fff;box-shadow:0 0 0 3px rgba(224,35,63,.15)}
-.form-card textarea{min-height:130px;resize:vertical}
-.hp{position:absolute;left:-9999px}
-.form-status{margin:12px 0 0;font-weight:600}
-.form-status.ok{color:#15803d}
-.form-status.err{color:#b91c1c}
-@media (max-width:640px){.steps-mini,.form-grid{grid-template-columns:1fr}}
-@media print{header.site,footer.site,.call-fab,.no-print{display:none!important}.hero{padding:20px 0!important;background:#fff!important;color:#000!important}.hero h1{color:#000!important}}
-</style><style>
-.start-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 8px;padding:0;list-style:none;counter-reset:s}
-.start-steps li{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:.95rem;color:var(--text)}
-.start-steps li strong{display:block;color:var(--ink)}
-.start-steps a{display:block;min-height:44px;text-decoration:none;color:inherit}
-.help{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;background:#fff7f8;border:1px solid rgba(224,35,63,.25);border-radius:12px;padding:14px 16px;margin:18px 0 0}
-.help p{margin:0;flex:1 1 260px}
-.step-h{display:flex;align-items:center;gap:12px;scroll-margin-top:90px}
-.step-h .num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;font-size:1rem;flex:none}
-.pkgs{border:0;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
-.pkgs legend{font-weight:600;color:var(--ink);margin-bottom:10px;padding:0}
-.pkg{position:relative;display:flex;gap:12px;align-items:flex-start;min-height:44px;border:2px solid var(--line);border-radius:14px;padding:14px;background:#fff;cursor:pointer}
-.pkg:has(input:checked){border-color:var(--red);background:#fff7f8}
-.pkg:has(input:focus-visible){outline:3px solid var(--red);outline-offset:2px}
-.pkg input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--red);flex:none}
-.pkg-body strong{display:block;color:var(--ink);font-size:1.05rem}
-.pkg-price{display:block;color:var(--red-dark,#b5162e);font-weight:700}
-.pkg-body small{display:block;color:var(--muted);font-size:.9rem;margin-top:2px}
-.pkg-info{margin-top:14px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
-.pkg-info p{margin:0}
-.progress{position:sticky;top:72px;z-index:2;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0 6px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
-.progress p{margin:0;font-weight:600;color:var(--ink)}
-.bar{flex:1 1 160px;height:10px;background:var(--paper);border:1px solid var(--line);border-radius:999px;overflow:hidden}
-.bar span{display:block;height:100%;width:0;background:var(--red);transition:width .3s}
-.linkish{background:none;border:0;padding:10px 4px;min-height:44px;font:inherit;color:var(--red-dark,#b5162e);text-decoration:underline;cursor:pointer}
-.check-group{border:0;padding:0;margin:18px 0 0}
-.check-group legend{font-weight:700;color:var(--ink);font-size:1.05rem;padding:0;margin-bottom:4px}
-.check li{min-height:44px;align-items:flex-start}
-.check input{width:24px;height:24px;margin-top:2px}
-.check label{flex:1;padding:2px 0}
-.ways{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0 18px}
-.ways .card p{margin:6px 0 0}
-.req{color:var(--muted);font-weight:400;font-size:.85rem}
-.form-card .hint{display:block;font-weight:400;color:var(--muted);font-size:.85rem;margin:-2px 0 6px}
-.form-card input,.form-card select,.form-card textarea{min-height:48px;font-size:1rem}
-.form-card .agree{display:flex;gap:12px;align-items:flex-start;font-weight:400}
-.form-card .agree input{width:24px;height:24px;min-height:0;flex:none;margin-top:2px;accent-color:var(--red)}
-.next{counter-reset:n;list-style:none;padding:0}
-.next li{counter-increment:n;position:relative;padding:8px 0 8px 40px}
-.next li::before{content:counter(n);position:absolute;left:0;top:6px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:.85rem;font-weight:700}
-@media (max-width:760px){.start-steps,.ways{grid-template-columns:1fr 1fr}.progress{top:64px}}
-@media (max-width:480px){.start-steps,.ways{grid-template-columns:1fr}}
-@media print{.progress{position:static}.pkgs,.pkg-info,#send{display:none!important}}
-</style>
+<script src="../assets/site.js" defer></script>
 <script src="../assets/form.js" defer></script>
-<script src="../assets/start.js" defer></script></head>
-<body>
+<script src="../assets/start.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sampoots.github.io/Poots.design/"},{"@type":"ListItem","position":2,"name":"Start your project","item":"https://sampoots.github.io/Poots.design/start/"}]}</script>
+<style>html:has(.st-stepper){scroll-padding-top:136px}.st-stepper{position:sticky;top:var(--header);z-index:40;background:#fff;border-bottom:1px solid var(--ll);--focus:var(--red)}.st-stepper ol{display:flex;align-items:center;gap:8px;height:56px;margin:0;padding:0;list-style:none}.st-stepper li{display:flex;align-items:center;gap:8px}.st-stepper li+li::before{content:"";width:clamp(16px,4vw,56px);height:1px;background:var(--ll2)}.st-stepper a{display:inline-flex;align-items:center;gap:10px;min-height:44px;color:var(--fl3);font-size:14.4px;font-weight:550;text-decoration:none;white-space:nowrap}.st-stepper a:hover,.st-stepper a[aria-current]{color:var(--fl1)}.st-stepper a[aria-current]{font-weight:650}.st-dot{display:inline-grid;place-items:center;flex:none;width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;font:600 12px/1 var(--mono)}.st-stepper a:not([aria-current]) .st-dot{background:#fff;color:var(--red-text);box-shadow:inset 0 0 0 1.5px var(--red)}.st-stepper [aria-current] .st-dot{box-shadow:0 0 0 4px var(--red-a16)}@media (max-width:640px){.st-stepper a:not([aria-current]) .st-lbl{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}}.st-body{padding-top:clamp(40px,5vw,72px)}.st-grid{display:grid;gap:40px}.st-grid>*{min-width:0}.st-h{display:flex;align-items:center;gap:14px;margin:0 0 12px;font-size:var(--t3);font-weight:600;letter-spacing:-.035em;line-height:1.1}.st-h .st-dot{width:36px;height:36px;font-size:14px}.st-step>p{margin:0 0 24px;max-width:60ch}.st-step a:not([class]){color:var(--accent-text)}.st-pk legend{margin-bottom:14px}.st-pkg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.st-pr{font-size:1.25rem;font-weight:650;color:var(--red-text)}.st-unsure{grid-column:1/-1;flex-flow:row wrap;align-items:baseline;column-gap:12px;padding-block:14px}.st-found{margin-top:12px}.st-found+.fine{margin:0 0 0 34px}.st-prog{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding-bottom:20px;border-bottom:1px solid var(--ll)}.st-prog p{margin:0;font-weight:600;color:var(--ink)}.st-bar{flex:1 1 160px;height:8px;border-radius:9px;background:var(--p3);overflow:hidden}.st-bar span{display:block;height:100%;background:var(--red);transform-origin:0;transform:scaleX(var(--p,0));transition:transform var(--d3)}.st-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:8px 40px;padding-top:12px}.st-group h3{margin:16px 0 2px;font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.st-group ul{margin:0;padding:0;list-style:none}.st-group small{display:block;color:var(--muted);font-size:13.6px}.st-ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin:0 0 20px}.st-ways h3{margin:0 0 4px;font-size:16px}.st-ways p{margin:0;font-size:15px}.st-more{border-block:1px solid var(--ll)}.st-more>summary{position:relative;padding:18px 48px 18px 0;list-style:none;cursor:pointer;font-weight:600;color:var(--ink)}.st-more>summary::-webkit-details-marker{display:none}.st-more summary span{font-weight:400;color:var(--muted)}.st-more .form-grid{padding:4px 0 24px}.st-pw{display:flex;gap:10px;margin:0;font-size:15px}.st-pw .ico{margin-top:2px;color:var(--red-text)}.st-sum{display:grid;gap:16px;background:radial-gradient(80% 50% at 100% 0,rgba(224,35,63,.3),transparent),var(--n1)}.st-sum p{margin:0}.st-sum__name{font-size:var(--t3);font-weight:600;letter-spacing:-.035em;line-height:1.1;color:#fff}.st-sum dl{display:grid;gap:10px;margin:16px 0}.st-sum dl div{display:flex;justify-content:space-between;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--ld)}.st-sum dt{white-space:nowrap}.st-sum dd{margin:0;font-weight:600;color:#fff;text-align:right}.st-sum__note{font-size:14.4px}@media (min-width:1024px){.st-grid{grid-template-columns:minmax(0,8fr) minmax(0,4fr);column-gap:56px}.st-step{grid-column:1}.st-side{grid-column:2;grid-row:1/span 3}.st-sum{position:sticky;top:144px}}@media (max-width:480px){.st-pkg{grid-template-columns:minmax(0,1fr)}}</style>
+</head>
+<body class="pg-start">
 <a class="skip" href="#main">Skip to main content</a>
-<header class="site">
-  <div class="wrap nav">
-    <a class="logo" href="../" aria-label="Poots Design home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a>
-    <nav aria-label="Main"><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../#contact">Contact</a></li></ul></nav>
-    <div class="nav-cta">
-      <a class="btn btn-white plain" href="../#contact">Free mock-up</a>
-      <a class="btn btn-ghost plain" href="tel:+447395229191">Call Sam</a>
+<header class="site-h">
+  <div class="wrap site-h__in">
+    <a class="logo" href="../"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg><span>Poots Design</span></a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="../services/">Services</a></li>
+        <li><a href="../#prices">Prices</a></li>
+        <li><a href="../#work">Examples</a></li>
+        <li><a href="../templates/">Templates</a></li>
+        <li><a href="../about/">About</a></li>
+      </ul>
+    </nav>
+    <div class="h-cta">
+      <a class="h-call" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg><span>Call<span class="h-call__num tnum"> 07395 229191</span></span></a>
+      <a class="btn btn-white btn-sm h-mock" href="../mock-up/">Free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a>
+      <a class="call-ico" href="tel:+447395229191" aria-label="Call Sam on 07395 229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg></a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-btn__bars" aria-hidden="true"><i></i><i></i></span><span class="menu-btn__label">Menu</span></button>
     </div>
   </div>
 </header>
-<main id="main">
-<section class="hero dark glow frame"><div class="wrap"><span class="eyebrow">Start your project</span><h1 class="display">Let&#x27;s get your website started</h1><p class="lead">Three simple steps: pick a package, gather your details, and send them over. Take your time. Your ticks are saved on this device, so you can come back later.</p></div></section>
-<section class="white"><div class="wrap doc" style="max-width:860px">
-<ol class="start-steps no-print">
-  <li><a href="#step-1"><strong>1. Pick a package</strong>Or choose "Not sure yet".</a></li>
-  <li><a href="#step-2"><strong>2. Gather your details</strong>Use the checklist.</a></li>
-  <li><a href="#step-3"><strong>3. Send them to me</strong>Online form or email.</a></li>
-  <li><strong>4. I build your site</strong>Once your deposit is paid.</li>
-</ol>
-<div class="help no-print"><p><strong>Prefer to talk?</strong> Call or text Sam and we can go through it together over the phone. It usually takes about 15 minutes.</p><a class="btn plain" href="tel:+447395229191">Call 07395 229191</a></div>
-
-<h2 class="step-h" id="step-1"><span class="num" aria-hidden="true">1</span>Pick a package</h2>
-<p>Each package has a fixed price. You pay a 50% deposit to start and the rest before your site goes live. Full details are on the <a href="../services/">services page</a>.</p>
-<fieldset class="pkgs"><legend>Which package would you like?</legend><label class="pkg"><input type="radio" name="package" value="launch" form="enquiry" data-name="Launch" data-price="£249" data-deposit="£124.50" data-photos="3–8 photos" data-time="about 3 working days"><span class="pkg-body"><strong>Launch</strong><span class="pkg-price">£249</span><small>One page from a template for your trade</small></span></label><label class="pkg"><input type="radio" name="package" value="essential" form="enquiry" data-name="Essential" data-price="£299" data-deposit="£149.50" data-photos="5–12 photos" data-time="about 5 working days"><span class="pkg-body"><strong>Essential</strong><span class="pkg-price">£299</span><small>Up to 5 pages from a template</small></span></label><label class="pkg"><input type="radio" name="package" value="starter" form="enquiry" data-name="Starter" data-price="£399" data-deposit="£199.50" data-photos="a handful of good photos" data-time="about 5–7 working days"><span class="pkg-body"><strong>Starter</strong><span class="pkg-price">£399</span><small>Up to 5 pages, custom design, wording written for you</small></span></label><label class="pkg"><input type="radio" name="package" value="business" form="enquiry" data-name="Business" data-price="£795" data-deposit="£397.50" data-photos="10–20 photos" data-time="about 7–10 working days"><span class="pkg-body"><strong>Business</strong><span class="pkg-price">£795</span><small>Up to 8 pages, plus Google and social set-up</small></span></label><label class="pkg"><input type="radio" name="package" value="unsure" form="enquiry" data-name="Not sure yet" data-price="" data-deposit="" data-photos="" data-time="" checked><span class="pkg-body"><strong>Not sure yet</strong><small>I&#x27;ll recommend the right one, with no obligation</small></span></label></fieldset>
-<div class="pkg-info" id="pkg-info" aria-live="polite"><p>Not sure? That's fine. Send your details and I'll recommend the right package, with a fixed quote and no obligation.</p></div>
-
-<h2 class="step-h" id="step-2"><span class="num" aria-hidden="true">2</span>Gather your details</h2>
-<p>Tick things off as you get them ready. You don't need everything before you get in touch: send what you have and I'll help with the rest.</p>
-<div class="progress"><p id="progress-text" aria-live="polite">0 of 13 ready</p><div class="bar" aria-hidden="true"><span id="progress-bar"></span></div><button class="linkish no-print" type="button" id="clear-ticks">Clear ticks</button></div>
-<fieldset class="check-group"><legend>About your business</legend><ul class="check"><li><input type="checkbox" id="c1" data-tick><label for="c1"><strong>Business name and what you do</strong><small>One or two sentences is plenty.</small></label></li><li><input type="checkbox" id="c2" data-tick><label for="c2"><strong>Your trade and the towns you cover</strong><small>For example &quot;Roofer: Bangor, Holywood and Newtownards&quot;.</small></label></li></ul></fieldset><fieldset class="check-group"><legend>Services and prices</legend><ul class="check"><li><input type="checkbox" id="c3" data-tick><label for="c3"><strong>Your main services (up to 6)</strong><small>With prices or &quot;from&quot; prices if you&#x27;re happy to show them.</small></label></li><li><input type="checkbox" id="c4" data-tick><label for="c4"><strong>What makes you different</strong><small>Only true points, like &quot;family-run since 2010&quot; or &quot;fully insured&quot;.</small></label></li></ul></fieldset><fieldset class="check-group"><legend>Logo and photos</legend><ul class="check"><li><input type="checkbox" id="c5" data-tick><label for="c5"><strong>Your logo</strong><small>Any format. No logo? I can make one (Logo &amp; brand kit, £120).</small></label></li><li><input type="checkbox" id="c6" data-tick><label for="c6"><strong>Photos of your work, premises or team</strong><small>Photos you took or have permission to use. Phone photos are fine.</small></label></li></ul></fieldset><fieldset class="check-group"><legend>Contact details</legend><ul class="check"><li><input type="checkbox" id="c7" data-tick><label for="c7"><strong>Phone, email and opening hours</strong><small>Whatever customers should use.</small></label></li><li><input type="checkbox" id="c8" data-tick><label for="c8"><strong>Your address, if customers visit you</strong><small>If you go to your customers, you can leave this off.</small></label></li></ul></fieldset><fieldset class="check-group"><legend>Online accounts</legend><ul class="check"><li><input type="checkbox" id="c9" data-tick><label for="c9"><strong>Do you already own a web address (domain)?</strong><small>Just tell me who it&#x27;s with. Never send passwords.</small></label></li><li><input type="checkbox" id="c10" data-tick><label for="c10"><strong>Google Business Profile</strong><small>If you have one, add infopootsdesign@gmail.com as a Manager in the profile settings.</small></label></li><li><input type="checkbox" id="c11" data-tick><label for="c11"><strong>Facebook and Instagram links</strong><small>So your site can link to them.</small></label></li></ul></fieldset><fieldset class="check-group"><legend>Extras, if you ordered them</legend><ul class="check"><li><input type="checkbox" id="c12" data-tick><label for="c12"><strong>Booking, ordering or payment provider</strong><small>For example ResDiary, Fresha, Square or Stripe. I need the booking link, not your password.</small></label></li><li><input type="checkbox" id="c13" data-tick><label for="c13"><strong>Menu, price list or timetable</strong><small>A photo of a printed menu is fine.</small></label></li></ul></fieldset>
-
-<h2 class="step-h" id="step-3"><span class="num" aria-hidden="true">3</span>Send them to me</h2>
-<div class="ways no-print">
-  <div class="card"><h3>Online form (easiest)</h3><p>Fill in the form below. Share photos using a Google Drive, OneDrive, Dropbox or WeTransfer link.</p></div>
-  <div class="card"><h3>Email</h3><p>Send everything to <a href="mailto:infopootsdesign@gmail.com?subject=Website%20content">infopootsdesign@gmail.com</a> with the subject "Website content". Attachments are fine.</p></div>
+<div class="menu-sheet" id="site-menu" hidden>
+  <nav aria-label="Menu">
+    <ul class="menu-sheet__links">
+      <li><a href="../services/">Services <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../#prices">Prices <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../#work">Examples <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../templates/">Templates <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../about/">About <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+      <li><a href="../start/" aria-current="page">Start your project <svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-chevron-right"/></svg></a></li>
+    </ul>
+  </nav>
+  <ul class="menu-sheet__pk" aria-label="Packages">
+    <li><a href="../services/#launch"><span>Launch</span><b class="tnum">£249</b></a></li>
+    <li><a href="../services/#essential"><span>Essential</span><b class="tnum">£299</b></a></li>
+    <li><a href="../services/#starter"><span>Starter</span><b class="tnum">£399</b></a></li>
+    <li><a href="../services/#business"><span>Business</span><b class="tnum">£795</b></a></li>
+  </ul>
+  <div class="menu-sheet__actions">
+    <a class="btn btn-lg btn-block" href="../mock-up/">Get my free mock-up<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a>
+    <a class="btn btn-ghost btn-lg btn-block" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call 07395 229191</a>
+    <p class="menu-sheet__meta"><a href="sms:+447395229191">Text instead</a> · <a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a> · Belfast, BT7</p>
+  </div>
 </div>
-<div class="form-card" id="send" data-form-box>
-  <form id="enquiry" action="https://formspree.io/f/mppqjvey" method="POST" novalidate>
-    <p style="margin:0 0 10px;color:var(--muted)">Fields marked <span class="req">(required)</span> must be filled in. Everything else is optional.</p>
-    <div class="form-grid">
-      <div><label for="sp-name">Your name <span class="req">(required)</span></label><input id="sp-name" name="name" autocomplete="name" required></div>
-      <div><label for="sp-business">Business name <span class="req">(required)</span></label><input id="sp-business" name="business" autocomplete="organization" required></div>
-      <div><label for="sp-email">Email <span class="req">(required)</span></label><input id="sp-email" name="email" type="email" autocomplete="email" required></div>
-      <div><label for="sp-phone">Phone</label><input id="sp-phone" name="phone" type="tel" autocomplete="tel"></div>
-      <div class="full"><label for="sp-what">What does your business do? <span class="req">(required)</span></label><textarea id="sp-what" name="about" required placeholder="For example: Electrician covering Bangor and Newtownards. Domestic rewires, fuse boards and EV chargers."></textarea></div>
-      <div class="full"><label for="sp-services">Your main services and prices</label><span class="hint" id="sp-services-hint">One per line. "From" prices are fine.</span><textarea id="sp-services" name="services" aria-describedby="sp-services-hint"></textarea></div>
-      <div><label for="sp-areas">Towns or areas you cover</label><input id="sp-areas" name="areas"></div>
-      <div><label for="sp-hours">Opening hours</label><input id="sp-hours" name="hours"></div>
-      <div class="full"><label for="sp-different">What makes you different?</label><span class="hint" id="sp-different-hint">Only true points, like years trading, qualifications or guarantees.</span><textarea id="sp-different" name="different" aria-describedby="sp-different-hint" style="min-height:90px"></textarea></div>
-      <div class="full"><label for="sp-photos">Link to your logo and photos</label><span class="hint" id="sp-photos-hint">A shared Google Drive, OneDrive, Dropbox or WeTransfer link. Or email them instead.</span><input id="sp-photos" name="photos_link" inputmode="url" aria-describedby="sp-photos-hint"></div>
-      <div><label for="sp-domain">Do you have a web address (domain)?</label><select id="sp-domain" name="domain"><option>No, I need one</option><option>Yes, I have one</option><option>Not sure</option></select></div>
-      <div><label for="sp-gbp">Do you have a Google Business Profile?</label><select id="sp-gbp" name="google_profile"><option>Not sure</option><option>Yes</option><option>No</option></select></div>
-      <div class="full"><label for="sp-contact">How should I contact you?</label><select id="sp-contact" name="contact_by"><option>Email</option><option>Phone call</option><option>Text message</option></select></div>
-      <div class="full"><label for="sp-msg">Anything else?</label><textarea id="sp-msg" name="message" style="min-height:90px" placeholder="Extras you'd like (logo, Google profile set-up, business email...), websites you like, colours, deadlines, questions..."></textarea></div>
-      <div class="full"><label class="agree" for="sp-agree"><input type="checkbox" id="sp-agree" name="agreed_terms" value="Yes" required><span>I've read the <a href="../terms/">terms of business</a> and <a href="../privacy/">privacy notice</a>, and I have the right to use the photos and content I'm sending. <span class="req">(required)</span></span></label></div>
-      <div class="hp" aria-hidden="true"><label for="sp-gotcha">Leave this empty</label><input id="sp-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
-      <input type="hidden" name="_subject" value="New project details">
+<main id="main">
+<section class="page-hero dark glow frame page-hero--compact" data-callbar-hide aria-labelledby="ph-title">
+  <div class="wrap page-hero__in">
+    <div>
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">Start your project</li></ol></nav>
+      <h1 id="ph-title" class="h1">Let's get your website started.</h1>
+      <p class="lead">Three simple steps: pick a package, gather your details, and send them over. Take your time. Your ticks are saved on this device, so you can come back later.</p>
+      <p class="callline"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg> Prefer to talk? <a href="tel:+447395229191">Call or text <b class="tnum">07395 229191</b></a></p>
     </div>
-    <p style="margin:16px 0 0"><button class="btn" type="submit">Send my details <span class="tile" aria-hidden="true">→</span></button></p>
+  </div>
+</section>
+<nav class="st-stepper no-print" aria-label="Steps"><div class="wrap"><ol><li><a href="#step-1" aria-current="step"><span class="st-dot" aria-hidden="true">1</span><span class="st-lbl">Pick a package</span></a></li><li><a href="#step-2"><span class="st-dot" aria-hidden="true">2</span><span class="st-lbl">Gather your details</span></a></li><li><a href="#step-3"><span class="st-dot" aria-hidden="true">3</span><span class="st-lbl">Send them</span></a></li></ol></div></nav>
+<section class="light frame st-body" aria-label="Start your project">
+  <div class="wrap st-grid">
+    <div class="st-step no-print" id="step-1">
+      <h2 class="st-h"><span class="st-dot" aria-hidden="true">1</span>Pick a package</h2>
+      <p>Each package has a fixed price. You pay a 50% deposit to start and the rest when I show you your finished site, before it goes live. Full details are on the <a href="../services/">services page</a>.</p>
+      <fieldset class="field st-pk"><legend>Which package would you like?</legend><div class="st-pkg"><label class="radio-card"><input type="radio" name="package" value="launch" form="enquiry" required data-name="Launch" data-price="£249" data-deposit="£124.50" data-photos="3–8 photos" data-time="about 3 working days"><b>Launch</b><span class="st-pr tnum">£249</span><small>One page from a template for your trade</small></label><label class="radio-card"><input type="radio" name="package" value="essential" form="enquiry" required data-name="Essential" data-price="£299" data-deposit="£149.50" data-photos="5–12 photos" data-time="about 5 working days"><b>Essential</b><span class="st-pr tnum">£299</span><small>Up to 5 pages from a template</small></label><label class="radio-card"><input type="radio" name="package" value="starter" form="enquiry" required data-name="Starter" data-price="£399" data-deposit="£199.50" data-photos="a handful of good photos" data-time="about 5–7 working days"><b>Starter</b><span class="st-pr tnum">£399</span><small>Up to 5 pages, custom design, wording written for you</small></label><label class="radio-card"><input type="radio" name="package" value="business" form="enquiry" required data-name="Business" data-price="£795" data-deposit="£397.50" data-photos="10–20 photos" data-time="about 7–10 working days"><b>Business</b><span class="st-pr tnum">£795</span><small>Up to 8 pages, plus Google and social set-up</small></label><label class="radio-card st-unsure"><input type="radio" name="package" value="unsure" form="enquiry" required checked><b>Not sure yet</b><small>I'll recommend the right one, with no obligation</small></label></div></fieldset>
+      <label class="check st-found"><input type="checkbox" name="founding" value="Yes" form="enquiry"><span>I'd like a founding client place (Starter or Business)</span></label>
+      <p class="fine">My first two clients get 30% off a Starter or Business build (Starter £279.30, Business £556.50), in return for honest feedback and permission to show the finished site here.</p>
+    </div>
+    <aside class="st-side no-print" aria-label="Your package">
+      <div class="card-d st-sum">
+        <p class="kicker">Your package</p>
+        <div class="st-sum__live" aria-live="polite">
+          <p class="st-sum__name" data-sum="name">Not sure yet</p>
+          <dl><div><dt>Price</dt><dd data-sum="price">Fixed quote</dd></div><div><dt>Deposit to start</dt><dd data-sum="deposit">50%</dd></div><div><dt>Ready in</dt><dd data-sum="time">3–10 working days</dd></div></dl>
+          <p class="st-sum__note" data-sum="note">That's fine. Send your details and I'll recommend the right package, with a fixed quote and no obligation.</p>
+        </div>
+        <a class="btn btn-white btn-block" href="#step-3">Go to step 3<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></a>
+        <p class="callline"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg> Prefer to talk? <a href="tel:+447395229191">Call or text <b class="tnum">07395 229191</b></a></p>
+      </div>
+    </aside>
+    <div class="st-step" id="step-2">
+      <h2 class="st-h"><span class="st-dot" aria-hidden="true">2</span>Gather your details</h2>
+      <p>Tick things off as you get them ready. You don't need everything before you get in touch: send what you have and I'll help with the rest.</p>
+      <div class="card">
+        <div class="st-prog"><p id="progress-text" aria-live="polite">0 of 13 ready</p><div class="st-bar" aria-hidden="true"><span id="progress-bar"></span></div>
+          <button class="btn btn-line btn-sm no-print" type="button" id="clear-ticks">Clear ticks</button><button class="btn btn-line btn-sm no-print" type="button" id="print-list" hidden><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-print"/></svg>Print checklist</button></div>
+        <div class="st-groups"><div class="st-group"><h3>About your business</h3><ul><li class="check"><input type="checkbox" id="c1" data-tick><label for="c1"><strong>Business name and what you do</strong><small>One or two sentences is plenty.</small></label></li><li class="check"><input type="checkbox" id="c2" data-tick><label for="c2"><strong>Your trade and the towns you cover</strong><small>For example &quot;Roofer: Bangor, Holywood and Newtownards&quot;.</small></label></li></ul></div><div class="st-group"><h3>Services and prices</h3><ul><li class="check"><input type="checkbox" id="c3" data-tick><label for="c3"><strong>Your main services (up to 6)</strong><small>With prices or &quot;from&quot; prices if you&#x27;re happy to show them.</small></label></li><li class="check"><input type="checkbox" id="c4" data-tick><label for="c4"><strong>What makes you different</strong><small>Only true points, like &quot;family-run since 2010&quot; or &quot;fully insured&quot;.</small></label></li></ul></div><div class="st-group"><h3>Logo and photos</h3><ul><li class="check"><input type="checkbox" id="c5" data-tick><label for="c5"><strong>Your logo</strong><small>Any format. No logo? I can make one (Logo &amp; brand kit, £120).</small></label></li><li class="check"><input type="checkbox" id="c6" data-tick><label for="c6"><strong>Photos of your work, premises or team</strong><small>Photos you took or have permission to use. Phone photos are fine.</small></label></li></ul></div><div class="st-group"><h3>Contact details</h3><ul><li class="check"><input type="checkbox" id="c7" data-tick><label for="c7"><strong>Phone, email and opening hours</strong><small>Whatever customers should use.</small></label></li><li class="check"><input type="checkbox" id="c8" data-tick><label for="c8"><strong>Your address, if customers visit you</strong><small>If you go to your customers, you can leave this off.</small></label></li></ul></div><div class="st-group"><h3>Online accounts</h3><ul><li class="check"><input type="checkbox" id="c9" data-tick><label for="c9"><strong>Do you already own a web address (domain)?</strong><small>Just tell me who it&#x27;s with. Never send passwords.</small></label></li><li class="check"><input type="checkbox" id="c10" data-tick><label for="c10"><strong>Google Business Profile</strong><small>If you have one, add infopootsdesign@gmail.com as a Manager in the profile settings.</small></label></li><li class="check"><input type="checkbox" id="c11" data-tick><label for="c11"><strong>Facebook and Instagram links</strong><small>So your site can link to them.</small></label></li></ul></div><div class="st-group"><h3>Extras, if you ordered them</h3><ul><li class="check"><input type="checkbox" id="c12" data-tick><label for="c12"><strong>Booking, ordering or payment provider</strong><small>For example ResDiary, Fresha, Square or Stripe. I need the booking link, not your password.</small></label></li><li class="check"><input type="checkbox" id="c13" data-tick><label for="c13"><strong>Menu, price list or timetable</strong><small>A photo of a printed menu is fine.</small></label></li></ul></div></div>
+      </div>
+    </div>
+    <div class="st-step no-print" id="step-3">
+      <h2 class="st-h"><span class="st-dot" aria-hidden="true">3</span>Send them to me</h2>
+      <div class="st-ways">
+        <div class="card"><h3>Online form (easiest)</h3><p>Fill in the form below. Share photos using a Google Drive, OneDrive, Dropbox or WeTransfer link.</p></div>
+        <div class="card"><h3>Email</h3><p>Send everything to <a href="mailto:infopootsdesign@gmail.com?subject=Website%20content">infopootsdesign@gmail.com</a> with the subject "Website content". Attachments are fine.</p></div>
+      </div>
+      <div class="card" id="send">
+  <form id="enquiry" class="form" data-enquiry action="https://formspree.io/f/mppqjvey" method="POST">
+    <p class="fine">Fields marked <span class="req">(required)</span> must be filled in. Everything else is optional.</p>
+    <div class="form-grid">
+      <div class="field"><label for="sp-name">Your name <span class="req">(required)</span></label><input class="inp" id="sp-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="sp-business">Business name <span class="req">(required)</span></label><input class="inp" id="sp-business" name="business" autocomplete="organization" required></div>
+      <fieldset class="field full" data-one-of="email phone"><legend>How should I reply? <span class="req">(email or phone, at least one)</span></legend>
+        <div class="form-grid"><div class="field"><label for="sp-email">Email</label><input class="inp" id="sp-email" name="email" type="email" autocomplete="email"></div>
+        <div class="field"><label for="sp-phone">Phone</label><input class="inp" id="sp-phone" name="phone" type="tel" autocomplete="tel"></div></div></fieldset>
+      <div class="field full"><label for="sp-what">What does your business do? <span class="req">(required)</span></label><textarea class="inp" id="sp-what" name="about" required placeholder="For example: Electrician covering Bangor and Newtownards. Domestic rewires, fuse boards and EV chargers."></textarea></div>
+    </div>
+    <details class="st-more"><summary>Add your content now <span>(optional, saves time)</span><span class="pm" aria-hidden="true"></span></summary>
+      <div class="form-grid">
+        <div class="field full"><label for="sp-services">Your main services and prices</label><p class="field__hint" id="sp-services-hint">One per line. "From" prices are fine.</p><textarea class="inp" id="sp-services" name="services" aria-describedby="sp-services-hint"></textarea></div>
+        <div class="field"><label for="sp-areas">Towns or areas you cover</label><input class="inp" id="sp-areas" name="areas"></div>
+        <div class="field"><label for="sp-hours">Opening hours</label><input class="inp" id="sp-hours" name="hours"></div>
+        <div class="field full"><label for="sp-different">What makes you different?</label><p class="field__hint" id="sp-different-hint">Only true points, like years trading, qualifications or guarantees.</p><textarea class="inp" id="sp-different" name="different" aria-describedby="sp-different-hint"></textarea></div>
+        <div class="field full"><label for="sp-photos">Link to your logo and photos</label><p class="field__hint" id="sp-photos-hint">A shared Google Drive, OneDrive, Dropbox or WeTransfer link. Or email them instead.</p><input class="inp" id="sp-photos" name="photos_link" inputmode="url" aria-describedby="sp-photos-hint"></div>
+        <div class="field"><label for="sp-domain">Do you have a web address (domain)?</label><select class="inp" id="sp-domain" name="domain"><option>No, I need one</option><option>Yes, I have one</option><option selected>Not sure</option></select></div>
+        <div class="field"><label for="sp-gbp">Do you have a Google Business Profile?</label><select class="inp" id="sp-gbp" name="google_profile"><option>Not sure</option><option>Yes</option><option>No</option></select></div>
+        <div class="field full"><label for="sp-contact">How should I contact you?</label><select class="inp" id="sp-contact" name="contact_by"><option>Email</option><option>Phone call</option><option>Text message</option></select></div>
+        <div class="field full"><label for="sp-msg">Anything else?</label><textarea class="inp" id="sp-msg" name="message" placeholder="Extras you'd like (logo, Google profile set-up, business email...), websites you like, colours, deadlines, questions..."></textarea></div>
+      </div>
+    </details>
+    <p class="st-pw"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-lock"/></svg><span><strong>Never include passwords.</strong> Share photos with a link, or email them to me.</span></p>
+    <label class="check"><input type="checkbox" id="sp-agree" name="agreed_terms" value="Yes" required><span>I have the right to use the photos and content I am sending, and I have read the <a href="../terms/">terms of business</a>. <span class="req">(required)</span></span></label>
+    <div class="hp" aria-hidden="true"><label for="sp-gotcha">Leave this empty</label><input id="sp-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+    <input type="hidden" name="_subject" value="New project details">
+    <div><button class="btn btn-lg" type="submit">Send my details<span class="tile" aria-hidden="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-arrow-right"/></svg></span></button></div>
     <p class="form-status" data-status role="status" aria-live="polite"></p>
-    <p style="color:var(--muted);font-size:.9rem;margin:8px 0 0"><strong>Never include passwords.</strong> Sending this doesn't commit you to anything: I'll reply with a fixed quote first.</p>
+    <p class="fine">Sending this doesn't commit you to anything: I'll reply with a fixed quote first. See the <a href="../privacy/">privacy notice</a>.</p>
   </form>
 </div>
-
-<h2>What happens next</h2>
-<ol class="next">
-  <li>I'll reply within one working day to confirm your package and fixed price in writing.</li>
-  <li>I'll send a deposit invoice for 50%. Card payments show as POOTS GROUP.</li>
-  <li>Once the deposit and your content are in, I start building and keep you updated.</li>
-  <li>You review the site and send your changes. When you're happy, you pay the balance and it goes live.</li>
-</ol>
-<p class="no-print" style="margin-top:22px"><button class="btn btn-line plain" type="button" onclick="window.print()">Print this checklist</button></p>
-</div></section>
-
-</main>
-<footer class="site">
-  <div class="wrap">
-    <div class="cols cols-4">
-      <div><a class="logo" href="../"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a><p style="margin:12px 0 0">Websites for local businesses across Belfast, Lisburn and North Down.</p></div>
-      <div><h3>Site</h3><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../start/">Start your project</a></li></ul></div>
-      <div><h3>Areas</h3><ul><li><a href="../web-design-belfast/">Web design Belfast</a></li><li><a href="../web-design-lisburn/">Web design Lisburn</a></li><li><a href="../web-design-bangor/">Web design Bangor</a></li><li><a href="../web-design-newtownards/">Web design Newtownards</a></li><li><a href="../web-design-carrickfergus/">Web design Carrickfergus</a></li><li><a href="../web-design-newtownabbey/">Web design Newtownabbey</a></li></ul></div>
-      <div><h3>Contact</h3><ul><li><a href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a></li><li><a href="../#contact">Free mock-up</a></li></ul></div>
     </div>
-    <div class="legal"><span>Poots Design is a trading name of Sam Poots, part of Poots Group. Belfast, BT7.</span><span><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <a href="../care/">Care plan changes</a></span></div>
+  </div>
+</section>
+<div class="rule" aria-hidden="true"></div>
+<section class="white frame st-next no-print" aria-labelledby="next-title">
+  <div class="wrap">
+    <div class="sh"><p class="kicker">After you send it</p><h2 class="h2" id="next-title">What happens next</h2></div>
+    <ol class="tl">
+      <li class="tl__step"><span class="tl__node">01</span><h3>Fixed quote</h3><p>I'll reply within one working day to confirm your package and fixed price in writing.</p></li>
+      <li class="tl__step"><span class="tl__node">02</span><h3>50% deposit</h3><p>I'll send a deposit invoice for 50%. Card payments show as POOTS GROUP.</p></li>
+      <li class="tl__step"><span class="tl__node">03</span><h3>I build it</h3><p>Once the deposit and your content are in, I start building and keep you updated.</p></li>
+      <li class="tl__step"><span class="tl__node">04</span><h3>You review, then go live</h3><p>You review the site and send your changes. When you're happy, you pay the balance and it goes live.</p></li>
+    </ol>
+  </div>
+</section>
+</main>
+<footer class="site-f" data-callbar-hide>
+  <svg class="skyline" viewBox="0 0 1440 150" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 132C60 124 110 112 160 96 205 82 232 60 262 50c14-5 22-4 30 2 6 5 6 14 14 18 10 5 24-2 38 2 26 8 52 30 84 44 34 15 76 22 120 24"/>
+    <path d="M520 138v-22h26v-10h18v14h22v-26h12v26h30v-12h24v18h40v-30l14-10 14 10v30h28v-16h30v20h36"/>
+    <g class="crane"><path d="M922 141l6-104h8l6 104M1036 141l6-104h8l6 104M910 37h160v-14H910zM932 23v-9h30v9M944 37v10h18V37M929 90h119"/><path d="M1096 141l5-88h7l5 88M1196 141l5-88h7l5 88M1086 53h140V41h-140zM1104 41v-8h26v8M1150 53v9h16v-9M1102 100h104"/></g>
+    <path d="M1150 138c40-4 90-14 150-16s100 4 140 2"/><path d="M0 141h1440"/>
+  </svg>
+  <div class="wrap">
+    <p class="site-f__signoff">Made in Belfast, <b>one site at a time.</b></p>
+    <div class="site-f__grid">
+      <div class="site-f__brand"><a class="logo" href="../"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg><span>Poots Design</span></a><p>Websites for local businesses across Belfast, Lisburn and North Down.</p><p>Sam Poots · Belfast, BT7</p></div>
+      <nav aria-labelledby="f-site"><h2 class="f-h" id="f-site">Site</h2><ul><li><a href="../services/">Services</a></li><li><a href="../#prices">Prices</a></li><li><a href="../#work">Examples</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/">About</a></li><li><a href="../start/">Start your project</a></li></ul></nav>
+      <nav aria-labelledby="f-areas"><h2 class="f-h" id="f-areas">Areas</h2><ul><li><a href="../web-design-belfast/">Web design Belfast</a></li><li><a href="../web-design-lisburn/">Web design Lisburn</a></li><li><a href="../web-design-bangor/">Web design Bangor</a></li><li><a href="../web-design-newtownards/">Web design Newtownards</a></li><li><a href="../web-design-carrickfergus/">Web design Carrickfergus</a></li><li><a href="../web-design-newtownabbey/">Web design Newtownabbey</a></li></ul></nav>
+      <div><h2 class="f-h">Contact</h2><ul><li><a class="tnum" href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:infopootsdesign@gmail.com">infopootsdesign@gmail.com</a></li><li><a href="../mock-up/">Free mock-up</a></li><li><a href="../care/">Care plan changes</a></li></ul></div>
+    </div>
+    <div class="site-f__legal"><p>Poots Design is a trading name of Sam Poots, part of Poots Group. Belfast, BT7.</p><p><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <span class="no-track"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-shield"/></svg>No cookies. No tracking.</span></p></div>
   </div>
 </footer>
-<a class="btn call-fab plain" href="tel:+447395229191">📞 Call Sam: 07395 229191</a>
+<div class="callbar" data-callbar>
+  <a class="btn btn-sm" href="tel:+447395229191"><svg class="ico" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-phone"/></svg>Call Sam</a>
+  <a class="btn btn-white btn-sm" href="../mock-up/">Free mock-up</a>
+</div>
 </body>
 </html>
