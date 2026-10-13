@@ -74,6 +74,28 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .booking{grid-template-columns:1fr}
   .widget .row{grid-template-columns:1fr}
 }
+.order{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:start}
+.olist{display:grid;gap:10px}
+.oitem{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-family:system-ui,sans-serif}
+.oitem strong{display:block;font-family:Georgia,serif;font-size:1.05rem}
+.oitem small{color:var(--muted)}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--moss);background:var(--white);color:var(--moss-dark);font-size:1.1rem;font-weight:700;cursor:pointer}
+.qty button:hover{background:var(--moss);color:#fff}
+.qty output{min-width:18px;text-align:center;font-weight:700}
+.basket{position:sticky;top:20px;background:var(--white);border:2px solid var(--moss);border-radius:var(--radius);padding:20px;font-family:system-ui,sans-serif}
+.basket h3{margin:0 0 10px;font-family:Georgia,serif;color:var(--moss-dark)}
+.basket ul{list-style:none;margin:0 0 12px;padding:0;font-size:.95rem}
+.basket li{display:flex;justify-content:space-between;padding:4px 0}
+.basket .total{display:flex;justify-content:space-between;font-weight:800;border-top:1px dashed var(--line);padding-top:10px;margin-top:6px}
+.basket .opts{display:flex;gap:8px;margin:12px 0}
+.basket .opts label{flex:1;text-align:center;border:1.5px solid var(--line);border-radius:999px;padding:7px;cursor:pointer;font-weight:600;font-size:.9rem}
+.basket .opts input{position:absolute;opacity:0}
+.basket .opts label:has(input:checked){border-color:var(--moss);background:#e3ecdf}
+.basket .pay{width:100%;padding:13px;border:0;border-radius:999px;background:var(--moss);color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.basket .pay:disabled{background:#9aa79a;cursor:not-allowed}
+.basket .note{font-size:.8rem;color:var(--muted);margin:10px 0 0}
+@media (max-width:820px){.order{grid-template-columns:1fr}.basket{position:static}}
 </style>
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/motion.css">
@@ -87,6 +109,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <a class="brand" href="#top">Hollowmoss<small>Café · North Coast</small></a>
     <nav aria-label="Main"><ul>
       <li><a href="#menu">Menu</a></li>
+      <li><a href="#order">Order</a></li>
       <li><a href="#book">Book</a></li>
       <li><a href="#visit">Visit</a></li>
       <li><a href="#story">Our story</a></li>
@@ -124,18 +147,40 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <p class="sub">A sample layout. A live site would be easy for the owner to update.</p>
       <div class="menu">
         <h3>Breakfast · until 11:30</h3>
-        <div class="item"><div><strong>Ulster fry</strong><span class="desc">Soda &amp; potato bread, bacon, sausage, egg, tomato</span></div><span class="price">£0.00</span></div>
-        <div class="item"><div><strong>Porridge</strong><span class="desc">Oats, berries, honey</span></div><span class="price">£0.00</span></div>
-        <div class="item"><div><strong>Eggs on toast</strong><span class="desc">Poached, scrambled or fried, on sourdough</span></div><span class="price">£0.00</span></div>
-        <div class="item"><div><strong>Veggie breakfast</strong><span class="desc">Halloumi, mushrooms, beans, avocado</span></div><span class="price">£0.00</span></div>
+        <div class="item"><div><strong>Ulster fry</strong><span class="desc">Soda &amp; potato bread, bacon, sausage, egg, tomato</span></div><span class="price">£9.50</span></div>
+        <div class="item"><div><strong>Porridge</strong><span class="desc">Oats, berries, honey</span></div><span class="price">£4.50</span></div>
+        <div class="item"><div><strong>Eggs on toast</strong><span class="desc">Poached, scrambled or fried, on sourdough</span></div><span class="price">£6.00</span></div>
+        <div class="item"><div><strong>Veggie breakfast</strong><span class="desc">Halloumi, mushrooms, beans, avocado</span></div><span class="price">£9.00</span></div>
         <h3>Lunch · 12 – 3</h3>
-        <div class="item"><div><strong>Soup of the day</strong><span class="desc">With wheaten bread</span></div><span class="price">£0.00</span></div>
-        <div class="item"><div><strong>Toasted sandwich</strong><span class="desc">Ask about today's fillings</span></div><span class="price">£0.00</span></div>
+        <div class="item"><div><strong>Soup of the day</strong><span class="desc">With wheaten bread</span></div><span class="price">£5.50</span></div>
+        <div class="item"><div><strong>Toasted sandwich</strong><span class="desc">Ask about today's fillings</span></div><span class="price">£6.50</span></div>
         <h3>Coffee &amp; bakes</h3>
-        <div class="item"><div><strong>Flat white</strong></div><span class="price">£0.00</span></div>
-        <div class="item"><div><strong>Scone, butter &amp; jam</strong></div><span class="price">£0.00</span></div>
+        <div class="item"><div><strong>Flat white</strong></div><span class="price">£3.20</span></div>
+        <div class="item"><div><strong>Scone, butter &amp; jam</strong></div><span class="price">£3.00</span></div>
       </div>
-      <p class="sub" style="margin-top:20px;font-size:.9rem">Prices shown as £0.00 because this is a design sample. Allergen information would be listed on a live site.</p>
+      <p class="sub" style="margin-top:20px;font-size:.9rem">Sample prices for a fictional café. Allergen information would be listed on a live site.</p>
+    </div>
+  </section>
+
+  <section id="order" aria-labelledby="order-title">
+    <div class="wrap">
+      <h2 id="order-title">Order for collection</h2>
+      <p class="sub">Order ahead and skip the queue. Sample prices, and this is an example only: no real orders or payments are taken.</p>
+      <div class="order">
+        <div class="olist" id="olist"></div>
+        <aside class="basket" aria-labelledby="basket-title">
+          <span class="placeholder-tag">Example checkout</span>
+          <h3 id="basket-title">Your order</h3>
+          <ul id="blist"><li style="color:var(--muted)">Nothing added yet</li></ul>
+          <div class="total"><span>Total</span><span id="btotal">£0.00</span></div>
+          <div class="opts" role="radiogroup" aria-label="Collection or delivery">
+            <label><input type="radio" name="fulfil" value="collect" checked> Collect</label>
+            <label><input type="radio" name="fulfil" value="deliver"> Deliver</label>
+          </div>
+          <button class="pay" id="bpay" type="button" disabled>Pay securely</button>
+          <p class="note" id="bnote">On a live site, this button opens a secure payment page from a provider such as Stripe, Square or SumUp. Card details never touch the café's website.</p>
+        </aside>
+      </div>
     </div>
   </section>
 
@@ -206,5 +251,23 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <span>Privacy notice goes here on a live site</span>
   </div>
 </footer>
+<script>
+(function(){
+  var items=[["Ulster fry",9.5],["Eggs on toast",6],["Veggie breakfast",9],["Soup of the day",5.5],["Toasted sandwich",6.5],["Flat white",3.2],["Scone, butter & jam",3]];
+  var q=items.map(function(){return 0;});
+  var list=document.getElementById('olist'), bl=document.getElementById('blist'), bt=document.getElementById('btotal'), pay=document.getElementById('bpay'), note=document.getElementById('bnote');
+  function gbp(n){return '£'+n.toFixed(2);}
+  list.innerHTML=items.map(function(it,i){return '<div class="oitem"><div><strong>'+it[0]+'</strong><small>'+gbp(it[1])+'</small></div><div class="qty"><button type="button" data-i="'+i+'" data-d="-1" aria-label="Remove one '+it[0]+'">−</button><output id="q'+i+'" aria-live="polite">0</output><button type="button" data-i="'+i+'" data-d="1" aria-label="Add one '+it[0]+'">+</button></div></div>';}).join('');
+  function render(){
+    var total=0, rows=[];
+    items.forEach(function(it,i){ document.getElementById('q'+i).textContent=q[i]; if(q[i]){ total+=q[i]*it[1]; rows.push('<li><span>'+q[i]+' × '+it[0]+'</span><span>'+gbp(q[i]*it[1])+'</span></li>'); } });
+    bl.innerHTML=rows.length?rows.join(''):'<li style="color:var(--muted)">Nothing added yet</li>';
+    bt.textContent=gbp(total); pay.disabled=!rows.length;
+  }
+  list.addEventListener('click',function(e){var b=e.target.closest('button[data-i]'); if(!b) return; var i=+b.dataset.i; q[i]=Math.max(0,q[i]+(+b.dataset.d)); render();});
+  pay.addEventListener('click',function(){ note.textContent='Example only: on a live site you would now be taken to a secure checkout to pay '+bt.textContent+'. No payment has been taken.'; note.style.color='var(--moss-dark)'; note.style.fontWeight='700'; });
+  render();
+})();
+</script>
 </body>
 </html>

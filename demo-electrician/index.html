@@ -86,6 +86,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   .call-fab{display:flex;position:fixed;left:16px;right:16px;bottom:16px;justify-content:center;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.25)}
   footer{padding-bottom:96px}
 }
+.dep{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.dep-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 20px 50px -24px rgba(15,29,46,.35)}
+.dep-card h3{margin:0 0 4px}
+.dep-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:.97rem}
+.dep-row b{font-weight:800}
+.dep-row.due{border-bottom:0;font-size:1.1rem}
+.dep-card .btn{width:100%;justify-content:center;margin-top:14px}
+.dep-card .btn[aria-disabled=true]{opacity:.85}
+.methods{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.methods span{font-size:.75rem;font-weight:700;border:1px solid var(--line);border-radius:6px;padding:3px 8px;color:var(--muted)}
+.dep-msg{font-size:.85rem;color:var(--muted);margin:12px 0 0}
+@media (max-width:900px){.dep{grid-template-columns:1fr}}
 </style>
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/motion.css">
@@ -106,6 +118,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <li><a href="#services">Services</a></li>
         <li><a href="#how">How it works</a></li>
         <li><a href="#areas">Areas</a></li>
+        <li><a href="#deposit">Pay deposit</a></li>
         <li><a href="#quote">Contact</a></li>
       </ul>
     </nav>
@@ -202,6 +215,33 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </div>
   </section>
 
+  <section id="deposit" aria-labelledby="dep-title">
+    <div class="wrap dep">
+      <div>
+        <div class="section-head" style="margin-bottom:16px">
+          <h2 id="dep-title">Accept your quote online</h2>
+          <p>Happy with your quote? Pay the deposit online to lock in your date. It takes a minute, and you get an email receipt straight away.</p>
+        </div>
+        <ul style="color:var(--muted);padding-left:1.2em;margin:0">
+          <li>Secure card payment, Apple Pay or Google Pay</li>
+          <li>Deposit comes off your final bill</li>
+          <li>Prefer bank transfer? Details are on your quote</li>
+        </ul>
+      </div>
+      <div class="dep-card">
+        <span class="placeholder-tag">Example only</span>
+        <h3>Quote #Q-0000 · Fuse board upgrade</h3>
+        <p style="margin:0 0 10px;color:var(--muted);font-size:.9rem">Sample quote for a fictional customer</p>
+        <div class="dep-row"><span>Quote total</span><b>£000.00</b></div>
+        <div class="dep-row"><span>Deposit (25%)</span><b>£000.00</b></div>
+        <div class="dep-row due"><span>Due now</span><b>£000.00</b></div>
+        <button class="btn" type="button" id="dep-btn">🔒 Pay deposit securely</button>
+        <div class="methods" aria-label="Accepted payment methods"><span>Visa</span><span>Mastercard</span><span>Apple Pay</span><span>Google Pay</span></div>
+        <p class="dep-msg" id="dep-msg">On a live site, this button opens a secure payment page (for example Stripe or SumUp) set to the exact deposit. No card details are stored on the website.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="areas" class="alt" aria-labelledby="areas-title">
     <div class="wrap">
       <div class="section-head">
@@ -230,5 +270,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </footer>
 
 <a class="btn call-fab" href="tel:+442896496123">📞 Call 028 9649 6123</a>
+<script>
+document.getElementById('dep-btn').addEventListener('click',function(ev){ev.preventDefault();var m=document.getElementById('dep-msg');m.textContent='Example only: on a live site you would now go to a secure payment page. No payment has been taken.';m.style.color='#0f1d2e';m.style.fontWeight='700';});
+</script>
 </body>
 </html>
