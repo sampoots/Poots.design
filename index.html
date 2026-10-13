@@ -32,7 +32,7 @@
   "address": {"@type": "PostalAddress", "addressLocality": "Belfast", "postalCode": "BT7", "addressRegion": "Northern Ireland", "addressCountry": "GB"},
   "parentOrganization": {"@type": "Organization", "name": "Poots Group"},
   "areaServed": ["Belfast","Lisburn","Bangor","Newtownards","Carrickfergus","Whiteabbey","Newtownabbey","Holywood"],
-  "priceRange": "££"
+  "priceRange": "£249–£795"
 }
 </script>
 <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -131,6 +131,10 @@
 .price-card li::before{content:"✓";color:var(--red);font-weight:800}
 .offer{margin-top:22px;border:1px dashed rgba(224,35,63,.5);background:rgba(224,35,63,.05);color:#7f1d2d;border-radius:14px;padding:16px 20px}
 
+.prices-4{grid-template-columns:repeat(4,1fr)}
+.care{margin-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.care p{margin:4px 0 0}
+@media (max-width:1100px){.prices-4{grid-template-columns:1fr 1fr}}
 /* Demos */
 .demos{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .demo{display:block;text-decoration:none;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:transform .3s,box-shadow .3s}
@@ -262,7 +266,7 @@
       <div>
         <span class="eyebrow">Web design · Belfast &amp; North Down</span>
         <h1 id="hero-title" class="display">Websites that get local businesses more enquiries</h1>
-        <p class="lead">Fast, mobile-friendly websites for trades, shops and services. Fixed price, usually live within a week, and no tech hassle for you.</p>
+        <p class="lead">Affordable, mobile-friendly websites for trades, shops and services, from £249. Fixed price, usually live within a week, and no tech hassle for you.</p>
         <div class="actions">
           <a class="btn" href="#contact">Get a free mock-up <span class="tile" aria-hidden="true">→</span></a>
           <a class="btn btn-ghost plain" href="#prices">See prices</a>
@@ -383,7 +387,7 @@
       <table class="cmp">
         <thead><tr><th scope="col"></th><th scope="col" class="us">Poots Design</th><th scope="col">Typical large agency</th></tr></thead>
         <tbody>
-          <tr><td>Price</td><td class="us">Shown up front, from £395</td><td class="them">Usually quote-only</td></tr>
+          <tr><td>Price</td><td class="us">Shown up front, from £249</td><td class="them">Usually quote-only</td></tr>
           <tr><td>Before you pay</td><td class="us">A free mock-up of your site</td><td class="them">Often a proposal or strategy meeting</td></tr>
           <tr><td>Time to go live</td><td class="us">About a week</td><td class="them">Often several weeks or more</td></tr>
           <tr><td>Who you talk to</td><td class="us">Sam, directly</td><td class="them">Often an account manager</td></tr>
@@ -398,15 +402,18 @@
   <section id="prices" class="light frame" aria-labelledby="prices-title">
     <div class="wrap">
       <div class="head"><h2 id="prices-title">Simple, fixed prices</h2><p>50% deposit to start, 50% before the site goes live. No hidden extras.</p></div>
-      <div class="prices">
-        <div class="card price-card"><h3>Starter</h3><div class="amount">£395</div><p>For getting online properly.</p>
-          <ul><li>1 to 3 pages</li><li>Mobile-first design</li><li>Tap-to-call and enquiry form</li><li>Google Business Profile check</li><li>Live in about 5 working days</li></ul></div>
+      <div class="prices prices-4">
+        <div class="card price-card"><h3>Launch</h3><div class="amount">£249</div><p>A simple one-page site to get you online.</p>
+          <ul><li>1 page from a template for your trade</li><li>Your logo, photos and text</li><li>Tap-to-call, enquiry form and map</li><li>1 round of changes</li><li>Live in about 3 working days</li></ul></div>
+        <div class="card price-card"><h3>Essential</h3><div class="amount">£299</div><p>Room for your services and contact details.</p>
+          <ul><li>Up to 3 pages from a template</li><li>Basic Google setup</li><li>Enquiry form and tap-to-call</li><li>2 rounds of changes</li><li>Live in about 5 working days</li></ul></div>
+        <div class="card price-card"><h3>Starter</h3><div class="amount">£399</div><p>Designed around your brand.</p>
+          <ul><li>Up to 3 pages, custom design</li><li>I write and polish the wording</li><li>Google Business Profile check</li><li>2 rounds of changes</li><li>Live in about 5–7 working days</li></ul></div>
         <div class="card price-card featured"><span class="badge">Most popular</span><h3>Business</h3><div class="amount">£795</div><p>For winning more local work.</p>
-          <ul><li>Up to 6 pages</li><li>Service and area pages for local search</li><li>Photo gallery</li><li>Your real Google reviews shown</li><li>Visitor stats</li><li>Live in 7 to 10 working days</li></ul></div>
-        <div class="card price-card"><h3>Care plan</h3><div class="amount">£35<small>/month</small></div><p>So you never have to think about it.</p>
-          <ul><li>Hosting and security certificate</li><li>Backups and uptime checks</li><li>Up to 30 minutes of changes a month</li><li>Cancel any time</li></ul></div>
+          <ul><li>Up to 6 pages</li><li>Service and area pages for local search</li><li>Photo gallery and your real Google reviews</li><li>Visitor stats</li><li>Live in 7 to 10 working days</li></ul></div>
       </div>
-      <p class="offer"><strong>Founding client offer:</strong> my first two clients get 30% off the Starter or Business build, in return for honest feedback and permission to show the finished site here.</p>
+      <div class="card care"><div><h3>Care plan · £35/month</h3><p>Hosting, security certificate, backups and up to 30 minutes of changes a month. Cancel any time.</p></div><a class="btn btn-dark plain" href="#contact">Ask about care</a></div>
+      <p class="offer"><strong>Founding client offer:</strong> my first two clients get 30% off a Starter or Business build, in return for honest feedback and permission to show the finished site here.</p>
     </div>
   </section>
 
@@ -437,7 +444,8 @@
     <div class="wrap">
       <div class="head" style="margin-left:auto;margin-right:auto;text-align:center"><h2 id="faq-title">Questions people ask</h2><p>If yours isn't here, just ask.</p></div>
       <div class="faq">
-        <details><summary>How long does it take?</summary><p>A Starter site is usually live in about 5 working days, and a Business site in 7 to 10, once I have your details and photos.</p></details>
+        <details><summary>How long does it take?</summary><p>A Launch site is usually live in about 3 working days, Essential and Starter in about 5 to 7, and Business in 7 to 10, once I have your details and photos.</p></details>
+        <details><summary>What's the difference between Launch, Essential and Starter?</summary><p>Launch and Essential use a ready-made template for your trade with your own logo, photos and text, which keeps the price down. Starter is designed around your brand, and I write and polish the wording for you.</p></details>
         <details><summary>What do I need to give you?</summary><p>Your business name, what you offer, the areas you cover, how customers should contact you, and any photos or logo you have. If you don't have photos or wording, I'll help you put them together.</p></details>
         <details><summary>Do I own the website?</summary><p>Yes. Your domain name and all your content belong to you. If you ever leave, I'll hand everything over.</p></details>
         <details><summary>Can I make changes after it's live?</summary><p>Yes. On the care plan, up to 30 minutes of changes a month are included. Without it, small changes are £60 each.</p></details>
