@@ -5,30 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About Sam Poots — Poots Design</title>
 <meta name="description" content="Sam Poots is an 18-year-old web designer from Northern Ireland with a manufacturing engineering background, and a rock climber and mountaineer. He builds websites for local businesses.">
-<style>
-:root{
-  --ink:#111214; --ink-2:#1b1d21; --red:#d7263d; --red-dark:#b01c30;
-  --text:#1c1e22; --muted:#5d636d; --line:#e5e7eb; --bg:#f7f7f8; --white:#fff;
-  --max:1080px; --radius:14px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.65}
-a{color:inherit}
-a:focus-visible,.btn:focus-visible{outline:3px solid var(--red);outline-offset:3px}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-header{background:var(--ink);color:var(--white);position:sticky;top:0;z-index:10}
-.nav{display:flex;justify-content:space-between;align-items:center;height:66px;gap:16px}
-.logo{font-weight:800;font-size:1.2rem;text-decoration:none}
-.logo span{color:var(--red)}
-.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
-.nav ul a{text-decoration:none;color:#c5c8ce;font-weight:500}
-.nav ul a:hover,.nav ul a[aria-current]{color:var(--white)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:var(--white);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;border:0}
-.btn:hover{background:var(--red-dark)}
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css">
+<style>.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
 .btn-ghost{background:transparent;border:2px solid rgba(255,255,255,.3)}
 .btn-ghost:hover{background:rgba(255,255,255,.08)}
-.hero{background:var(--ink);color:var(--white);padding:64px 0 80px;overflow:hidden}
+.hero{color:var(--white);padding:64px 0 80px;overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
 .eyebrow{display:inline-block;background:rgba(215,38,61,.15);color:#ff6b7d;font-weight:700;font-size:.85rem;padding:6px 12px;border-radius:999px;margin-bottom:16px}
 .hero h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.08;margin:0 0 18px}
@@ -67,20 +49,18 @@ section{padding:80px 0}
 .cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .cta h2{margin:0;font-size:clamp(1.4rem,3vw,2rem)}
 .cta p{margin:6px 0 0;color:#c5c8ce}
-footer{background:#000;color:#8b9099;padding:32px 0;font-size:.9rem}
-footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media (max-width:900px){
   .hero .wrap{grid-template-columns:1fr}
   .art{justify-self:start;max-width:320px}
   .qualities,.promise{grid-template-columns:1fr 1fr}
-  .nav ul{display:none}
 }
 @media (max-width:640px){
   .story,.qualities,.promise{grid-template-columns:1fr}
   section{padding:56px 0}
   .hero{padding:48px 0 64px}
-  .nav .btn{display:none}
 }
+.hero h1{letter-spacing:-.045em;font-weight:600;color:#fff}
+.hero{color:#fff}
 </style>
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://sampoots.github.io/Poots.design/about/">
@@ -99,21 +79,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </head>
 <body>
 
-<header>
+<header class="site">
   <div class="wrap nav">
-    <a class="logo" href="../">Poots<span>.</span>Design</a>
-    <nav aria-label="Main"><ul>
-      <li><a href="../#prices">Prices</a></li>
-      <li><a href="../templates/">Templates</a></li>
-      <li><a href="./" aria-current="page">About</a></li>
-      <li><a href="../#contact">Contact</a></li>
-    </ul></nav>
-    <a class="btn" href="tel:+447395229191">07395 229191</a>
+    <a class="logo" href="../" aria-label="Poots Design home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a>
+    <nav aria-label="Main"><ul><li><a href="../#prices">Prices</a></li><li><a href="../templates/">Templates</a></li><li><a href="../about/" aria-current="page">About</a></li><li><a href="../#contact">Contact</a></li></ul></nav>
+    <div class="nav-cta">
+      <a class="btn btn-white plain" href="../#contact">Free mock-up</a>
+      <a class="btn btn-ghost plain" href="tel:+447395229191">Call Sam</a>
+    </div>
   </div>
 </header>
 
 <main>
-  <section class="hero" aria-labelledby="about-title">
+  <section class="hero dark glow frame" aria-labelledby="about-title">
     <div class="wrap">
       <div>
         <span class="eyebrow">About Poots Design</span>
@@ -211,10 +189,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </main>
 
-<footer>
+<footer class="site">
   <div class="wrap">
-    <span>Poots Design is a trading name of Sam Poots, part of Poots Group. Northern Ireland.</span>
-    <span><a href="../privacy/" style="color:#c5c8ce">Privacy notice</a> · No cookies or tracking</span>
+    <div class="cols">
+      <div><a class="logo" href="../"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e0233f"/><path d="M10 25V7h7.2c3.9 0 6.3 2.2 6.3 5.6s-2.4 5.6-6.3 5.6H14.3V25z M14.3 14.6h2.6c1.5 0 2.4-.8 2.4-2s-.9-2-2.4-2h-2.6z" fill="#fff"/><circle cx="25" cy="24" r="2.6" fill="#fff"/></svg>Poots Design</a><p style="margin:12px 0 0">Websites for local businesses across Belfast, Lisburn and North Down.</p></div>
+      <div><h3>Site</h3><ul><li><a href="../#prices">Prices</a></li><li><a href="../templates/">Templates</a></li><li><a href="../#work">Examples</a></li><li><a href="../about/">About</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li><a href="tel:+447395229191">07395 229191</a></li><li><a href="mailto:pootssam5@gmail.com">pootssam5@gmail.com</a></li><li><a href="../#contact">Free mock-up</a></li></ul></div>
+    </div>
+    <div class="legal"><span>Poots Design is a trading name of Sam Poots, part of Poots Group. Northern Ireland.</span><span><a href="../privacy/">Privacy notice</a> · No cookies or tracking</span></div>
   </div>
 </footer>
 </body>
