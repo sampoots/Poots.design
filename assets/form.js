@@ -30,7 +30,7 @@
       button.textContent = 'Sent';
     }).catch(function () {
       status.className = 'form-status err';
-      status.textContent = "Sorry, that didn't send. Please call or text 07395 229191, or email pootssam5@gmail.com.";
+      status.textContent = "Sorry, that didn't send. Please call or text 07395 229191, or email infopootsdesign@gmail.com.";
       button.disabled = false;
       button.innerHTML = label;
     });
