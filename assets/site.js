@@ -229,4 +229,48 @@
     });
     stage.addEventListener('pointerleave', function () { tgt.x = BX; tgt.y = BY; kick(); });
   }
+  // free mock-up nudge: one small dismissible card per visit, never on form pages
+  (function () {
+    var mock = d.querySelector('.h-mock');
+    var path = w.location.pathname;
+    if (!mock || /\/(mock-up|start|care|privacy|terms|accessibility)(\/|$)/.test(path)) return;
+    try { if (w.sessionStorage.getItem('pd_nudge')) return; } catch (e) {}
+    var card, shown = false, opener;
+    function close(remember) {
+      if (!card) return;
+      card.classList.remove('is-in');
+      var c = card; card = null;
+      setTimeout(function () { c.remove(); }, 300);
+      if (remember) try { w.sessionStorage.setItem('pd_nudge', '1'); } catch (e) {}
+      d.removeEventListener('keydown', onKey);
+      if (opener && opener.isConnected) opener.focus();
+    }
+    function onKey(e) { if (e.key === 'Escape') close(true); }
+    function show() {
+      if (shown || root.classList.contains('menu-open')) return;
+      shown = true;
+      opener = d.activeElement !== d.body ? d.activeElement : null;
+      card = d.createElement('aside');
+      card.className = 'nudge dark';
+      card.setAttribute('role', 'dialog');
+      card.setAttribute('aria-labelledby', 'nudge-t');
+      card.innerHTML = '<button type="button" class="nudge__x" aria-label="Close">&times;</button>' +
+        '<p class="nudge__k">Free, no obligation</p>' +
+        '<h2 id="nudge-t" class="nudge__t">See your website before you pay a penny</h2>' +
+        '<p class="nudge__p">Send me your business name and I\u2019ll make you a free one-page mock-up.</p>' +
+        '<div class="nudge__a"><a class="btn btn-white btn-sm" href="' + mock.getAttribute('href') + '">Get my free mock-up</a>' +
+        '<button type="button" class="nudge__n">Not now</button></div>';
+      d.body.appendChild(card);
+      card.querySelector('.nudge__x').addEventListener('click', function () { close(true); });
+      card.querySelector('.nudge__n').addEventListener('click', function () { close(true); });
+      card.querySelector('a').addEventListener('click', function () { try { w.sessionStorage.setItem('pd_nudge', '1'); } catch (e) {} });
+      d.addEventListener('keydown', onKey);
+      w.requestAnimationFrame(function () { card.classList.add('is-in'); });
+    }
+    // after 20s on the page, or once they have read about half of it
+    var t = setTimeout(show, 20000);
+    w.addEventListener('scroll', function f() {
+      if (w.scrollY > (root.scrollHeight - w.innerHeight) * 0.5) { w.removeEventListener('scroll', f); clearTimeout(t); setTimeout(show, 800); }
+    }, { passive: true });
+  })();
 })();
