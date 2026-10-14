@@ -937,3 +937,5 @@ details[open]>summary .pm::before,details[open]>summary .pm::after{background:va
   h1,h2,h3{break-after:avoid}
   .card,.pc,.cell,tr{break-inside:avoid}
 }
+.signature>:first-child img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover}
+.signature>:first-child:has(img){background:var(--ll2,#ddd);overflow:hidden;padding:0}
